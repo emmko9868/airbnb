@@ -1,7 +1,7 @@
 ---
 kind: page
 site: AirbnbHome
-revision: 11
+revision: 13
 status: review-required
 source_ref: my-website/figma/Home.png; my-website/figma/Home.layers.xml; my-website/figma/Home.json (Figma node 389:2752, frame 1440x3367)
 facts_complete: true
@@ -53,10 +53,8 @@ open_questions: 0
           "items": [
             {
               "id": "logo",
-              "component": "Link",
-              "props": { "href": "/", "variant": "default", "size": "md" },
-              "children": ["airbnb"],
-              "states": ["default"]
+              "image": "airbnb-logo",
+              "alt": "airbnb"
             }
           ]
         },
@@ -82,48 +80,6 @@ open_questions: 0
                   { "id": "who", "label": "Who", "placeholder": "Add guests" }
                 ]
               },
-              "states": ["default"]
-            }
-          ]
-        },
-        {
-          "id": "reservations",
-          "tag": "section",
-          "items": [
-            {
-              "id": "reservation-card-1",
-              "component": "div",
-              "props": { "className": "page-Home__reservation-card" },
-              "children": [
-                { "id": "reservation-title-1", "component": "Text", "props": { "as": "p", "variant": "body-sm" }, "children": ["Your reservation"], "states": ["default"] },
-                { "id": "reservation-status-1", "component": "Text", "props": { "as": "p", "variant": "body-sm" }, "children": ["CHECK-IN"], "states": ["default"] },
-                { "id": "reservation-name-1", "component": "Text", "props": { "as": "p", "variant": "body-sm" }, "children": ["San Francisco, tiny home"], "states": ["default"] },
-                { "id": "reservation-code-1", "component": "Text", "props": { "as": "p", "variant": "body-sm" }, "children": ["Reservation code: UNIMPORTANTID"], "states": ["default"] }
-              ],
-              "states": ["default"]
-            },
-            {
-              "id": "reservation-card-2",
-              "component": "div",
-              "props": { "className": "page-Home__reservation-card" },
-              "children": [
-                { "id": "reservation-title-2", "component": "Text", "props": { "as": "p", "variant": "body-sm" }, "children": ["Your reservation"], "states": ["default"] },
-                { "id": "reservation-status-2", "component": "Text", "props": { "as": "p", "variant": "body-sm" }, "children": ["CHECK-OUT"], "states": ["default"] },
-                { "id": "reservation-name-2", "component": "Text", "props": { "as": "p", "variant": "body-sm" }, "children": ["tiny house, tiny farm"], "states": ["default"] },
-                { "id": "reservation-code-2", "component": "Text", "props": { "as": "p", "variant": "body-sm" }, "children": ["Reservation code: UNIMPORTANTID"], "states": ["default"] }
-              ],
-              "states": ["default"]
-            },
-            {
-              "id": "reservation-card-3",
-              "component": "div",
-              "props": { "className": "page-Home__reservation-card" },
-              "children": [
-                { "id": "reservation-title-3", "component": "Text", "props": { "as": "p", "variant": "body-sm" }, "children": ["Your reservation"], "states": ["default"] },
-                { "id": "reservation-status-3", "component": "Text", "props": { "as": "p", "variant": "body-sm" }, "children": ["CANCELLED"], "states": ["default"] },
-                { "id": "reservation-name-3", "component": "Text", "props": { "as": "p", "variant": "body-sm" }, "children": ["tiny house, city farm"], "states": ["default"] },
-                { "id": "reservation-code-3", "component": "Text", "props": { "as": "p", "variant": "body-sm" }, "children": ["Reservation code: UNIMPORTANTID"], "states": ["default"] }
-              ],
               "states": ["default"]
             }
           ]
