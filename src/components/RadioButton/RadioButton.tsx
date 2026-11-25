@@ -70,6 +70,12 @@ export const RadioButton = forwardRef<HTMLInputElement, RadioButtonProps>(functi
                   disabled={item.disabled}
                   onChange={() => choose(item.value)}
                 />
+                <span className="ds-radiobutton__visual" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle className="ds-radiobutton__circle-outer" cx="12" cy="12" r="11.5" />
+                    <circle className="ds-radiobutton__circle-inner" cx="12" cy="12" r="4" />
+                  </svg>
+                </span>
                 <label className="ds-radiobutton__label" htmlFor={id}>
                   {item.label}
                 </label>
@@ -88,6 +94,12 @@ export const RadioButton = forwardRef<HTMLInputElement, RadioButtonProps>(functi
   return (
     <span className={classes} data-testid="ds-radiobutton">
       <input ref={ref} id={id} type="radio" name={nameProp} className="ds-radiobutton__field" disabled={disabled} {...rest} />
+      <span className="ds-radiobutton__visual" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle className="ds-radiobutton__circle-outer" cx="12" cy="12" r="11.5" />
+          <circle className="ds-radiobutton__circle-inner" cx="12" cy="12" r="4" />
+        </svg>
+      </span>
       {text ? (
         <label className="ds-radiobutton__label" htmlFor={id}>
           {text}

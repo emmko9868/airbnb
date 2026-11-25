@@ -1,7 +1,7 @@
 /**
  * 생성 파일 — 직접 고치지 마세요. `pnpm ds:tokens` 로 다시 만듭니다.
  * 학생 팔레트: 선언/승인 역할만 적용
- * Figma: 학생 Figma / source 14e6422ce7c7baa9
+ * Figma: 학생 Figma / source 64dc44e00c560513
  */
 @import "tailwindcss";
 
@@ -12,6 +12,7 @@
   --color-discounts: #008A05;
   --color-error-01: #FEF8F6;
   --color-error-02: #C13515;
+  --color-gray-02-10: #FFFFFF;
   --color-link: #004CC4;
   --color-neutral-01: #F7F7F7;
   --color-neutral-02: #EBEBEB;

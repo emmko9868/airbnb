@@ -2,7 +2,7 @@
   "$comment": "scripts/figma-tokens.mjs 가 Figma MCP 로 가져온 변수. 손으로 고치지 말고 다시 가져온다. 우리 쪽 정의는 .ds/source.json.",
   "schema_version": "1.0",
   "file_key": "zrqq2F92iVtCoxKzj4b8Pm",
-  "imported_at": "2026-11-20T15:11:06.395Z",
+  "imported_at": "2026-11-25T04:17:48.781Z",
   "nodes": [
     "232:1522",
     "245:3517",
@@ -19,7 +19,9 @@
     "414:1917",
     "418:3150",
     "238:2378",
-    "238:2153"
+    "238:2153",
+    "213:1943",
+    "213:1944"
   ],
   "collections": [
     {
@@ -170,6 +172,13 @@
           "type": "COLOR",
           "value": "#F7F7F7",
           "figmaName": "Neutral 01"
+        },
+        {
+          "id": "figma-gray_02/10",
+          "name": "gray_02/10",
+          "type": "COLOR",
+          "value": "#FFFFFF",
+          "figmaName": "Gray_02/10"
         }
       ]
     },
@@ -847,6 +856,7 @@
     "Neutral 01": "#F7F7F7",
     "Elevation 03": "Effect(type: DROP_SHADOW, color: #0000001F, offset: (0, 6), radius: 16, spread: 0)",
     "Elevation 02": "Effect(type: DROP_SHADOW, color: #00000030, offset: (0, 1), radius: 5, spread: -363)",
-    "Elevation 01": "Effect(type: DROP_SHADOW, color: #0000002B, offset: (0, 4), radius: 18, spread: 0)"
+    "Elevation 01": "Effect(type: DROP_SHADOW, color: #0000002B, offset: (0, 4), radius: 18, spread: 0)",
+    "Gray_02/10": "#FFFFFF"
   }
 }

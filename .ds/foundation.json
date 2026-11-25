@@ -12,12 +12,12 @@
     }
   ],
   "counts": {
-    "primitive": 20,
+    "primitive": 21,
     "layout": 102,
     "semantic": 18
   },
   "bySource": {
-    "declared": 103,
+    "declared": 104,
     "synthesized": 19,
     "human": 18
   },
@@ -343,7 +343,7 @@
   "missingRoles": [],
   "figma": {
     "fileKey": "zrqq2F92iVtCoxKzj4b8Pm",
-    "importedAt": "2026-11-20T15:11:06.395Z",
+    "importedAt": "2026-11-25T04:17:48.781Z",
     "variables": [
       {
         "figma": "Shade 02",
@@ -558,6 +558,17 @@
         "figma": "Neutral 01",
         "tier": "primitive",
         "token": "neutral-01",
+        "applied": true,
+        "how": {
+          "ko": "계층 선언 없음 → primitive",
+          "en": "no tier declared → primitive"
+        },
+        "hint": null
+      },
+      {
+        "figma": "Gray_02/10",
+        "tier": "primitive",
+        "token": "gray-02-10",
         "applied": true,
         "how": {
           "ko": "계층 선언 없음 → primitive",
@@ -863,6 +874,21 @@
       "cssVar": "--color-neutral-01",
       "value": "#F7F7F7",
       "hex": "#F7F7F7",
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "학생 Figma의 정확한 원시 색",
+        "en": "Exact raw color from your Figma"
+      }
+    },
+    {
+      "layer": "primitive",
+      "category": "COLOR",
+      "name": "gray-02-10",
+      "cssVar": "--color-gray-02-10",
+      "value": "#FFFFFF",
+      "hex": "#FFFFFF",
       "ref": null,
       "source": "declared",
       "confidence": 1,
