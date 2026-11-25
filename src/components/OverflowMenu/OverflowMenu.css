@@ -1,0 +1,69 @@
+/* OverflowMenu — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-overflowmenu { position: relative; display: inline-flex; font-family: var(--font-sans); }
+
+.ds-overflowmenu__trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(var(--spacing) * 8);
+  height: calc(var(--spacing) * 8);
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: background var(--duration-fast) var(--ease-standard);
+}
+
+.ds-overflowmenu__trigger:hover { background: var(--color-surface); color: var(--color-text); }
+
+.ds-overflowmenu__trigger:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.ds-overflowmenu__list {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + var(--spacing));
+  min-width: calc(var(--spacing) * 44);
+  padding: calc(var(--spacing) * 1);
+  border: var(--border-width-thin) solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-raised);
+  box-shadow: var(--shadow-lg);
+}
+
+.ds-overflowmenu--end .ds-overflowmenu__list { right: 0; }
+.ds-overflowmenu--start .ds-overflowmenu__list { left: 0; }
+.ds-overflowmenu--flipped .ds-overflowmenu__list { top: auto; bottom: calc(100% + var(--spacing)); }
+
+.ds-overflowmenu__item {
+  display: block;
+  width: 100%;
+  padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3);
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-text);
+  font: inherit;
+  font-size: var(--text-body-2);
+  text-align: left;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.ds-overflowmenu__item:hover:not(:disabled) { background: var(--color-surface); }
+
+.ds-overflowmenu__item:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+}
+
+.ds-overflowmenu__item:disabled { color: var(--color-text-disabled); cursor: not-allowed; }
+
+.ds-overflowmenu__item--danger { color: var(--color-danger); }
+
+.ds-overflowmenu--sm .ds-overflowmenu__trigger { width: calc(var(--spacing) * 7); height: calc(var(--spacing) * 7); }
+.ds-overflowmenu--lg .ds-overflowmenu__trigger { width: calc(var(--spacing) * 10); height: calc(var(--spacing) * 10); }

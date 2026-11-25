@@ -1,0 +1,2565 @@
+{
+  "$comment": "컴포넌트 기준선. IBM Carbon Design System 의 React 패키지 컴포넌트 디렉터리(144개)에서 도출했다.",
+  "$source": "https://github.com/carbon-design-system/carbon/tree/main/packages/react/src/components (2026-09-19 조회)",
+  "$derivation": [
+    "내부 유틸 제외: ClassPrefix, FeatureFlags, ErrorBoundary, IdPrefix, Portal, Theme, Layer, Icons, Plex 등",
+    "하위 부품 제외: AccordionItem, BreadcrumbItem, SelectItem, TabContent, ListBox, FormGroup 등 (상위 컴포넌트에 포함)",
+    "Fluid* 12종 제외: 기존 컴포넌트의 대체 폼 스타일이라 별도 컴포넌트가 아님",
+    "폐기/중복 제외: PrimaryButton, SecondaryButton, DangerButton (→ Button variant), OverflowMenuV2, ToggleSmall",
+    "Carbon 문서 사이트는 JS 렌더라 본문을 가져오지 못해 저장소 디렉터리를 권위 출처로 삼았다"
+  ],
+  "$tiers": {
+    "core": "어떤 제품이든 필요한 최소 집합. `ds baseline` 기본 대상",
+    "standard": "대부분의 제품이 곧 필요해지는 것",
+    "extended": "복합·전문 컴포넌트. 손으로 설계할 여지가 큼"
+  },
+  "components": [
+    {
+      "name": "Button",
+      "category": "Input & Control",
+      "tier": "core",
+      "element": "button",
+      "props": [
+        {
+          "name": "variant",
+          "kind": "enum",
+          "values": [
+            "primary",
+            "secondary",
+            "tertiary",
+            "ghost",
+            "danger"
+          ]
+        },
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        },
+        {
+          "name": "icon",
+          "kind": "node"
+        }
+      ],
+      "states": [
+        "hover",
+        "active",
+        "focus",
+        "disabled"
+      ],
+      "a11y": "role=button. 아이콘만 있을 때 aria-label 필수",
+      "note": ""
+    },
+    {
+      "name": "IconButton",
+      "category": "Input & Control",
+      "tier": "core",
+      "element": "button",
+      "props": [
+        {
+          "name": "variant",
+          "kind": "enum",
+          "values": [
+            "primary",
+            "secondary",
+            "ghost",
+            "danger"
+          ]
+        },
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        },
+        {
+          "name": "icon",
+          "kind": "node"
+        }
+      ],
+      "states": [
+        "hover",
+        "active",
+        "focus",
+        "disabled"
+      ],
+      "a11y": "aria-label 필수. 툴팁으로 이름을 보여줘도 aria-label 은 따로 둔다",
+      "note": "",
+      "sampleArgs": {
+        "label": "Add",
+        "icon": {
+          "$jsx": "<svg viewBox=\"0 0 16 16\" fill=\"none\"><path d=\"M8 3v10M3 8h10\" stroke=\"currentColor\" strokeWidth={1.6} strokeLinecap=\"round\" /></svg>"
+        }
+      }
+    },
+    {
+      "name": "Link",
+      "category": "Typography",
+      "tier": "core",
+      "element": "a",
+      "props": [
+        {
+          "name": "variant",
+          "kind": "enum",
+          "values": [
+            "default",
+            "inline"
+          ]
+        },
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md"
+          ]
+        },
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        },
+        {
+          "name": "external",
+          "kind": "boolean"
+        }
+      ],
+      "states": [
+        "hover",
+        "active",
+        "focus",
+        "visited",
+        "disabled"
+      ],
+      "a11y": "외부 링크는 새 탭 안내를 시각+스크린리더 양쪽에",
+      "note": "",
+      "sampleArgs": {
+        "href": "#",
+        "children": "Learn more about token tiers"
+      }
+    },
+    {
+      "name": "TextInput",
+      "category": "Input & Control",
+      "tier": "core",
+      "element": "input",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        },
+        {
+          "name": "invalid",
+          "kind": "boolean"
+        },
+        {
+          "name": "readOnly",
+          "kind": "boolean"
+        },
+        {
+          "name": "placeholder",
+          "kind": "string"
+        },
+        {
+          "name": "label",
+          "kind": "string"
+        },
+        {
+          "name": "helperText",
+          "kind": "string"
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "disabled",
+        "invalid",
+        "readOnly"
+      ],
+      "a11y": "label 과 input 을 id/for 로 연결. 오류는 aria-describedby + aria-invalid",
+      "note": "",
+      "sampleArgs": {
+        "label": "Token name",
+        "placeholder": "e.g. color-primary",
+        "helperText": "Use kebab-case"
+      }
+    },
+    {
+      "name": "Textarea",
+      "category": "Input & Control",
+      "tier": "core",
+      "element": "textarea",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        },
+        {
+          "name": "invalid",
+          "kind": "boolean"
+        },
+        {
+          "name": "label",
+          "kind": "string"
+        },
+        {
+          "name": "helperText",
+          "kind": "string"
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "disabled",
+        "invalid",
+        "readOnly"
+      ],
+      "a11y": "TextInput 과 같은 연결 규칙",
+      "note": "",
+      "sampleArgs": {
+        "label": "Reason for change",
+        "placeholder": "A note for reviewers",
+        "helperText": "Saved together with the lock diff",
+        "rows": 3
+      }
+    },
+    {
+      "name": "Checkbox",
+      "category": "Input & Control",
+      "tier": "core",
+      "element": "input",
+      "props": [
+        {
+          "name": "checked",
+          "kind": "boolean"
+        },
+        {
+          "name": "indeterminate",
+          "kind": "boolean"
+        },
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        },
+        {
+          "name": "invalid",
+          "kind": "boolean"
+        },
+        {
+          "name": "label",
+          "kind": "string"
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "a11y": "indeterminate 는 시각만이 아니라 aria-checked=mixed 로도",
+      "note": "",
+      "sampleArgs": {
+        "label": "Apply reviewed tokens only"
+      }
+    },
+    {
+      "name": "RadioButton",
+      "category": "Input & Control",
+      "tier": "core",
+      "element": "input",
+      "props": [
+        {
+          "name": "checked",
+          "kind": "boolean"
+        },
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        },
+        {
+          "name": "label",
+          "kind": "string"
+        },
+        {
+          "name": "orientation",
+          "kind": "enum",
+          "values": [
+            "horizontal",
+            "vertical"
+          ]
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "a11y": "그룹은 role=radiogroup + 화살표 키 이동",
+      "note": "",
+      "sampleArgs": {
+        "label": "Stack to generate",
+        "items": [
+          {
+            "value": "css",
+            "label": "Plain CSS"
+          },
+          {
+            "value": "css-modules",
+            "label": "CSS Modules"
+          },
+          {
+            "value": "tailwind",
+            "label": "Tailwind"
+          },
+          {
+            "value": "shadcn",
+            "label": "shadcn/ui"
+          }
+        ],
+        "defaultSelected": "css"
+      }
+    },
+    {
+      "name": "Select",
+      "category": "Input & Control",
+      "tier": "core",
+      "element": "select",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        },
+        {
+          "name": "invalid",
+          "kind": "boolean"
+        },
+        {
+          "name": "label",
+          "kind": "string"
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "disabled",
+        "invalid",
+        "readOnly"
+      ],
+      "a11y": "네이티브 select. 커스텀이 필요하면 Dropdown 을 쓴다",
+      "note": "",
+      "sampleArgs": {
+        "label": "Stack",
+        "items": [
+          {
+            "value": "css",
+            "label": "Plain CSS"
+          },
+          {
+            "value": "css-modules",
+            "label": "CSS Modules"
+          },
+          {
+            "value": "tailwind",
+            "label": "Tailwind"
+          },
+          {
+            "value": "shadcn",
+            "label": "shadcn/ui"
+          }
+        ],
+        "defaultValue": "css"
+      }
+    },
+    {
+      "name": "Dropdown",
+      "category": "Input & Control",
+      "tier": "core",
+      "element": "div",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "type",
+          "kind": "enum",
+          "values": [
+            "default",
+            "inline"
+          ]
+        },
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        },
+        {
+          "name": "invalid",
+          "kind": "boolean"
+        },
+        {
+          "name": "label",
+          "kind": "string"
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "disabled",
+        "invalid",
+        "readOnly"
+      ],
+      "a11y": "role=combobox + listbox. 화살표/Home/End/Esc 키 처리 필수",
+      "note": "",
+      "composite": true,
+      "parts": [
+        "Root",
+        "Trigger",
+        "Value",
+        "Icon",
+        "Portal",
+        "Content",
+        "Viewport",
+        "Item",
+        "ItemText",
+        "ItemIndicator"
+      ],
+      "pattern": "select",
+      "sampleArgs": {
+        "label": "Design system",
+        "items": [
+          {
+            "value": "figma",
+            "label": "Figma"
+          },
+          {
+            "value": "tokens",
+            "label": "Design tokens"
+          },
+          {
+            "value": "storybook",
+            "label": "Storybook"
+          },
+          {
+            "value": "codeconnect",
+            "label": "Code Connect"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Toggle",
+      "category": "Input & Control",
+      "tier": "core",
+      "element": "button",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md"
+          ]
+        },
+        {
+          "name": "checked",
+          "kind": "boolean"
+        },
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        },
+        {
+          "name": "label",
+          "kind": "string"
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "a11y": "role=switch + aria-checked",
+      "note": "",
+      "sampleArgs": {
+        "label": "AI descriptions"
+      }
+    },
+    {
+      "name": "Tag",
+      "category": "Data Display",
+      "tier": "core",
+      "element": "span",
+      "props": [
+        {
+          "name": "tone",
+          "kind": "enum",
+          "values": [
+            "neutral",
+            "info",
+            "success",
+            "warning",
+            "danger"
+          ]
+        },
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md"
+          ]
+        },
+        {
+          "name": "dismissible",
+          "kind": "boolean"
+        },
+        {
+          "name": "icon",
+          "kind": "node"
+        }
+      ],
+      "states": [
+        "hover",
+        "focus"
+      ],
+      "a11y": "dismissible 이면 닫기 버튼에 aria-label",
+      "note": "",
+      "sampleArgs": {
+        "children": "semantic"
+      }
+    },
+    {
+      "name": "Tile",
+      "category": "Container",
+      "tier": "core",
+      "element": "div",
+      "props": [
+        {
+          "name": "variant",
+          "kind": "enum",
+          "values": [
+            "base",
+            "clickable",
+            "selectable",
+            "expandable"
+          ]
+        },
+        {
+          "name": "selected",
+          "kind": "boolean"
+        },
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        }
+      ],
+      "states": [
+        "hover",
+        "active",
+        "focus",
+        "disabled"
+      ],
+      "a11y": "clickable 이면 실제 button/a 로. div 에 onClick 금지",
+      "note": "",
+      "sampleArgs": {
+        "children": "16 semantic tokens",
+        "details": "Role tokens that point to primitives. Components reference only this tier."
+      }
+    },
+    {
+      "name": "Modal",
+      "category": "Overlay & Feedback",
+      "tier": "core",
+      "element": "div",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "variant",
+          "kind": "enum",
+          "values": [
+            "default",
+            "danger"
+          ]
+        },
+        {
+          "name": "open",
+          "kind": "boolean"
+        },
+        {
+          "name": "title",
+          "kind": "string"
+        }
+      ],
+      "states": [
+        "open"
+      ],
+      "a11y": "role=dialog aria-modal. 포커스 트랩 + Esc 닫기 + 열기 전 포커스 복귀",
+      "note": "",
+      "composite": true,
+      "parts": [
+        "Root",
+        "Trigger",
+        "Portal",
+        "Overlay",
+        "Content",
+        "Title",
+        "Description",
+        "Close"
+      ],
+      "pattern": "dialog",
+      "sampleArgs": {
+        "title": "Apply these changes?",
+        "children": "19 tokens will change. You can undo this.",
+        "defaultOpen": true,
+        "trigger": "Apply changes"
+      },
+      "portal": true
+    },
+    {
+      "name": "Notification",
+      "category": "Overlay & Feedback",
+      "tier": "core",
+      "element": "div",
+      "props": [
+        {
+          "name": "tone",
+          "kind": "enum",
+          "values": [
+            "info",
+            "success",
+            "warning",
+            "danger"
+          ]
+        },
+        {
+          "name": "variant",
+          "kind": "enum",
+          "values": [
+            "inline",
+            "toast"
+          ]
+        },
+        {
+          "name": "dismissible",
+          "kind": "boolean"
+        },
+        {
+          "name": "title",
+          "kind": "string"
+        }
+      ],
+      "states": [],
+      "a11y": "role=status(보통) 또는 role=alert(긴급). toast 는 자동 사라짐 시간 충분히",
+      "note": "",
+      "composite": true,
+      "sampleArgs": {
+        "title": "19 tokens updated",
+        "children": "4 items need review."
+      }
+    },
+    {
+      "name": "Loading",
+      "category": "Overlay & Feedback",
+      "tier": "core",
+      "element": "div",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "overlay",
+          "kind": "boolean"
+        },
+        {
+          "name": "label",
+          "kind": "string"
+        }
+      ],
+      "states": [],
+      "a11y": "role=status + aria-live=polite. 장식이면 aria-hidden",
+      "note": "",
+      "sampleArgs": {
+        "label": "Resolving tokens"
+      }
+    },
+    {
+      "name": "Tabs",
+      "category": "In-page Navigation",
+      "tier": "core",
+      "element": "div",
+      "props": [
+        {
+          "name": "variant",
+          "kind": "enum",
+          "values": [
+            "line",
+            "contained"
+          ]
+        },
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md"
+          ]
+        },
+        {
+          "name": "orientation",
+          "kind": "enum",
+          "values": [
+            "horizontal",
+            "vertical"
+          ]
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "a11y": "role=tablist/tab/tabpanel + 화살표 키 이동",
+      "note": "",
+      "composite": true,
+      "parts": [
+        "Root",
+        "List",
+        "Trigger",
+        "Content"
+      ],
+      "pattern": "tabs",
+      "sampleArgs": {
+        "items": [
+          {
+            "id": "overview",
+            "label": "Overview",
+            "content": "One panel per tab. Use the arrow keys to move between tabs."
+          },
+          {
+            "id": "tokens",
+            "label": "Tokens",
+            "content": "References semantic tokens only."
+          },
+          {
+            "id": "policy",
+            "label": "Policy",
+            "content": "Guards G1–G16 check this."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Accordion",
+      "category": "Container",
+      "tier": "core",
+      "element": "div",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "align",
+          "kind": "enum",
+          "values": [
+            "start",
+            "end"
+          ]
+        },
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "expanded",
+        "disabled"
+      ],
+      "a11y": "헤더는 button, aria-expanded + aria-controls",
+      "note": "",
+      "composite": true,
+      "parts": [
+        "Root",
+        "Item",
+        "Header",
+        "Trigger",
+        "Content"
+      ],
+      "pattern": "accordion",
+      "sampleArgs": {
+        "items": [
+          {
+            "id": "a",
+            "title": "What are the three tiers?",
+            "content": "Hexcode → Primitive → Semantic. Developers use Semantic only."
+          },
+          {
+            "id": "b",
+            "title": "When a tier is missing",
+            "content": "Whatever exists is used; missing tiers are generated."
+          },
+          {
+            "id": "c",
+            "title": "How are guesses marked?",
+            "content": "Every value carries its source, confidence and reason.",
+            "disabled": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tooltip",
+      "category": "Overlay & Feedback",
+      "tier": "core",
+      "element": "div",
+      "props": [
+        {
+          "name": "align",
+          "kind": "enum",
+          "values": [
+            "top",
+            "bottom",
+            "left",
+            "right"
+          ]
+        },
+        {
+          "name": "label",
+          "kind": "string"
+        }
+      ],
+      "states": [
+        "visible"
+      ],
+      "a11y": "hover 만으로 열지 말 것 — focus 로도 열려야 한다",
+      "note": "",
+      "composite": true,
+      "parts": [
+        "Root",
+        "Trigger",
+        "Portal",
+        "Content",
+        "Arrow",
+        "Close"
+      ],
+      "pattern": "popover",
+      "sampleArgs": {
+        "label": "Only semantic tokens may be referenced",
+        "children": "Token rules"
+      },
+      "portal": true
+    },
+    {
+      "name": "Search",
+      "category": "Input & Control",
+      "tier": "core",
+      "element": "input",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        },
+        {
+          "name": "placeholder",
+          "kind": "string"
+        },
+        {
+          "name": "expandable",
+          "kind": "boolean"
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "disabled",
+        "invalid",
+        "readOnly"
+      ],
+      "a11y": "type=search + label. 지우기 버튼에 aria-label",
+      "note": "",
+      "sampleArgs": {
+        "label": "Search tokens",
+        "placeholder": "Search by token name"
+      }
+    },
+    {
+      "name": "Pagination",
+      "category": "In-page Navigation",
+      "tier": "core",
+      "element": "nav",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "variant",
+          "kind": "enum",
+          "values": [
+            "default",
+            "compact"
+          ]
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "a11y": "nav + aria-label. 현재 페이지에 aria-current=page",
+      "note": "",
+      "composite": true,
+      "sampleArgs": {
+        "pageCount": 12,
+        "defaultPage": 3
+      }
+    },
+    {
+      "name": "Breadcrumb",
+      "category": "In-page Navigation",
+      "tier": "standard",
+      "element": "nav",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md"
+          ]
+        },
+        {
+          "name": "noTrailingSlash",
+          "kind": "boolean"
+        }
+      ],
+      "states": [
+        "hover",
+        "focus"
+      ],
+      "a11y": "nav aria-label + 마지막 항목 aria-current=page",
+      "note": "",
+      "composite": true,
+      "sampleArgs": {
+        "items": [
+          {
+            "label": "Design system",
+            "href": "#"
+          },
+          {
+            "label": "Tokens",
+            "href": "#"
+          },
+          {
+            "label": "Semantic"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ComboBox",
+      "category": "Input & Control",
+      "tier": "standard",
+      "element": "div",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        },
+        {
+          "name": "invalid",
+          "kind": "boolean"
+        },
+        {
+          "name": "label",
+          "kind": "string"
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "disabled",
+        "invalid",
+        "readOnly"
+      ],
+      "a11y": "role=combobox + aria-autocomplete=list",
+      "note": "",
+      "composite": true,
+      "parts": [
+        "Root",
+        "Trigger",
+        "Value",
+        "Icon",
+        "Portal",
+        "Content",
+        "Viewport",
+        "Item",
+        "ItemText",
+        "ItemIndicator"
+      ],
+      "pattern": "select",
+      "sampleArgs": {
+        "label": "Search tokens",
+        "items": [
+          {
+            "value": "primary",
+            "label": "--color-primary"
+          },
+          {
+            "value": "bg",
+            "label": "--color-bg"
+          },
+          {
+            "value": "text",
+            "label": "--color-text"
+          },
+          {
+            "value": "danger",
+            "label": "--color-danger"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MultiSelect",
+      "category": "Input & Control",
+      "tier": "standard",
+      "element": "div",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        },
+        {
+          "name": "invalid",
+          "kind": "boolean"
+        },
+        {
+          "name": "type",
+          "kind": "enum",
+          "values": [
+            "default",
+            "inline"
+          ]
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "disabled",
+        "invalid",
+        "readOnly"
+      ],
+      "a11y": "선택 개수를 스크린리더에 알림",
+      "note": "",
+      "composite": true,
+      "parts": [
+        "Root",
+        "Trigger",
+        "Value",
+        "Icon",
+        "Portal",
+        "Content",
+        "Viewport",
+        "Item",
+        "ItemText",
+        "ItemIndicator"
+      ],
+      "pattern": "select",
+      "sampleArgs": {
+        "label": "Tiers to generate",
+        "items": [
+          {
+            "value": "core",
+            "label": "core (20)"
+          },
+          {
+            "value": "standard",
+            "label": "standard (20)"
+          },
+          {
+            "value": "extended",
+            "label": "extended (19)"
+          }
+        ],
+        "defaultValue": [
+          "core"
+        ]
+      }
+    },
+    {
+      "name": "NumberInput",
+      "category": "Input & Control",
+      "tier": "standard",
+      "element": "input",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        },
+        {
+          "name": "invalid",
+          "kind": "boolean"
+        },
+        {
+          "name": "hideSteppers",
+          "kind": "boolean"
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "disabled",
+        "invalid",
+        "readOnly"
+      ],
+      "a11y": "증감 버튼에 aria-label. 키보드 위/아래도 동작",
+      "note": "",
+      "sampleArgs": {
+        "label": "Items per page",
+        "defaultValue": 20
+      }
+    },
+    {
+      "name": "DatePicker",
+      "category": "Input & Control",
+      "tier": "standard",
+      "element": "div",
+      "props": [
+        {
+          "name": "type",
+          "kind": "enum",
+          "values": [
+            "single",
+            "range"
+          ]
+        },
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        },
+        {
+          "name": "invalid",
+          "kind": "boolean"
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "disabled",
+        "invalid",
+        "readOnly"
+      ],
+      "a11y": "달력은 grid 역할 + 키보드 이동. 텍스트 입력도 허용",
+      "note": "",
+      "composite": true,
+      "sampleArgs": {
+        "label": "Publish date",
+        "defaultValue": "2026-09-19",
+        "helperText": "YYYY-MM-DD"
+      }
+    },
+    {
+      "name": "TimePicker",
+      "category": "Input & Control",
+      "tier": "standard",
+      "element": "div",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        },
+        {
+          "name": "invalid",
+          "kind": "boolean"
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "disabled",
+        "invalid",
+        "readOnly"
+      ],
+      "a11y": "12/24시간 표기를 명시",
+      "note": "",
+      "composite": true,
+      "sampleArgs": {
+        "label": "Sync time",
+        "defaultValue": "09:30",
+        "helperText": "Match the library publish time"
+      }
+    },
+    {
+      "name": "FileUploader",
+      "category": "Input & Control",
+      "tier": "standard",
+      "element": "div",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "multiple",
+          "kind": "boolean"
+        },
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        },
+        {
+          "name": "variant",
+          "kind": "enum",
+          "values": [
+            "button",
+            "dropArea"
+          ]
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "disabled",
+        "invalid",
+        "readOnly"
+      ],
+      "a11y": "드롭 영역만 두지 말고 버튼도 함께. 진행/실패 상태를 aria-live 로",
+      "note": "",
+      "composite": true,
+      "sampleArgs": {
+        "variant": "dropArea",
+        "label": "Choose ds-source.json",
+        "helperText": "Design data exported from Figma",
+        "defaultFiles": [
+          {
+            "id": "1",
+            "name": "ds-source.json",
+            "size": 48213,
+            "status": "done"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Slider",
+      "category": "Input & Control",
+      "tier": "standard",
+      "element": "div",
+      "props": [
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        },
+        {
+          "name": "invalid",
+          "kind": "boolean"
+        },
+        {
+          "name": "hideTextInput",
+          "kind": "boolean"
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "a11y": "role=slider + aria-valuenow/min/max. 화살표·Home·End 키",
+      "note": "",
+      "composite": true,
+      "parts": [
+        "Root",
+        "Track",
+        "Range",
+        "Thumb"
+      ],
+      "pattern": "slider",
+      "sampleArgs": {
+        "label": "Confidence threshold",
+        "min": 0,
+        "max": 100,
+        "defaultValue": 60,
+        "helperText": "Anything below this goes to review"
+      }
+    },
+    {
+      "name": "ProgressBar",
+      "category": "Data Display",
+      "tier": "standard",
+      "element": "div",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md"
+          ]
+        },
+        {
+          "name": "status",
+          "kind": "enum",
+          "values": [
+            "active",
+            "finished",
+            "error"
+          ]
+        },
+        {
+          "name": "indeterminate",
+          "kind": "boolean"
+        }
+      ],
+      "states": [],
+      "a11y": "role=progressbar + aria-valuenow. indeterminate 면 값 생략",
+      "note": "",
+      "sampleArgs": {
+        "label": "Token resolution",
+        "value": 68
+      }
+    },
+    {
+      "name": "ProgressIndicator",
+      "category": "In-page Navigation",
+      "tier": "standard",
+      "element": "ul",
+      "props": [
+        {
+          "name": "orientation",
+          "kind": "enum",
+          "values": [
+            "horizontal",
+            "vertical"
+          ]
+        },
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md"
+          ]
+        }
+      ],
+      "states": [
+        "complete",
+        "current",
+        "incomplete",
+        "disabled",
+        "error"
+      ],
+      "a11y": "현재 단계에 aria-current=step",
+      "note": "",
+      "composite": true,
+      "sampleArgs": {
+        "current": 1,
+        "steps": [
+          {
+            "id": "read",
+            "label": "Read Figma",
+            "description": "Collected via MCP"
+          },
+          {
+            "id": "resolve",
+            "label": "Resolve three tiers",
+            "description": "L2a — semantic inferred"
+          },
+          {
+            "id": "review",
+            "label": "Review",
+            "description": "35 inferred"
+          },
+          {
+            "id": "apply",
+            "label": "Apply"
+          }
+        ]
+      }
+    },
+    {
+      "name": "InlineLoading",
+      "category": "Overlay & Feedback",
+      "tier": "standard",
+      "element": "div",
+      "props": [
+        {
+          "name": "status",
+          "kind": "enum",
+          "values": [
+            "active",
+            "finished",
+            "error",
+            "inactive"
+          ]
+        },
+        {
+          "name": "description",
+          "kind": "string"
+        }
+      ],
+      "states": [],
+      "a11y": "aria-live=polite. 완료/실패 문구를 반드시 바꿀 것",
+      "note": "",
+      "sampleArgs": {
+        "description": "Reading Figma"
+      }
+    },
+    {
+      "name": "Skeleton",
+      "category": "Data Display",
+      "tier": "standard",
+      "element": "div",
+      "props": [
+        {
+          "name": "variant",
+          "kind": "enum",
+          "values": [
+            "text",
+            "placeholder",
+            "icon"
+          ]
+        },
+        {
+          "name": "animated",
+          "kind": "boolean"
+        }
+      ],
+      "states": [],
+      "a11y": "aria-hidden. 로딩 사실은 별도 status 로 알림",
+      "note": "",
+      "sampleArgs": {
+        "lines": 3
+      }
+    },
+    {
+      "name": "ContentSwitcher",
+      "category": "In-page Navigation",
+      "tier": "standard",
+      "element": "div",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "a11y": "role=tablist 와 유사. 선택 상태를 aria-selected 로",
+      "note": "",
+      "composite": true,
+      "parts": [
+        "Root",
+        "Item"
+      ],
+      "pattern": "toggle-group",
+      "sampleArgs": {
+        "items": [
+          {
+            "id": "tokens",
+            "label": "Tokens"
+          },
+          {
+            "id": "components",
+            "label": "Components"
+          },
+          {
+            "id": "policy",
+            "label": "Policy"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OverflowMenu",
+      "category": "Overlay & Feedback",
+      "tier": "standard",
+      "element": "div",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "align",
+          "kind": "enum",
+          "values": [
+            "start",
+            "end"
+          ]
+        },
+        {
+          "name": "flipped",
+          "kind": "boolean"
+        }
+      ],
+      "states": [
+        "hover",
+        "active",
+        "focus",
+        "disabled"
+      ],
+      "a11y": "트리거에 aria-haspopup=menu + aria-expanded. 메뉴는 role=menu",
+      "note": "",
+      "composite": true,
+      "parts": [
+        "Root",
+        "Trigger",
+        "Portal",
+        "Content",
+        "Item",
+        "Separator",
+        "Label"
+      ],
+      "pattern": "menu",
+      "portal": true,
+      "sampleArgs": {
+        "items": [
+          {
+            "id": "regen",
+            "label": "Regenerate"
+          },
+          {
+            "id": "diff",
+            "label": "Compare changes"
+          },
+          {
+            "id": "remove",
+            "label": "Delete component",
+            "danger": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Popover",
+      "category": "Overlay & Feedback",
+      "tier": "standard",
+      "element": "div",
+      "props": [
+        {
+          "name": "align",
+          "kind": "enum",
+          "values": [
+            "top",
+            "bottom",
+            "left",
+            "right"
+          ]
+        },
+        {
+          "name": "caret",
+          "kind": "boolean"
+        },
+        {
+          "name": "open",
+          "kind": "boolean"
+        }
+      ],
+      "states": [
+        "open"
+      ],
+      "a11y": "Tooltip 과 달리 상호작용 가능. 포커스 관리 필요",
+      "note": "",
+      "composite": true,
+      "parts": [
+        "Root",
+        "Trigger",
+        "Portal",
+        "Content",
+        "Arrow",
+        "Close"
+      ],
+      "pattern": "popover",
+      "portal": true,
+      "sampleArgs": {
+        "trigger": "Token info",
+        "children": "This value was inferred. Reason: highest contrast against primary (4.6:1)."
+      }
+    },
+    {
+      "name": "Toggletip",
+      "category": "Overlay & Feedback",
+      "tier": "standard",
+      "element": "div",
+      "props": [
+        {
+          "name": "align",
+          "kind": "enum",
+          "values": [
+            "top",
+            "bottom",
+            "left",
+            "right"
+          ]
+        }
+      ],
+      "states": [
+        "open"
+      ],
+      "a11y": "Tooltip 과 구분: 클릭으로 열고 안에 상호작용 요소를 둘 수 있다",
+      "note": "",
+      "composite": true,
+      "parts": [
+        "Root",
+        "Trigger",
+        "Portal",
+        "Content",
+        "Arrow",
+        "Close"
+      ],
+      "pattern": "popover",
+      "portal": true,
+      "sampleArgs": {
+        "label": "About token tiers",
+        "children": "Components may reference only semantic and layout tokens."
+      }
+    },
+    {
+      "name": "StructuredList",
+      "category": "Data Display",
+      "tier": "standard",
+      "element": "div",
+      "props": [
+        {
+          "name": "selectable",
+          "kind": "boolean"
+        },
+        {
+          "name": "condensed",
+          "kind": "boolean"
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "selected"
+      ],
+      "a11y": "선택형이면 radio/checkbox 의미를 부여",
+      "note": "",
+      "composite": true,
+      "sampleArgs": {
+        "headers": [
+          "Tokens",
+          "Source",
+          "Confidence"
+        ],
+        "rows": [
+          {
+            "id": "a",
+            "cells": [
+              "--color-primary",
+              "Inferred",
+              "0.40"
+            ]
+          },
+          {
+            "id": "b",
+            "cells": [
+              "--color-bg",
+              "Inferred",
+              "0.55"
+            ]
+          },
+          {
+            "id": "c",
+            "cells": [
+              "--color-blue-500",
+              "Declared",
+              "1.00"
+            ]
+          }
+        ],
+        "label": "Token list"
+      }
+    },
+    {
+      "name": "ContainedList",
+      "category": "Data Display",
+      "tier": "standard",
+      "element": "div",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "variant",
+          "kind": "enum",
+          "values": [
+            "on-page",
+            "disclosed"
+          ]
+        }
+      ],
+      "states": [
+        "hover",
+        "focus"
+      ],
+      "a11y": "목록은 ul/li 로",
+      "note": "",
+      "composite": true,
+      "sampleArgs": {
+        "title": "Needs review",
+        "items": [
+          {
+            "id": "1",
+            "label": "--color-primary",
+            "meta": "Inferred 0.40"
+          },
+          {
+            "id": "2",
+            "label": "--color-on-primary",
+            "meta": "Inferred 0.55"
+          },
+          {
+            "id": "3",
+            "label": "--color-overlay",
+            "meta": "Synthesized 0.30"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CodeSnippet",
+      "category": "Data Display",
+      "tier": "standard",
+      "element": "div",
+      "props": [
+        {
+          "name": "type",
+          "kind": "enum",
+          "values": [
+            "single",
+            "multi",
+            "inline"
+          ]
+        },
+        {
+          "name": "wrapText",
+          "kind": "boolean"
+        },
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "expanded"
+      ],
+      "a11y": "복사 버튼에 aria-label + 복사 완료를 aria-live 로",
+      "note": "",
+      "composite": true,
+      "sampleArgs": {
+        "code": "--color-primary: var(--color-blue-500);\n--color-on-primary: var(--color-gray-50);"
+      }
+    },
+    {
+      "name": "TreeView",
+      "category": "Data Display",
+      "tier": "standard",
+      "element": "ul",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md"
+          ]
+        },
+        {
+          "name": "multiselect",
+          "kind": "boolean"
+        },
+        {
+          "name": "hideLabel",
+          "kind": "boolean"
+        }
+      ],
+      "states": [
+        "hover",
+        "focus",
+        "selected",
+        "expanded",
+        "disabled"
+      ],
+      "a11y": "role=tree/treeitem + 화살표 키로 펼침·이동",
+      "note": "",
+      "composite": true,
+      "parts": [
+        "Root",
+        "Item",
+        "Header",
+        "Trigger",
+        "Content"
+      ],
+      "pattern": "accordion",
+      "sampleArgs": {
+        "label": "Token tiers",
+        "defaultExpanded": [
+          "primitive"
+        ],
+        "nodes": [
+          {
+            "id": "primitive",
+            "label": "Primitive (29)",
+            "children": [
+              {
+                "id": "blue",
+                "label": "blue-50 … blue-900"
+              },
+              {
+                "id": "gray",
+                "label": "gray-50 … gray-900"
+              }
+            ]
+          },
+          {
+            "id": "semantic",
+            "label": "Semantic (16)",
+            "children": [
+              {
+                "id": "primary",
+                "label": "primary"
+              }
+            ]
+          },
+          {
+            "id": "layout",
+            "label": "Layout (24)"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DataTable",
+      "category": "Data Display",
+      "tier": "extended",
+      "element": "table",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "xs",
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "sortable",
+          "kind": "boolean"
+        },
+        {
+          "name": "selectable",
+          "kind": "boolean"
+        },
+        {
+          "name": "expandable",
+          "kind": "boolean"
+        },
+        {
+          "name": "sticky",
+          "kind": "boolean"
+        }
+      ],
+      "states": [],
+      "a11y": "정렬 가능한 헤더는 button + aria-sort. 행 선택은 checkbox",
+      "note": "",
+      "composite": true
+    },
+    {
+      "name": "UIShell",
+      "category": "Navigation (Global)",
+      "tier": "extended",
+      "element": "header",
+      "props": [
+        {
+          "name": "hasSideNav",
+          "kind": "boolean"
+        },
+        {
+          "name": "expanded",
+          "kind": "boolean"
+        }
+      ],
+      "states": [
+        "hover",
+        "active",
+        "focus",
+        "disabled"
+      ],
+      "a11y": "skip-to-content 링크 필수. 좌측 내비는 nav 역할",
+      "note": "",
+      "composite": true
+    },
+    {
+      "name": "SidePanel",
+      "category": "Overlay & Feedback",
+      "tier": "extended",
+      "element": "aside",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "placement",
+          "kind": "enum",
+          "values": [
+            "left",
+            "right"
+          ]
+        },
+        {
+          "name": "open",
+          "kind": "boolean"
+        }
+      ],
+      "states": [],
+      "a11y": "Modal 과 같은 포커스 규칙",
+      "note": "",
+      "composite": true,
+      "parts": [
+        "Root",
+        "Trigger",
+        "Portal",
+        "Overlay",
+        "Content",
+        "Title",
+        "Description",
+        "Close"
+      ],
+      "pattern": "dialog",
+      "portal": true
+    },
+    {
+      "name": "Tearsheet",
+      "category": "Overlay & Feedback",
+      "tier": "extended",
+      "element": "div",
+      "props": [
+        {
+          "name": "variant",
+          "kind": "enum",
+          "values": [
+            "wide",
+            "narrow"
+          ]
+        },
+        {
+          "name": "open",
+          "kind": "boolean"
+        }
+      ],
+      "states": [],
+      "a11y": "전체 화면 작업 흐름. 닫기 확인이 필요할 수 있다",
+      "note": "",
+      "composite": true,
+      "parts": [
+        "Root",
+        "Trigger",
+        "Portal",
+        "Overlay",
+        "Content",
+        "Title",
+        "Description",
+        "Close"
+      ],
+      "pattern": "dialog",
+      "portal": true
+    },
+    {
+      "name": "PageHeader",
+      "category": "Navigation (Global)",
+      "tier": "extended",
+      "element": "header",
+      "props": [
+        {
+          "name": "sticky",
+          "kind": "boolean"
+        },
+        {
+          "name": "hasBreadcrumb",
+          "kind": "boolean"
+        },
+        {
+          "name": "hasTabs",
+          "kind": "boolean"
+        }
+      ],
+      "states": [
+        "hover",
+        "active",
+        "focus",
+        "disabled"
+      ],
+      "a11y": "h1 은 페이지당 하나",
+      "note": "",
+      "composite": true
+    },
+    {
+      "name": "Menu",
+      "category": "Navigation (Global)",
+      "tier": "extended",
+      "element": "div",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "states": [
+        "hover",
+        "active",
+        "focus",
+        "disabled"
+      ],
+      "a11y": "role=menu/menuitem + 타이핑 이동",
+      "note": "",
+      "composite": true,
+      "parts": [
+        "Root",
+        "Trigger",
+        "Portal",
+        "Content",
+        "Item",
+        "Separator",
+        "Label"
+      ],
+      "pattern": "menu",
+      "portal": true
+    },
+    {
+      "name": "MenuButton",
+      "category": "Input & Control",
+      "tier": "extended",
+      "element": "div",
+      "props": [
+        {
+          "name": "variant",
+          "kind": "enum",
+          "values": [
+            "primary",
+            "tertiary",
+            "ghost"
+          ]
+        },
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "states": [
+        "hover",
+        "active",
+        "focus",
+        "disabled"
+      ],
+      "a11y": "aria-haspopup=menu",
+      "note": "",
+      "composite": true,
+      "parts": [
+        "Root",
+        "Trigger",
+        "Portal",
+        "Content",
+        "Item",
+        "Separator",
+        "Label"
+      ],
+      "pattern": "menu"
+    },
+    {
+      "name": "Coachmark",
+      "category": "Overlay & Feedback",
+      "tier": "extended",
+      "element": "div",
+      "props": [
+        {
+          "name": "variant",
+          "kind": "enum",
+          "values": [
+            "stacked",
+            "tooltip",
+            "floating"
+          ]
+        }
+      ],
+      "states": [],
+      "a11y": "건너뛰기를 항상 제공",
+      "note": "",
+      "composite": true,
+      "parts": [
+        "Root",
+        "Trigger",
+        "Portal",
+        "Content",
+        "Arrow",
+        "Close"
+      ],
+      "pattern": "popover",
+      "portal": true
+    },
+    {
+      "name": "Guidebanner",
+      "category": "Overlay & Feedback",
+      "tier": "extended",
+      "element": "div",
+      "props": [
+        {
+          "name": "collapsible",
+          "kind": "boolean"
+        },
+        {
+          "name": "withCloseButton",
+          "kind": "boolean"
+        }
+      ],
+      "states": [],
+      "a11y": "닫으면 다시 안 뜨는지 명시",
+      "note": "",
+      "composite": true
+    },
+    {
+      "name": "BigNumber",
+      "category": "Data Display",
+      "tier": "extended",
+      "element": "div",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "trend",
+          "kind": "enum",
+          "values": [
+            "up",
+            "down",
+            "flat"
+          ]
+        }
+      ],
+      "states": [],
+      "a11y": "추세를 색만으로 전달하지 말 것",
+      "note": ""
+    },
+    {
+      "name": "UserAvatar",
+      "category": "Media",
+      "tier": "extended",
+      "element": "div",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg",
+            "xl"
+          ]
+        },
+        {
+          "name": "variant",
+          "kind": "enum",
+          "values": [
+            "initials",
+            "image",
+            "icon"
+          ]
+        }
+      ],
+      "states": [],
+      "a11y": "이미지에 alt. 장식이면 빈 alt",
+      "note": ""
+    },
+    {
+      "name": "PasswordInput",
+      "category": "Input & Control",
+      "tier": "extended",
+      "element": "input",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "disabled",
+          "kind": "boolean"
+        },
+        {
+          "name": "invalid",
+          "kind": "boolean"
+        }
+      ],
+      "states": [
+        "hover",
+        "active",
+        "focus",
+        "disabled"
+      ],
+      "a11y": "표시/숨김 토글에 aria-pressed",
+      "note": ""
+    },
+    {
+      "name": "EditInPlace",
+      "category": "Input & Control",
+      "tier": "extended",
+      "element": "div",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        {
+          "name": "invalid",
+          "kind": "boolean"
+        }
+      ],
+      "states": [
+        "hover",
+        "active",
+        "focus",
+        "disabled"
+      ],
+      "a11y": "편집 모드 진입을 키보드로도",
+      "note": "",
+      "composite": true
+    },
+    {
+      "name": "AISkeleton",
+      "category": "Data Display",
+      "tier": "extended",
+      "element": "div",
+      "props": [
+        {
+          "name": "variant",
+          "kind": "enum",
+          "values": [
+            "text",
+            "placeholder",
+            "icon"
+          ]
+        }
+      ],
+      "states": [],
+      "a11y": "AI 생성 중임을 명시. aria-hidden",
+      "note": ""
+    },
+    {
+      "name": "Grid",
+      "category": "Layout",
+      "tier": "extended",
+      "element": "div",
+      "props": [
+        {
+          "name": "variant",
+          "kind": "enum",
+          "values": [
+            "wide",
+            "narrow",
+            "condensed",
+            "full"
+          ]
+        },
+        {
+          "name": "fullWidth",
+          "kind": "boolean"
+        }
+      ],
+      "states": [],
+      "a11y": "시각 순서와 DOM 순서를 어긋나게 하지 말 것",
+      "note": ""
+    },
+    {
+      "name": "Stack",
+      "category": "Layout",
+      "tier": "extended",
+      "element": "div",
+      "props": [
+        {
+          "name": "orientation",
+          "kind": "enum",
+          "values": [
+            "vertical",
+            "horizontal"
+          ]
+        },
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        }
+      ],
+      "states": [],
+      "a11y": "간격은 토큰으로만",
+      "note": ""
+    },
+    {
+      "name": "AspectRatio",
+      "category": "Layout",
+      "tier": "extended",
+      "element": "div",
+      "props": [
+        {
+          "name": "ratio",
+          "kind": "enum",
+          "values": [
+            "1x1",
+            "4x3",
+            "16x9",
+            "2x1",
+            "3x2"
+          ]
+        }
+      ],
+      "states": [],
+      "a11y": "",
+      "note": ""
+    },
+    {
+      "name": "Heading",
+      "category": "Typography",
+      "tier": "extended",
+      "element": "h2",
+      "props": [
+        {
+          "name": "size",
+          "kind": "enum",
+          "values": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        }
+      ],
+      "states": [],
+      "a11y": "시각 크기와 heading 레벨을 분리할 것",
+      "note": ""
+    },
+    {
+      "name": "List",
+      "category": "Typography",
+      "tier": "extended",
+      "element": "ul",
+      "props": [
+        {
+          "name": "variant",
+          "kind": "enum",
+          "values": [
+            "unordered",
+            "ordered"
+          ]
+        },
+        {
+          "name": "nested",
+          "kind": "boolean"
+        }
+      ],
+      "states": [],
+      "a11y": "중첩 목록은 li 안에 중첩",
+      "note": ""
+    }
+  ],
+  "$composite": "composite=true 는 여러 요소가 ARIA 상태를 맞춰야 하는 컴포넌트다. 결정적 생성기는 올바른 골격과 접근성 요구만 내고 구현은 비운다 — 틀린 구현을 내는 것보다 비워 두는 게 낫다. prompts/generate-component.md 로 채운다.",
+  "$parts": "Radix 합성 패턴별 필요한 부품. shadcn 스택에서 골격을 낼 때 쓴다.",
+  "$sampleArgs": "story 용 예시 데이터. 컨테이너 prop 만으로는 화면에 아무것도 안 나와 story 가 빈 상자가 된다. storyFile 이 args 에 병합한다. 상태는 비제어형(defaultOpen·defaultPage 등)으로 준다 — 제어형 값을 고정하면 눌러도 바뀌지 않는다. 아이콘처럼 JSON 으로 줄 수 없는 노드는 { \"$jsx\": \"<svg …/>\" } 로 적는다.",
+  "$portal": "portal=true 는 document.body 로 렌더되는 컴포넌트다. story 의 play 함수가 within(canvasElement) 로 찾으면 못 찾는다 — #storybook-root 밖이기 때문. storyFile 이 within(document.body) 를 쓴다."
+}

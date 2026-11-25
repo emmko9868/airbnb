@@ -1,0 +1,13 @@
+.git/
+.vercel/
+node_modules/
+dist/
+storybook-static/
+var/
+**/*.log
+**/.DS_Store
+.env*
+**/.env*
+!.env.example
+.claude/settings.local.json
+**/.claude/settings.local.json

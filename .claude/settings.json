@@ -1,0 +1,91 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm typecheck)",
+      "Bash(pnpm ds:guard)",
+      "Bash(pnpm ds:guard *)",
+      "Bash(node scripts/ds.mjs guard)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "${CLAUDE_PROJECT_DIR}/scripts/ai-check.mjs",
+              "pre"
+            ],
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "${CLAUDE_PROJECT_DIR}/scripts/ai-check.mjs",
+              "post"
+            ],
+            "timeout": 60,
+            "statusMessage": "규칙 검사 중"
+          }
+        ]
+      },
+      {
+        "matcher": "AskUserQuestion",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "${CLAUDE_PROJECT_DIR}/scripts/ai-check.mjs",
+              "answer"
+            ],
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "${CLAUDE_PROJECT_DIR}/scripts/ai-check.mjs",
+              "prompt"
+            ],
+            "timeout": 90,
+            "statusMessage": "Figma 디자인 읽는 중"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "${CLAUDE_PROJECT_DIR}/scripts/ai-check.mjs",
+              "stop"
+            ],
+            "timeout": 120,
+            "statusMessage": "끝내기 전 검사 중"
+          }
+        ]
+      }
+    ]
+  }
+}

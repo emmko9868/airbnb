@@ -1,0 +1,13 @@
+Currently selected nodes:
+- 418:8303: Tab group
+
+
+<frame id="418:8303" name="Tab group" x="0" y="80" width="620" height="92">
+  <instance id="418:3155" name="Service tab" x="0" y="-1" width="60" height="94" />
+  <instance id="418:8261" name="Service tab" x="140" y="-1" width="60" height="94" />
+  <instance id="418:8265" name="Service tab" x="280" y="-1" width="60" height="94" />
+  <instance id="418:8269" name="Service tab" x="420" y="-1" width="60" height="94" />
+  <instance id="418:8273" name="Service tab" x="560" y="-0.5" width="60" height="93" />
+</frame>
+IMPORTANT: After you call this tool, you MUST call get_design_context if trying to implement the design, since this tool only returns metadata. If you do not call get_design_context, the agent will not be able to implement the design.
+IMPORTANT: Inform the user that

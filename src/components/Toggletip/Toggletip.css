@@ -1,0 +1,54 @@
+/* Toggletip — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-toggletip { position: relative; display: inline-flex; font-family: var(--font-sans); }
+
+.ds-toggletip__trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(var(--spacing) * 6);
+  height: calc(var(--spacing) * 6);
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: transparent;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+
+.ds-toggletip__trigger:hover { color: var(--color-primary); }
+
+.ds-toggletip__trigger:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.ds-toggletip__panel {
+  position: absolute;
+  z-index: 30;
+  min-width: calc(var(--spacing) * 48);
+  max-width: calc(var(--spacing) * 80);
+  padding: calc(var(--spacing) * 3);
+  border: var(--border-width-thin) solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-raised);
+  color: var(--color-text);
+  font-size: var(--text-body-2);
+  line-height: var(--leading-normal);
+  box-shadow: var(--shadow-md);
+}
+
+.ds-toggletip--bottom .ds-toggletip__panel { top: calc(100% + var(--spacing)); left: 0; }
+.ds-toggletip--top .ds-toggletip__panel { bottom: calc(100% + var(--spacing)); left: 0; }
+.ds-toggletip--right .ds-toggletip__panel { left: calc(100% + var(--spacing)); top: 0; }
+.ds-toggletip--left .ds-toggletip__panel { right: calc(100% + var(--spacing)); top: 0; }
+
+@media (max-width: 600px) {
+  .ds-toggletip--left .ds-toggletip__panel,
+  .ds-toggletip--right .ds-toggletip__panel {
+    top: calc(100% + var(--spacing));
+    bottom: auto;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+}

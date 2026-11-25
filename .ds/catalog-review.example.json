@@ -1,0 +1,18 @@
+{
+  "$comment": "예시만 제공합니다. 실제 승인 데이터가 아닙니다. 사람이 실제 검수 후 catalog-review.json을 작성하며 생성기는 읽기만 합니다. decision은 검수 결과에 따라 approved 또는 rejected로 작성하세요. 실제 해시는 pnpm ds:catalog Button의 버전에서 확인하세요. 빈 필수 문자열과 빈 scope 배열은 승인으로 인정되지 않습니다. scope 예: {\"props\":{\"variant\":\"primary\",\"size\":\"m\",\"disabled\":false},\"states\":[\"default\",\"hover\"]}. props에는 공개 유한 리터럴/boolean 선택값만 쓰고, 나머지 데이터·조건은 evidenceId 증거에 기록하세요. props 객체를 비우면 모든 variant를 승인한 것으로 해석하면 안 되며 기본 props로 렌더한 해당 states만 검수한 것입니다. 자동 검사 필드는 이번 버전에서 not_run입니다.",
+  "schemaVersion": 1,
+  "components": {
+    "Button": {
+      "reviewer": "",
+      "evidenceId": "",
+      "reviewedAt": "",
+      "decision": "",
+      "source": { "kind": "figma", "ref": "" },
+      "scope": [],
+      "codeHash": "",
+      "cssHash": "",
+      "dependencyHash": "",
+      "tokensHash": ""
+    }
+  }
+}

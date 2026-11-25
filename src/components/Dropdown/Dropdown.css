@@ -1,0 +1,112 @@
+/* Dropdown — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-dropdown {
+  display: inline-flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 1.5);
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  min-width: calc(var(--spacing) * 48);
+}
+
+.ds-dropdown__label { font-size: var(--text-body-2); color: var(--color-text-secondary); }
+
+.ds-dropdown__field { position: relative; }
+
+.ds-dropdown__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(var(--spacing) * 2);
+  width: 100%;
+  min-height: calc(var(--spacing) * 8);
+  padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3);
+  border: var(--border-width-thin) solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-raised);
+  color: inherit;
+  font: inherit;
+  font-size: var(--text-body-2);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color var(--duration-fast) var(--ease-standard);
+}
+
+.ds-dropdown__trigger:hover:not(:disabled) { border-color: var(--color-primary); }
+
+.ds-dropdown__trigger:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.ds-dropdown__trigger:disabled {
+  color: var(--color-text-disabled);
+  background: var(--color-surface);
+  border-color: var(--color-border);
+  cursor: not-allowed;
+}
+
+/* 오류는 테두리 색만이 아니라 두께로도 구분된다. */
+.ds-dropdown__trigger[aria-invalid="true"] {
+  border-color: var(--color-danger);
+  border-width: var(--border-width-thick);
+}
+
+.ds-dropdown__placeholder { color: var(--color-text-disabled); }
+.ds-dropdown__value { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.ds-dropdown__chevron {
+  flex: 0 0 auto;
+  color: var(--color-text-secondary);
+  transition: transform var(--duration-fast) var(--ease-standard);
+}
+
+.ds-dropdown__trigger[aria-expanded="true"] .ds-dropdown__chevron { transform: rotate(180deg); }
+
+.ds-dropdown__list {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + var(--spacing));
+  left: 0;
+  right: 0;
+  max-height: calc(var(--spacing) * 60);
+  overflow-y: auto;
+  margin: 0;
+  padding: calc(var(--spacing) * 1);
+  border: var(--border-width-thin) solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-raised);
+  box-shadow: var(--shadow-lg);
+  list-style: none;
+}
+
+.ds-dropdown__option {
+  padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-body-2);
+  cursor: pointer;
+}
+
+.ds-dropdown__option[data-active] { background: var(--color-surface); }
+
+.ds-dropdown__option[aria-selected="true"] {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+.ds-dropdown__option[aria-disabled="true"] {
+  color: var(--color-text-disabled);
+  cursor: not-allowed;
+}
+
+.ds-dropdown__help { font-size: var(--text-body-2); color: var(--color-text-secondary); }
+.ds-dropdown__help--invalid { color: var(--color-danger); }
+
+.ds-dropdown--sm .ds-dropdown__trigger { min-height: calc(var(--spacing) * 7); }
+.ds-dropdown--lg .ds-dropdown__trigger { min-height: calc(var(--spacing) * 10); }
+
+.ds-dropdown--inline .ds-dropdown__trigger { border-color: transparent; background: transparent; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-dropdown__chevron { transition: none; }
+}

@@ -1,0 +1,54 @@
+/* Badge — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--spacing) * 2);
+  padding: calc(var(--spacing) * 2) calc(var(--spacing) * 4);
+  border: var(--border-width-thin) solid transparent;
+  border-radius: var(--radius-md);
+  font-family: var(--font-sans);
+  font-size: var(--text-body-1);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--leading-normal);
+  background: var(--color-surface);
+  color: var(--color-text);
+  transition: background var(--duration-fast) var(--ease-standard);
+}
+
+.ds-badge--neutral {
+  background: var(--color-surface-raised);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.ds-badge--info {
+  background: var(--color-info);
+  color: var(--color-on-primary);
+}
+
+.ds-badge--success {
+  background: var(--color-success);
+  color: var(--color-on-primary);
+}
+
+.ds-badge--warning {
+  background: var(--color-warning);
+  color: var(--color-on-primary);
+}
+
+.ds-badge--danger {
+  background: var(--color-danger);
+  color: var(--color-on-primary);
+}
+
+.ds-badge:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.ds-badge:disabled,
+.ds-badge[aria-disabled="true"] {
+  color: var(--color-text-disabled);
+  cursor: not-allowed;
+}

@@ -1,0 +1,104 @@
+/* Search — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-search {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: calc(var(--spacing) * 64);
+  max-width: 100%;
+  font-family: var(--font-sans);
+  font-size: var(--text-body-2);
+  color: var(--color-text);
+}
+
+.ds-search__icon {
+  position: absolute;
+  left: calc(var(--spacing) * 3);
+  display: inline-flex;
+  color: var(--color-text-secondary);
+  pointer-events: none;
+}
+
+.ds-search__field {
+  width: 100%;
+  min-height: calc(var(--spacing) * 8);
+  padding: 0 calc(var(--spacing) * 9);
+  border: var(--border-width-thin) solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-raised);
+  color: inherit;
+  font: inherit;
+}
+
+/* 브라우저 기본 지우기 버튼은 우리 버튼과 겹친다. */
+.ds-search__field::-webkit-search-cancel-button {
+  appearance: none;
+}
+
+.ds-search__field::placeholder {
+  color: var(--color-text-secondary);
+}
+
+.ds-search__field:hover:not(:disabled) {
+  border-color: var(--color-primary);
+}
+
+.ds-search__field:focus-visible {
+  outline: var(--border-width-thick) solid var(--color-primary);
+  outline-offset: var(--border-width-thick);
+}
+
+.ds-search__field:disabled {
+  color: var(--color-text-disabled);
+  background: var(--color-surface);
+  cursor: not-allowed;
+}
+
+.ds-search__clear,
+.ds-search__toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: var(--border-width-thin) solid transparent;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+
+.ds-search__clear {
+  position: absolute;
+  right: calc(var(--spacing) * 2);
+  width: calc(var(--spacing) * 6);
+  height: calc(var(--spacing) * 6);
+}
+
+.ds-search__toggle {
+  width: calc(var(--spacing) * 8);
+  height: calc(var(--spacing) * 8);
+  border-color: var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-raised);
+  color: var(--color-text);
+}
+
+.ds-search__clear:hover,
+.ds-search__toggle:hover:not(:disabled) {
+  color: var(--color-text);
+  background: var(--color-surface);
+}
+
+.ds-search__clear:focus-visible,
+.ds-search__toggle:focus-visible {
+  outline: var(--border-width-thick) solid var(--color-primary);
+  outline-offset: var(--border-width-thin);
+}
+
+.ds-search--collapsed {
+  width: auto;
+}
+
+.ds-search--sm .ds-search__field { min-height: calc(var(--spacing) * 7); }
+.ds-search--lg .ds-search__field { min-height: calc(var(--spacing) * 10); }
+.ds-search--sm .ds-search__toggle { width: calc(var(--spacing) * 7); height: calc(var(--spacing) * 7); }
+.ds-search--lg .ds-search__toggle { width: calc(var(--spacing) * 10); height: calc(var(--spacing) * 10); }

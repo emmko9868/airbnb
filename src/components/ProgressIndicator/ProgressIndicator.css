@@ -1,0 +1,95 @@
+/* ProgressIndicator — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-progressindicator {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-2);
+  color: var(--color-text);
+}
+
+.ds-progressindicator__list {
+  display: flex;
+  gap: calc(var(--spacing) * 2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ds-progressindicator--vertical .ds-progressindicator__list { flex-direction: column; }
+
+.ds-progressindicator__step { flex: 1 1 0; min-width: 0; }
+
+.ds-progressindicator__button {
+  display: flex;
+  align-items: flex-start;
+  gap: calc(var(--spacing) * 2);
+  width: 100%;
+  padding: calc(var(--spacing) * 2) 0;
+  border: 0;
+  border-top: calc(var(--spacing) * 0.5) solid var(--color-border);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+}
+
+button.ds-progressindicator__button { cursor: pointer; }
+
+.ds-progressindicator__button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.ds-progressindicator__mark {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(var(--spacing) * 5);
+  height: calc(var(--spacing) * 5);
+  border: var(--border-width-thin) solid var(--color-border-strong);
+  border-radius: var(--radius-full);
+  font-size: var(--text-body-2);
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text-secondary);
+}
+
+.ds-progressindicator__text { display: flex; flex-direction: column; min-width: 0; }
+.ds-progressindicator__label { font-weight: var(--font-weight-medium); }
+.ds-progressindicator__desc { color: var(--color-text-secondary); }
+
+/* 낭독기 전용. 화면에서는 보이지 않지만 display:none 이 아니라 읽힌다. */
+.ds-progressindicator__sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* 상태는 색 + 기호 + 테두리 두께로 함께 구분된다. */
+.ds-progressindicator__step[data-state="complete"] .ds-progressindicator__button { border-top-color: var(--color-primary); }
+.ds-progressindicator__step[data-state="complete"] .ds-progressindicator__mark {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.ds-progressindicator__step[data-state="current"] .ds-progressindicator__button { border-top-color: var(--color-primary); }
+.ds-progressindicator__step[data-state="current"] .ds-progressindicator__mark {
+  border-color: var(--color-primary);
+  border-width: var(--border-width-thick);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+}
+
+.ds-progressindicator__step[data-state="error"] .ds-progressindicator__button { border-top-color: var(--color-danger); }
+.ds-progressindicator__step[data-state="error"] .ds-progressindicator__mark {
+  background: var(--color-danger);
+  border-color: var(--color-danger);
+  color: var(--color-on-primary);
+  font-weight: var(--font-weight-bold);
+}
+
+.ds-progressindicator__step[data-state="incomplete"] .ds-progressindicator__label { color: var(--color-text-secondary); }

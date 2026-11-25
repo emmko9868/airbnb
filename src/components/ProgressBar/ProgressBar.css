@@ -1,0 +1,59 @@
+/* ProgressBar — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-progressbar {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 1.5);
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  min-width: calc(var(--spacing) * 48);
+}
+
+.ds-progressbar__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: calc(var(--spacing) * 3);
+  font-size: var(--text-body-2);
+}
+
+.ds-progressbar__label { color: var(--color-text-secondary); }
+.ds-progressbar__value { color: var(--color-text); font-variant-numeric: tabular-nums; }
+
+.ds-progressbar__track {
+  height: calc(var(--spacing) * 2);
+  border-radius: var(--radius-full);
+  background: var(--color-border);
+  overflow: hidden;
+}
+
+.ds-progressbar__fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+  transition: width var(--duration-normal) var(--ease-standard);
+}
+
+.ds-progressbar--finished .ds-progressbar__fill { background: var(--color-success); }
+.ds-progressbar--error .ds-progressbar__fill { background: var(--color-danger); }
+
+/* 끝을 모르는 작업은 흐르는 막대로 보인다. */
+.ds-progressbar--indeterminate .ds-progressbar__fill {
+  width: 35%;
+  animation: ds-progressbar-slide 1.4s var(--ease-standard) infinite;
+}
+
+@keyframes ds-progressbar-slide {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(300%); }
+}
+
+.ds-progressbar__help { font-size: var(--text-body-2); color: var(--color-text-secondary); }
+.ds-progressbar--error .ds-progressbar__help { color: var(--color-danger); }
+.ds-progressbar--finished .ds-progressbar__help { color: var(--color-success); }
+
+.ds-progressbar--sm .ds-progressbar__track { height: calc(var(--spacing) * 1); }
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-progressbar__fill { transition: none; animation: none; }
+  .ds-progressbar--indeterminate .ds-progressbar__fill { width: 100%; opacity: 0.5; }
+}

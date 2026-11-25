@@ -1,0 +1,81 @@
+/* CodeSnippet — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-codesnippet {
+  position: relative;
+  font-family: var(--font-sans);
+  border: var(--border-width-thin) solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.ds-codesnippet--inline {
+  display: inline;
+  padding: calc(var(--spacing) * 0.5) calc(var(--spacing) * 1.5);
+  border-radius: var(--radius-sm);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: var(--text-body-2);
+}
+
+.ds-codesnippet__pre {
+  margin: 0;
+  padding: calc(var(--spacing) * 3) calc(var(--spacing) * 12) calc(var(--spacing) * 3) calc(var(--spacing) * 4);
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: var(--text-body-2);
+  line-height: var(--leading-normal);
+}
+
+.ds-codesnippet--wrap .ds-codesnippet__pre { white-space: pre-wrap; word-break: break-word; }
+.ds-codesnippet--single .ds-codesnippet__pre { white-space: nowrap; }
+
+.ds-codesnippet__copy {
+  position: absolute;
+  top: calc(var(--spacing) * 2);
+  right: calc(var(--spacing) * 2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(var(--spacing) * 8);
+  height: calc(var(--spacing) * 8);
+  border: var(--border-width-thin) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-raised);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+
+.ds-codesnippet__copy:hover:not(:disabled) { color: var(--color-primary); border-color: var(--color-primary); }
+
+.ds-codesnippet__copy:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.ds-codesnippet__copy:disabled { color: var(--color-text-disabled); cursor: not-allowed; }
+
+.ds-codesnippet__more {
+  display: block;
+  width: 100%;
+  padding: calc(var(--spacing) * 2);
+  border: 0;
+  border-top: var(--border-width-thin) solid var(--color-border);
+  background: var(--color-surface-raised);
+  color: var(--color-primary);
+  font: inherit;
+  font-size: var(--text-body-2);
+  cursor: pointer;
+}
+
+.ds-codesnippet__more:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+}
+
+.ds-codesnippet__status {
+  display: block;
+  padding: 0 calc(var(--spacing) * 4) calc(var(--spacing) * 2);
+  font-size: var(--text-body-2);
+  color: var(--color-success);
+  min-height: calc(var(--spacing) * 5);
+}

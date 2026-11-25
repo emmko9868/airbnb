@@ -1,0 +1,75 @@
+/* Pagination — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-pagination {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 1);
+  font-family: var(--font-sans);
+  font-size: var(--text-body-2);
+  color: var(--color-text);
+}
+
+.ds-pagination__list {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ds-pagination__page,
+.ds-pagination__step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: calc(var(--spacing) * 8);
+  height: calc(var(--spacing) * 8);
+  padding: 0 calc(var(--spacing) * 2);
+  border: var(--border-width-thin) solid transparent;
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--color-text);
+  font: inherit;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  transition: background var(--duration-fast) var(--ease-standard);
+}
+
+.ds-pagination__page:hover:not([aria-current]),
+.ds-pagination__step:hover:not(:disabled) { background: var(--color-surface-raised); }
+
+/* 현재 페이지는 색만이 아니라 테두리로도 구분된다. */
+.ds-pagination__page[aria-current="page"] {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-on-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+.ds-pagination__page:focus-visible,
+.ds-pagination__step:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.ds-pagination__step:disabled {
+  color: var(--color-text-disabled);
+  cursor: not-allowed;
+}
+
+.ds-pagination__gap {
+  min-width: calc(var(--spacing) * 6);
+  text-align: center;
+  color: var(--color-text-disabled);
+}
+
+.ds-pagination__status {
+  padding: 0 calc(var(--spacing) * 2);
+  color: var(--color-text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.ds-pagination--sm .ds-pagination__page,
+.ds-pagination--sm .ds-pagination__step { height: calc(var(--spacing) * 7); }
+.ds-pagination--lg .ds-pagination__page,
+.ds-pagination--lg .ds-pagination__step { height: calc(var(--spacing) * 10); }

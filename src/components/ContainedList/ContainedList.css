@@ -1,0 +1,63 @@
+/* ContainedList — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-containedlist {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  border: var(--border-width-thin) solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.ds-containedlist--disclosed { border-color: transparent; }
+
+.ds-containedlist__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(var(--spacing) * 3);
+  padding: calc(var(--spacing) * 3) calc(var(--spacing) * 4);
+  border-bottom: var(--border-width-thin) solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.ds-containedlist__title {
+  margin: 0;
+  font-size: var(--text-body-2);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-secondary);
+}
+
+.ds-containedlist__list { margin: 0; padding: 0; list-style: none; }
+
+.ds-containedlist__item + .ds-containedlist__item { border-top: var(--border-width-thin) solid var(--color-border); }
+
+.ds-containedlist__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(var(--spacing) * 3);
+  width: 100%;
+  padding: calc(var(--spacing) * 3) calc(var(--spacing) * 4);
+  border: 0;
+  background: var(--color-surface-raised);
+  color: inherit;
+  font: inherit;
+  font-size: var(--text-body-2);
+  text-align: left;
+}
+
+button.ds-containedlist__row { cursor: pointer; transition: background var(--duration-fast) var(--ease-standard); }
+button.ds-containedlist__row:hover:not(:disabled) { background: var(--color-surface); }
+
+.ds-containedlist__row:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+}
+
+.ds-containedlist__row:disabled { color: var(--color-text-disabled); cursor: not-allowed; }
+
+.ds-containedlist__meta { color: var(--color-text-secondary); font-variant-numeric: tabular-nums; }
+
+.ds-containedlist--sm .ds-containedlist__row { padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3); }
+.ds-containedlist--lg .ds-containedlist__row { padding: calc(var(--spacing) * 4) calc(var(--spacing) * 5); }

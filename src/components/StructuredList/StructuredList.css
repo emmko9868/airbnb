@@ -1,0 +1,66 @@
+/* StructuredList — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-structuredlist {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  border: var(--border-width-thin) solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+}
+
+.ds-structuredlist__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-body-2);
+}
+
+/* 표 이름은 낭독기에만 읽힌다. 화면에서는 제목을 따로 두는 게 보통이다. */
+.ds-structuredlist__caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.ds-structuredlist__table th {
+  padding: calc(var(--spacing) * 3) calc(var(--spacing) * 4);
+  border-bottom: var(--border-width-thin) solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-medium);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.ds-structuredlist__table td {
+  padding: calc(var(--spacing) * 3) calc(var(--spacing) * 4);
+  border-bottom: var(--border-width-thin) solid var(--color-border);
+  background: var(--color-surface-raised);
+  vertical-align: top;
+}
+
+.ds-structuredlist__table tbody tr:last-child td { border-bottom: 0; }
+
+.ds-structuredlist__pick { width: calc(var(--spacing) * 10); }
+.ds-structuredlist__pick input { accent-color: var(--color-primary); }
+
+.ds-structuredlist__pick input:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* 선택 행은 색만이 아니라 왼쪽 띠로도 구분된다. */
+.ds-structuredlist__row[data-selected] td {
+  background: var(--color-surface);
+  box-shadow: inset calc(var(--spacing) * 0.75) 0 0 var(--color-primary);
+}
+
+.ds-structuredlist--selectable .ds-structuredlist__row:hover td { background: var(--color-surface); }
+
+.ds-structuredlist--condensed .ds-structuredlist__table th,
+.ds-structuredlist--condensed .ds-structuredlist__table td {
+  padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3);
+}

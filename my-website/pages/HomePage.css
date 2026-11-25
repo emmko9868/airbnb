@@ -1,0 +1,299 @@
+.page-Home__top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: calc(var(--spacing) * 3) calc(var(--spacing) * 6);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-bg);
+  height: 80px;
+}
+
+.page-Home__logo {
+  display: flex;
+  align-items: center;
+}
+
+.page-Home__logo-img {
+  height: 32px;
+  width: auto;
+}
+
+.page-Home__nav-actions {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 2);
+}
+
+.page-Home__host-link {
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text);
+  text-decoration: none;
+  padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3);
+  border-radius: var(--radius-full);
+  transition: background var(--duration-fast) var(--ease-standard);
+}
+
+.page-Home__host-link:hover {
+  background: var(--color-neutral-01);
+}
+
+.page-Home__globe-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: calc(var(--spacing) * 2);
+  border-radius: var(--radius-full);
+  color: var(--color-text);
+  transition: background var(--duration-fast) var(--ease-standard);
+}
+
+.page-Home__globe-btn:hover {
+  background: var(--color-neutral-01);
+}
+
+.page-Home__user-menu-btn {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 1.5);
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: calc(var(--spacing) * 1) calc(var(--spacing) * 1.5) calc(var(--spacing) * 1) calc(var(--spacing) * 2);
+  cursor: pointer;
+  transition: box-shadow var(--duration-fast) var(--ease-standard);
+}
+
+.page-Home__user-menu-btn:hover {
+  box-shadow: var(--SHADOW-sm);
+}
+
+.page-Home__profile-avatar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--color-neutral-03);
+  border-radius: 50%;
+  color: var(--color-text-secondary);
+}
+
+.page-Home__notification-dot {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  background: #FF385C;
+  border-radius: 50%;
+  border: 2px solid var(--color-bg);
+}
+
+.page-Home__hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: calc(var(--spacing) * 10) calc(var(--spacing) * 20);
+  min-height: 426px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.page-Home__service-tabs {
+  display: flex;
+  gap: 80px;
+  justify-content: flex-start;
+  padding: calc(var(--spacing) * 4) 0;
+}
+
+/* Reservations Section */
+.page-Home__reservations {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc(var(--spacing) * 4);
+  padding: calc(var(--spacing) * 8) calc(var(--spacing) * 20);
+}
+
+.page-Home__reservation-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: calc(var(--spacing) * 4);
+  display: flex;
+  gap: calc(var(--spacing) * 3);
+  background: var(--color-bg);
+}
+
+.page-Home__reservation-image {
+  width: 80px;
+  height: 80px;
+  background: var(--color-neutral-02);
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.page-Home__reservation-info {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 1);
+}
+
+.page-Home__reservation-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.page-Home__reservation-status {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.page-Home__reservation-status--checkin {
+  color: var(--color-success);
+}
+
+.page-Home__reservation-status--checkout {
+  color: var(--color-warning);
+}
+
+.page-Home__reservation-status--cancelled {
+  color: var(--color-danger);
+}
+
+.page-Home__reservation-name {
+  font-size: 14px;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.page-Home__reservation-dates {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.page-Home__reservation-code {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* Stay in Seoul Section */
+.page-Home__stay-in-seoul {
+  padding: calc(var(--spacing) * 8) calc(var(--spacing) * 20);
+}
+
+.page-Home__stay-in-seoul > h2 {
+  margin-bottom: calc(var(--spacing) * 4);
+}
+
+.page-Home__property-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: calc(var(--spacing) * 4);
+  margin-top: calc(var(--spacing) * 4);
+}
+
+.page-Home__property-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-Home__property-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  background: var(--color-neutral-02);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.page-Home__property-heart {
+  position: absolute;
+  top: calc(var(--spacing) * 2);
+  right: calc(var(--spacing) * 2);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.page-Home__property-info {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 1);
+  margin-top: calc(var(--spacing) * 2);
+}
+
+.page-Home__property-details {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 0.5);
+}
+
+.page-Home__property-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.page-Home__property-subtitle {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.page-Home__property-dates {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.page-Home__property-price {
+  font-size: 14px;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.page-Home__property-price-strong {
+  font-weight: 600;
+}
+
+.page-Home__property-rating {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 1);
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+/* Inspiration Section */
+.page-Home__inspiration {
+  padding: calc(var(--spacing) * 8) calc(var(--spacing) * 20);
+}
+
+.page-Home__inspiration > h2 {
+  margin-bottom: calc(var(--spacing) * 4);
+}
+
+/* Footer */
+.page-Home__footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc(var(--spacing) * 8);
+  padding: calc(var(--spacing) * 8) calc(var(--spacing) * 20);
+  border-top: 1px solid var(--color-border);
+}

@@ -1,0 +1,48 @@
+/* Breadcrumb — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-breadcrumb {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-2);
+  color: var(--color-text-secondary);
+}
+
+.ds-breadcrumb__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ds-breadcrumb__item { display: inline-flex; align-items: center; }
+
+.ds-breadcrumb__link {
+  padding: calc(var(--spacing) * 0.5) 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-primary);
+  font: inherit;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.ds-breadcrumb__link:hover { text-decoration: underline; }
+
+.ds-breadcrumb__link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.ds-breadcrumb__current {
+  padding: calc(var(--spacing) * 0.5) 0;
+  color: var(--color-text);
+  font-weight: var(--font-weight-medium);
+}
+
+.ds-breadcrumb__sep {
+  padding: 0 calc(var(--spacing) * 2);
+  color: var(--color-text-disabled);
+}
+
+.ds-breadcrumb--sm { font-size: var(--text-body-2); }

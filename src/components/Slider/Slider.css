@@ -1,0 +1,73 @@
+/* Slider — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-slider {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 1.5);
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  min-width: calc(var(--spacing) * 64);
+}
+
+.ds-slider__label { font-size: var(--text-body-2); color: var(--color-text-secondary); }
+
+.ds-slider__row {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 3);
+}
+
+.ds-slider__bound {
+  font-size: var(--text-body-2);
+  color: var(--color-text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.ds-slider__range {
+  flex: 1 1 auto;
+  height: calc(var(--spacing) * 5);
+  accent-color: var(--color-primary);
+  /* 채운 구간을 눈에 보이게 한다. accent-color 만으로는 브라우저마다 다르다. */
+  background: linear-gradient(
+      to right,
+      var(--color-primary) 0 var(--ds-slider-fill, 0%),
+      var(--color-border) var(--ds-slider-fill, 0%) 100%
+    )
+    no-repeat center / 100% calc(var(--spacing) * 1);
+  appearance: none;
+  cursor: pointer;
+}
+
+.ds-slider__range:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.ds-slider__range:disabled { cursor: not-allowed; }
+
+.ds-slider__number {
+  width: calc(var(--spacing) * 18);
+  min-height: calc(var(--spacing) * 8);
+  padding: calc(var(--spacing) * 1) calc(var(--spacing) * 2);
+  border: var(--border-width-thin) solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-raised);
+  color: inherit;
+  font: inherit;
+  font-size: var(--text-body-2);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.ds-slider__number:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.ds-slider--invalid .ds-slider__number,
+.ds-slider--invalid .ds-slider__range {
+  outline: var(--border-width-thick) solid var(--color-danger);
+  outline-offset: 2px;
+}
+
+.ds-slider__help { font-size: var(--text-body-2); color: var(--color-text-secondary); }
+.ds-slider__help--invalid { color: var(--color-danger); }

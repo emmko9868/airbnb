@@ -1,0 +1,105 @@
+/* Popover — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-popover { position: relative; display: inline-flex; font-family: var(--font-sans); }
+
+.ds-popover__trigger {
+  min-height: calc(var(--spacing) * 8);
+  padding: 0 calc(var(--spacing) * 4);
+  border: var(--border-width-thin) solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-raised);
+  color: var(--color-text);
+  font: inherit;
+  font-size: var(--text-body-2);
+  cursor: pointer;
+}
+
+.ds-popover__trigger:hover { border-color: var(--color-primary); }
+
+.ds-popover__trigger:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.ds-popover__panel {
+  position: absolute;
+  z-index: 30;
+  min-width: calc(var(--spacing) * 56);
+  max-width: calc(var(--spacing) * 96);
+  padding: calc(var(--spacing) * 4);
+  border: var(--border-width-thin) solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-raised);
+  color: var(--color-text);
+  font-size: var(--text-body-2);
+  line-height: var(--leading-normal);
+  box-shadow: var(--shadow-lg);
+}
+
+.ds-popover__panel:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.ds-popover--bottom .ds-popover__panel { top: calc(100% + var(--spacing) * 1.5); left: 0; }
+.ds-popover--top .ds-popover__panel { bottom: calc(100% + var(--spacing) * 1.5); left: 0; }
+.ds-popover--right .ds-popover__panel { left: calc(100% + var(--spacing) * 1.5); top: 0; }
+.ds-popover--left .ds-popover__panel { right: calc(100% + var(--spacing) * 1.5); top: 0; }
+
+.ds-popover--caret .ds-popover__panel::before {
+  content: "";
+  position: absolute;
+  width: calc(var(--spacing) * 2);
+  height: calc(var(--spacing) * 2);
+  background: var(--color-surface-raised);
+  border: var(--border-width-thin) solid var(--color-border);
+  transform: rotate(45deg);
+}
+
+.ds-popover--caret.ds-popover--bottom .ds-popover__panel::before {
+  top: calc(var(--spacing) * -1.25);
+  left: calc(var(--spacing) * 5);
+  border-right: 0;
+  border-bottom: 0;
+}
+.ds-popover--caret.ds-popover--top .ds-popover__panel::before {
+  bottom: calc(var(--spacing) * -1.25);
+  left: calc(var(--spacing) * 5);
+  border-left: 0;
+  border-top: 0;
+}
+
+.ds-popover--caret.ds-popover--left .ds-popover__panel::before {
+  right: calc(var(--spacing) * -1.25);
+  top: calc(var(--spacing) * 4);
+  border-left: 0;
+  border-bottom: 0;
+}
+
+.ds-popover--caret.ds-popover--right .ds-popover__panel::before {
+  left: calc(var(--spacing) * -1.25);
+  top: calc(var(--spacing) * 4);
+  border-right: 0;
+  border-top: 0;
+}
+
+@media (max-width: 600px) {
+  .ds-popover--left .ds-popover__panel,
+  .ds-popover--right .ds-popover__panel {
+    top: calc(100% + var(--spacing) * 1.5);
+    bottom: auto;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+
+  .ds-popover--caret.ds-popover--left .ds-popover__panel::before,
+  .ds-popover--caret.ds-popover--right .ds-popover__panel::before {
+    top: calc(var(--spacing) * -1.25);
+    bottom: auto;
+    left: calc(50% - var(--spacing));
+    right: auto;
+    border: var(--border-width-thin) solid var(--color-border);
+    border-right: 0;
+    border-bottom: 0;
+  }
+}

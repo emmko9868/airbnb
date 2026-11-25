@@ -1,0 +1,852 @@
+{
+  "$comment": "scripts/figma-tokens.mjs 가 Figma MCP 로 가져온 변수. 손으로 고치지 말고 다시 가져온다. 우리 쪽 정의는 .ds/source.json.",
+  "schema_version": "1.0",
+  "file_key": "zrqq2F92iVtCoxKzj4b8Pm",
+  "imported_at": "2026-11-20T15:11:06.395Z",
+  "nodes": [
+    "232:1522",
+    "245:3517",
+    "245:3518",
+    "238:2188",
+    "245:3514",
+    "245:3513",
+    "245:3512",
+    "393:9507",
+    "414:1896",
+    "414:1903",
+    "414:1910",
+    "414:1924",
+    "414:1917",
+    "418:3150",
+    "238:2378",
+    "238:2153"
+  ],
+  "collections": [
+    {
+      "name": "Figma Colors",
+      "modes": [
+        {
+          "id": "f1",
+          "name": "Mode 1"
+        }
+      ],
+      "variables": [
+        {
+          "id": "figma-shade-02",
+          "name": "shade-02",
+          "type": "COLOR",
+          "value": "#222222",
+          "figmaName": "Shade 02"
+        },
+        {
+          "id": "figma-neutral-07",
+          "name": "neutral-07",
+          "type": "COLOR",
+          "value": "#717171",
+          "figmaName": "Neutral 07"
+        },
+        {
+          "id": "figma-shade-01",
+          "name": "shade-01",
+          "type": "COLOR",
+          "value": "#FFFFFF",
+          "figmaName": "Shade 01"
+        },
+        {
+          "id": "figma-neutral-03",
+          "name": "neutral-03",
+          "type": "COLOR",
+          "value": "#DDDDDD",
+          "figmaName": "Neutral 03"
+        },
+        {
+          "id": "figma-neutral-02",
+          "name": "neutral-02",
+          "type": "COLOR",
+          "value": "#EBEBEB",
+          "figmaName": "Neutral 02"
+        },
+        {
+          "id": "figma-neutral-04",
+          "name": "neutral-04",
+          "type": "COLOR",
+          "value": "#D3D3D3",
+          "figmaName": "Neutral 04"
+        },
+        {
+          "id": "figma-shade-02---5%",
+          "name": "shade-02---5%",
+          "type": "COLOR",
+          "value": "#222222",
+          "figmaName": "Shade 02 - 5%"
+        },
+        {
+          "id": "figma-link",
+          "name": "link",
+          "type": "COLOR",
+          "value": "#004CC4",
+          "figmaName": "Link"
+        },
+        {
+          "id": "figma-shade-02---30%",
+          "name": "shade-02---30%",
+          "type": "COLOR",
+          "value": "#222222",
+          "figmaName": "Shade 02 - 30%"
+        },
+        {
+          "id": "figma-discounts",
+          "name": "discounts",
+          "type": "COLOR",
+          "value": "#008A05",
+          "figmaName": "Discounts"
+        },
+        {
+          "id": "figma-accent-02",
+          "name": "accent-02",
+          "type": "COLOR",
+          "value": "#D03660",
+          "figmaName": "Accent 02"
+        },
+        {
+          "id": "figma-accent-01",
+          "name": "accent-01",
+          "type": "COLOR",
+          "value": "#F6D7DF",
+          "figmaName": "Accent 01"
+        },
+        {
+          "id": "figma-error-01",
+          "name": "error-01",
+          "type": "COLOR",
+          "value": "#FEF8F6",
+          "figmaName": "Error 01"
+        },
+        {
+          "id": "figma-error-02",
+          "name": "error-02",
+          "type": "COLOR",
+          "value": "#C13515",
+          "figmaName": "Error 02"
+        },
+        {
+          "id": "figma-primary-01",
+          "name": "primary-01",
+          "type": "COLOR",
+          "value": "#F6475F",
+          "figmaName": "Primary 01"
+        },
+        {
+          "id": "figma-primary-02",
+          "name": "primary-02",
+          "type": "COLOR",
+          "value": "#FF385C",
+          "figmaName": "Primary 02"
+        },
+        {
+          "id": "figma-neutral-05",
+          "name": "neutral-05",
+          "type": "COLOR",
+          "value": "#C2C2C2",
+          "figmaName": "Neutral 05"
+        },
+        {
+          "id": "figma-neutral-06",
+          "name": "neutral-06",
+          "type": "COLOR",
+          "value": "#B0B0B0",
+          "figmaName": "Neutral 06"
+        },
+        {
+          "id": "figma-neutral-08",
+          "name": "neutral-08",
+          "type": "COLOR",
+          "value": "#5E5E5E",
+          "figmaName": "Neutral 08"
+        },
+        {
+          "id": "figma-neutral-01",
+          "name": "neutral-01",
+          "type": "COLOR",
+          "value": "#F7F7F7",
+          "figmaName": "Neutral 01"
+        }
+      ]
+    },
+    {
+      "name": "Figma Layout",
+      "modes": [
+        {
+          "id": "f2",
+          "name": "Mode 1"
+        }
+      ],
+      "variables": [
+        {
+          "id": "figma-elevation-03",
+          "name": "elevation-03",
+          "type": "STRING",
+          "category": "SHADOW",
+          "value": "0px 6px 16px 0px #0000001F",
+          "figmaName": "Elevation 03"
+        },
+        {
+          "id": "figma-elevation-02",
+          "name": "elevation-02",
+          "type": "STRING",
+          "category": "SHADOW",
+          "value": "0px 1px 5px -363px #00000030",
+          "figmaName": "Elevation 02"
+        },
+        {
+          "id": "figma-elevation-01",
+          "name": "elevation-01",
+          "type": "STRING",
+          "category": "SHADOW",
+          "value": "0px 4px 18px 0px #0000002B",
+          "figmaName": "Elevation 01"
+        },
+        {
+          "id": "figma-gradient-icon-button-1",
+          "name": "icon-button-1",
+          "type": "STRING",
+          "category": "GRADIENT",
+          "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(4.1582 -4.3501e-7 4.3501e-7 56.542 -1.5819 40)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>\")",
+          "figmaName": "Gradient fill of Icon button"
+        },
+        {
+          "id": "figma-gradient-icon-button-2",
+          "name": "icon-button-2",
+          "type": "STRING",
+          "category": "GRADIENT",
+          "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-3.9578 4 -4 -486.33 39.77 0.0000061807)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\")",
+          "figmaName": "Gradient fill of Icon button"
+        },
+        {
+          "id": "figma-gradient-icon-button-3",
+          "name": "icon-button-3",
+          "type": "STRING",
+          "category": "GRADIENT",
+          "value": "linear-gradient(90deg, rgb(235, 76, 96) 0%, rgb(235, 76, 96) 100%), url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-3.9578 4 -4 -486.33 39.77 0.0000061807)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\"), url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-3.9578 4 -4 -486.33 39.77 0.0000061807)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\")",
+          "figmaName": "Gradient fill of Icon button"
+        },
+        {
+          "id": "figma-gradient-icon-button-4",
+          "name": "icon-button-4",
+          "type": "STRING",
+          "category": "GRADIENT",
+          "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(3.7424 -3.915e-7 3.915e-7 50.887 -1.4237 36)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>\")",
+          "figmaName": "Gradient fill of Icon button"
+        },
+        {
+          "id": "figma-gradient-icon-buttondefault-sizel-typeprimary-1",
+          "name": "icon-buttondefault-sizel-typeprimary-1",
+          "type": "STRING",
+          "category": "GRADIENT",
+          "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(4.1582 -4.3501e-7 4.3501e-7 56.542 -1.5819 40)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>\")",
+          "figmaName": "Gradient fill of Icon button=Default, Size=L, Type=Primary "
+        },
+        {
+          "id": "figma-gradient-card-1",
+          "name": "card-1",
+          "type": "STRING",
+          "category": "GRADIENT",
+          "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 325 51' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(33.785 -5.5463e-7 0.0000035344 72.091 -12.853 51)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>\")",
+          "figmaName": "Gradient fill of Card"
+        },
+        {
+          "id": "figma-gradient-primary-buttons-1",
+          "name": "primary-buttons-1",
+          "type": "STRING",
+          "category": "GRADIENT",
+          "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 520 47' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-51.451 4.7 -52 -571.44 517.01 0.0000072623)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\")",
+          "figmaName": "Gradient fill of Primary Buttons"
+        },
+        {
+          "id": "figma-gradient-primary-buttons-2",
+          "name": "primary-buttons-2",
+          "type": "STRING",
+          "category": "GRADIENT",
+          "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 91 48' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-9.0039 4.8 -9.1 -583.6 90.476 0.0000074169)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\")",
+          "figmaName": "Gradient fill of Primary Buttons"
+        },
+        {
+          "id": "figma-gradient-primary-buttons-3",
+          "name": "primary-buttons-3",
+          "type": "STRING",
+          "category": "GRADIENT",
+          "value": "linear-gradient(90deg, rgb(235, 76, 96) 0%, rgb(235, 76, 96) 100%), url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 488 47' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-48.285 4.7 -48.8 -571.44 485.19 0.0000072623)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\"), url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 488 47' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-48.285 4.7 -48.8 -571.44 485.19 0.0000072623)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\")",
+          "figmaName": "Gradient fill of Primary Buttons"
+        },
+        {
+          "id": "figma-gradient-primary-buttons-4",
+          "name": "primary-buttons-4",
+          "type": "STRING",
+          "category": "GRADIENT",
+          "value": "linear-gradient(90deg, rgb(235, 76, 96) 0%, rgb(235, 76, 96) 100%), url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 91 48' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-9.0039 4.8 -9.1 -583.6 90.476 0.0000074169)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\"), url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 91 48' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-9.0039 4.8 -9.1 -583.6 90.476 0.0000074169)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\")",
+          "figmaName": "Gradient fill of Primary Buttons"
+        },
+        {
+          "id": "figma-gradient-primary-buttons-5",
+          "name": "primary-buttons-5",
+          "type": "STRING",
+          "category": "GRADIENT",
+          "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 520 47' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(54.056 -5.1113e-7 0.0000056551 66.436 -20.565 47)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>\")",
+          "figmaName": "Gradient fill of Primary Buttons"
+        },
+        {
+          "id": "figma-gradient-primary-buttons-6",
+          "name": "primary-buttons-6",
+          "type": "STRING",
+          "category": "GRADIENT",
+          "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 91 48' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(9.4599 -5.2201e-7 9.8964e-7 67.85 -3.5989 48)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>\")",
+          "figmaName": "Gradient fill of Primary Buttons"
+        }
+      ]
+    }
+  ],
+  "conflicts": [],
+  "typography": {
+    "status": "review-required",
+    "applied": false,
+    "families": [
+      "SF Pro"
+    ],
+    "styles": [
+      {
+        "name": "Body Copy/16pt Semibold",
+        "raw": "Font(family: \"SF Pro\", style: Semibold, size: 16, weight: 590, lineHeight: 100, letterSpacing: 0)",
+        "fields": {
+          "family": "SF Pro",
+          "style": "Semibold",
+          "size": "16",
+          "weight": "590",
+          "lineHeight": "100",
+          "letterSpacing": "0"
+        },
+        "lineHeight": {
+          "status": "review-required",
+          "value": null,
+          "raw": "100",
+          "reason": "퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        },
+        "questions": [
+          "줄높이 확인: 퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        ]
+      },
+      {
+        "name": "Body Copy/13pt Semibold",
+        "raw": "Font(family: \"SF Pro\", style: Semibold, size: 13, weight: 590, lineHeight: 100, letterSpacing: 0)",
+        "fields": {
+          "family": "SF Pro",
+          "style": "Semibold",
+          "size": "13",
+          "weight": "590",
+          "lineHeight": "100",
+          "letterSpacing": "0"
+        },
+        "lineHeight": {
+          "status": "review-required",
+          "value": null,
+          "raw": "100",
+          "reason": "퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        },
+        "questions": [
+          "줄높이 확인: 퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        ]
+      },
+      {
+        "name": "Body Copy/12pt Semibold Underlined",
+        "raw": "Font(family: \"SF Pro\", style: Semibold, size: 12, weight: 590, lineHeight: 100, letterSpacing: 0)",
+        "fields": {
+          "family": "SF Pro",
+          "style": "Semibold",
+          "size": "12",
+          "weight": "590",
+          "lineHeight": "100",
+          "letterSpacing": "0"
+        },
+        "lineHeight": {
+          "status": "review-required",
+          "value": null,
+          "raw": "100",
+          "reason": "퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        },
+        "questions": [
+          "줄높이 확인: 퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        ]
+      },
+      {
+        "name": "Body Copy/14pt Semibold",
+        "raw": "Font(family: \"SF Pro\", style: Semibold, size: 14, weight: 590, lineHeight: 100, letterSpacing: 0)",
+        "fields": {
+          "family": "SF Pro",
+          "style": "Semibold",
+          "size": "14",
+          "weight": "590",
+          "lineHeight": "100",
+          "letterSpacing": "0"
+        },
+        "lineHeight": {
+          "status": "review-required",
+          "value": null,
+          "raw": "100",
+          "reason": "퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        },
+        "questions": [
+          "줄높이 확인: 퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        ]
+      },
+      {
+        "name": "Body Copy/12pt Regular",
+        "raw": "Font(family: \"SF Pro\", style: Regular, size: 12, weight: 400, lineHeight: 100, letterSpacing: 0)",
+        "fields": {
+          "family": "SF Pro",
+          "style": "Regular",
+          "size": "12",
+          "weight": "400",
+          "lineHeight": "100",
+          "letterSpacing": "0"
+        },
+        "lineHeight": {
+          "status": "review-required",
+          "value": null,
+          "raw": "100",
+          "reason": "퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        },
+        "questions": [
+          "줄높이 확인: 퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        ]
+      },
+      {
+        "name": "Mirco Text/10pt Semibold",
+        "raw": "Font(family: \"SF Pro\", style: Semibold, size: 10, weight: 590, lineHeight: 100, letterSpacing: 0)",
+        "fields": {
+          "family": "SF Pro",
+          "style": "Semibold",
+          "size": "10",
+          "weight": "590",
+          "lineHeight": "100",
+          "letterSpacing": "0"
+        },
+        "lineHeight": {
+          "status": "review-required",
+          "value": null,
+          "raw": "100",
+          "reason": "퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        },
+        "questions": [
+          "줄높이 확인: 퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        ]
+      },
+      {
+        "name": "Body Copy/12pt Semibold",
+        "raw": "Font(family: \"SF Pro\", style: Semibold, size: 12, weight: 590, lineHeight: 100, letterSpacing: 0)",
+        "fields": {
+          "family": "SF Pro",
+          "style": "Semibold",
+          "size": "12",
+          "weight": "590",
+          "lineHeight": "100",
+          "letterSpacing": "0"
+        },
+        "lineHeight": {
+          "status": "review-required",
+          "value": null,
+          "raw": "100",
+          "reason": "퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        },
+        "questions": [
+          "줄높이 확인: 퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        ]
+      },
+      {
+        "name": "Body Copy/13pt Regular",
+        "raw": "Font(family: \"SF Pro\", style: Regular, size: 13, weight: 400, lineHeight: 100, letterSpacing: 0)",
+        "fields": {
+          "family": "SF Pro",
+          "style": "Regular",
+          "size": "13",
+          "weight": "400",
+          "lineHeight": "100",
+          "letterSpacing": "0"
+        },
+        "lineHeight": {
+          "status": "review-required",
+          "value": null,
+          "raw": "100",
+          "reason": "퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        },
+        "questions": [
+          "줄높이 확인: 퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        ]
+      },
+      {
+        "name": "Body Copy/14pt Regular",
+        "raw": "Font(family: \"SF Pro\", style: Regular, size: 14, weight: 400, lineHeight: 100, letterSpacing: 0)",
+        "fields": {
+          "family": "SF Pro",
+          "style": "Regular",
+          "size": "14",
+          "weight": "400",
+          "lineHeight": "100",
+          "letterSpacing": "0"
+        },
+        "lineHeight": {
+          "status": "review-required",
+          "value": null,
+          "raw": "100",
+          "reason": "퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        },
+        "questions": [
+          "줄높이 확인: 퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        ]
+      },
+      {
+        "name": "Body Copy/16pt Regular",
+        "raw": "Font(family: \"SF Pro\", style: Regular, size: 16, weight: 400, lineHeight: 100, letterSpacing: 0)",
+        "fields": {
+          "family": "SF Pro",
+          "style": "Regular",
+          "size": "16",
+          "weight": "400",
+          "lineHeight": "100",
+          "letterSpacing": "0"
+        },
+        "lineHeight": {
+          "status": "review-required",
+          "value": null,
+          "raw": "100",
+          "reason": "퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        },
+        "questions": [
+          "줄높이 확인: 퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        ]
+      },
+      {
+        "name": "Body Copy/16pt Regular Underlined",
+        "raw": "Font(family: \"SF Pro\", style: Regular, size: 16, weight: 400, lineHeight: 100, letterSpacing: 0)",
+        "fields": {
+          "family": "SF Pro",
+          "style": "Regular",
+          "size": "16",
+          "weight": "400",
+          "lineHeight": "100",
+          "letterSpacing": "0"
+        },
+        "lineHeight": {
+          "status": "review-required",
+          "value": null,
+          "raw": "100",
+          "reason": "퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        },
+        "questions": [
+          "줄높이 확인: 퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        ]
+      },
+      {
+        "name": "Body Copy/18pt Regular",
+        "raw": "Font(family: \"SF Pro\", style: Regular, size: 18, weight: 400, lineHeight: 24, letterSpacing: 0)",
+        "fields": {
+          "family": "SF Pro",
+          "style": "Regular",
+          "size": "18",
+          "weight": "400",
+          "lineHeight": "24",
+          "letterSpacing": "0"
+        },
+        "lineHeight": {
+          "status": "review-required",
+          "value": null,
+          "raw": "24",
+          "reason": "퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        },
+        "questions": [
+          "줄높이 확인: 퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        ]
+      },
+      {
+        "name": "Body Copy/18pt Medium",
+        "raw": "Font(family: \"SF Pro\", style: Medium, size: 18, weight: 510, lineHeight: 24, letterSpacing: 0)",
+        "fields": {
+          "family": "SF Pro",
+          "style": "Medium",
+          "size": "18",
+          "weight": "510",
+          "lineHeight": "24",
+          "letterSpacing": "0"
+        },
+        "lineHeight": {
+          "status": "review-required",
+          "value": null,
+          "raw": "24",
+          "reason": "퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        },
+        "questions": [
+          "줄높이 확인: 퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        ]
+      },
+      {
+        "name": "Body Copy/18pt Semibold",
+        "raw": "Font(family: \"SF Pro\", style: Semibold, size: 18, weight: 590, lineHeight: 100, letterSpacing: 0)",
+        "fields": {
+          "family": "SF Pro",
+          "style": "Semibold",
+          "size": "18",
+          "weight": "590",
+          "lineHeight": "100",
+          "letterSpacing": "0"
+        },
+        "lineHeight": {
+          "status": "review-required",
+          "value": null,
+          "raw": "100",
+          "reason": "퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        },
+        "questions": [
+          "줄높이 확인: 퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        ]
+      },
+      {
+        "name": "Header/22pt Regular",
+        "raw": "Font(family: \"SF Pro\", style: Regular, size: 22, weight: 400, lineHeight: 100, letterSpacing: 0)",
+        "fields": {
+          "family": "SF Pro",
+          "style": "Regular",
+          "size": "22",
+          "weight": "400",
+          "lineHeight": "100",
+          "letterSpacing": "0"
+        },
+        "lineHeight": {
+          "status": "review-required",
+          "value": null,
+          "raw": "100",
+          "reason": "퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        },
+        "questions": [
+          "줄높이 확인: 퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        ]
+      },
+      {
+        "name": "Header/22pt Semibold",
+        "raw": "Font(family: \"SF Pro\", style: Semibold, size: 22, weight: 590, lineHeight: 100, letterSpacing: 0)",
+        "fields": {
+          "family": "SF Pro",
+          "style": "Semibold",
+          "size": "22",
+          "weight": "590",
+          "lineHeight": "100",
+          "letterSpacing": "0"
+        },
+        "lineHeight": {
+          "status": "review-required",
+          "value": null,
+          "raw": "100",
+          "reason": "퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        },
+        "questions": [
+          "줄높이 확인: 퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다."
+        ]
+      }
+    ],
+    "questions": [
+      "대표 글꼴과 기존 --font-sans·--text-*·--leading-*에 연결할 스타일을 학생이 선택하세요. 원본 값과 역할을 별도 글자 계획에서 승인받기 전에는 적용하지 않습니다."
+    ]
+  },
+  "effects": {
+    "converted": [
+      {
+        "name": "elevation-03",
+        "raw": "Effect(type: DROP_SHADOW, color: #0000001F, offset: (0, 6), radius: 16, spread: 0)",
+        "value": "0px 6px 16px 0px #0000001F"
+      },
+      {
+        "name": "elevation-02",
+        "raw": "Effect(type: DROP_SHADOW, color: #00000030, offset: (0, 1), radius: 5, spread: -363)",
+        "value": "0px 1px 5px -363px #00000030"
+      },
+      {
+        "name": "elevation-01",
+        "raw": "Effect(type: DROP_SHADOW, color: #0000002B, offset: (0, 4), radius: 18, spread: 0)",
+        "value": "0px 4px 18px 0px #0000002B"
+      }
+    ],
+    "review": []
+  },
+  "gradients": [
+    {
+      "name": "icon-button-1",
+      "part": "icon-button",
+      "partName": "Icon button",
+      "node": "393:9507",
+      "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(4.1582 -4.3501e-7 4.3501e-7 56.542 -1.5819 40)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "uses": [
+        "Icon button=Default, Size=L, Type=Primary  (414:1896) · Text",
+        "Icon button=Default, Size=S, Type=Secondary (402:69) · Text",
+        "Icon button=Hover, Size=S, Type=Secondary (402:73) · Text",
+        "Icon button=Pressed, Size=S, Type=Secondary (402:77) · Text",
+        "Icon button=Focus, Size=S, Type=Secondary (402:81) · Text",
+        "Icon button=Disabled, Size=S, Type=Secondary (402:87) · Text"
+      ]
+    },
+    {
+      "name": "icon-button-2",
+      "part": "icon-button",
+      "partName": "Icon button",
+      "node": "393:9507",
+      "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-3.9578 4 -4 -486.33 39.77 0.0000061807)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "uses": [
+        "Icon button=Hover, Size=L, Type=Primary  (414:1903) · root",
+        "Icon button=Hover, Size=L, Type=Primary  (414:1903) · Text"
+      ]
+    },
+    {
+      "name": "icon-button-3",
+      "part": "icon-button",
+      "partName": "Icon button",
+      "node": "393:9507",
+      "value": "linear-gradient(90deg, rgb(235, 76, 96) 0%, rgb(235, 76, 96) 100%), url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-3.9578 4 -4 -486.33 39.77 0.0000061807)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\"), url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-3.9578 4 -4 -486.33 39.77 0.0000061807)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "uses": [
+        "Icon button=Pressed, Size=L, Type=Primary  (414:1910) · root",
+        "Icon button=Pressed, Size=L, Type=Primary  (414:1910) · Text"
+      ]
+    },
+    {
+      "name": "icon-button-4",
+      "part": "icon-button",
+      "partName": "Icon button",
+      "node": "393:9507",
+      "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(3.7424 -3.915e-7 3.915e-7 50.887 -1.4237 36)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "uses": [
+        "Icon button=Focus, Size=L, Type=Primary  (414:1924) · Text"
+      ]
+    },
+    {
+      "name": "icon-buttondefault-sizel-typeprimary-1",
+      "part": "icon-buttondefault-sizel-typeprimary",
+      "partName": "Icon button=Default, Size=L, Type=Primary ",
+      "node": "414:1896",
+      "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(4.1582 -4.3501e-7 4.3501e-7 56.542 -1.5819 40)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "uses": [
+        "Icon button=Default, Size=L, Type=Primary  (414:1896) · Text"
+      ]
+    },
+    {
+      "name": "card-1",
+      "part": "card",
+      "partName": "Card",
+      "node": "238:2378",
+      "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 325 51' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(33.785 -5.5463e-7 0.0000035344 72.091 -12.853 51)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "uses": [
+        "Card type= Reservation Card (238:2383) · gradient"
+      ]
+    },
+    {
+      "name": "primary-buttons-1",
+      "part": "primary-buttons",
+      "partName": "Primary Buttons",
+      "node": "238:2153",
+      "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 520 47' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-51.451 4.7 -52 -571.44 517.01 0.0000072623)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "uses": [
+        "State=Hover, Size=Full Width, Icon=Off (238:2154) · root"
+      ]
+    },
+    {
+      "name": "primary-buttons-2",
+      "part": "primary-buttons",
+      "partName": "Primary Buttons",
+      "node": "238:2153",
+      "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 91 48' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-9.0039 4.8 -9.1 -583.6 90.476 0.0000074169)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "uses": [
+        "State=Hover, Size=Small, Icon=Off (238:2156) · root"
+      ]
+    },
+    {
+      "name": "primary-buttons-3",
+      "part": "primary-buttons",
+      "partName": "Primary Buttons",
+      "node": "238:2153",
+      "value": "linear-gradient(90deg, rgb(235, 76, 96) 0%, rgb(235, 76, 96) 100%), url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 488 47' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-48.285 4.7 -48.8 -571.44 485.19 0.0000072623)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\"), url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 488 47' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-48.285 4.7 -48.8 -571.44 485.19 0.0000072623)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "uses": [
+        "State=Pressed, Size=Full Width, Icon=Off (238:2160) · root"
+      ]
+    },
+    {
+      "name": "primary-buttons-4",
+      "part": "primary-buttons",
+      "partName": "Primary Buttons",
+      "node": "238:2153",
+      "value": "linear-gradient(90deg, rgb(235, 76, 96) 0%, rgb(235, 76, 96) 100%), url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 91 48' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-9.0039 4.8 -9.1 -583.6 90.476 0.0000074169)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\"), url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 91 48' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-9.0039 4.8 -9.1 -583.6 90.476 0.0000074169)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "uses": [
+        "State=Pressed, Size=Small, Icon=Off (238:2162) · root"
+      ]
+    },
+    {
+      "name": "primary-buttons-5",
+      "part": "primary-buttons",
+      "partName": "Primary Buttons",
+      "node": "238:2153",
+      "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 520 47' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(54.056 -5.1113e-7 0.0000056551 66.436 -20.565 47)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "uses": [
+        "State=Default, Size=Full Width, Icon=Off (238:2164) · root",
+        "State=Focus, Size=Full Width, Icon=Off (238:2180) · Button"
+      ]
+    },
+    {
+      "name": "primary-buttons-6",
+      "part": "primary-buttons",
+      "partName": "Primary Buttons",
+      "node": "238:2153",
+      "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 91 48' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(9.4599 -5.2201e-7 9.8964e-7 67.85 -3.5989 48)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "uses": [
+        "State=Default, Size=Small, Icon=Off (238:2166) · root",
+        "State=Focus, Size=Small, Icon=Off (238:2183) · Button"
+      ]
+    }
+  ],
+  "raw": {
+    "Shade 02": "#222222",
+    "Neutral 07": "#717171",
+    "Shade 01": "#FFFFFF",
+    "Body Copy/16pt Semibold": "Font(family: \"SF Pro\", style: Semibold, size: 16, weight: 590, lineHeight: 100, letterSpacing: 0)",
+    "Gradient 03": ",",
+    "Body Copy/13pt Semibold": "Font(family: \"SF Pro\", style: Semibold, size: 13, weight: 590, lineHeight: 100, letterSpacing: 0)",
+    "Neutral 03": "#DDDDDD",
+    "Gradient 01": ",,",
+    "Gradient 02": "",
+    "Neutral 02": "#EBEBEB",
+    "Neutral 04": "#D3D3D3",
+    "Shade 02 - 5%": "#222222",
+    "Body Copy/12pt Semibold Underlined": "Font(family: \"SF Pro\", style: Semibold, size: 12, weight: 590, lineHeight: 100, letterSpacing: 0)",
+    "Body Copy/14pt Semibold": "Font(family: \"SF Pro\", style: Semibold, size: 14, weight: 590, lineHeight: 100, letterSpacing: 0)",
+    "Link": "#004CC4",
+    "Body Copy/12pt Regular": "Font(family: \"SF Pro\", style: Regular, size: 12, weight: 400, lineHeight: 100, letterSpacing: 0)",
+    "Mirco Text/10pt Semibold": "Font(family: \"SF Pro\", style: Semibold, size: 10, weight: 590, lineHeight: 100, letterSpacing: 0)",
+    "Body Copy/12pt Semibold": "Font(family: \"SF Pro\", style: Semibold, size: 12, weight: 590, lineHeight: 100, letterSpacing: 0)",
+    "Body Copy/13pt Regular": "Font(family: \"SF Pro\", style: Regular, size: 13, weight: 400, lineHeight: 100, letterSpacing: 0)",
+    "Body Copy/14pt Regular": "Font(family: \"SF Pro\", style: Regular, size: 14, weight: 400, lineHeight: 100, letterSpacing: 0)",
+    "Body Copy/16pt Regular": "Font(family: \"SF Pro\", style: Regular, size: 16, weight: 400, lineHeight: 100, letterSpacing: 0)",
+    "Body Copy/16pt Regular Underlined": "Font(family: \"SF Pro\", style: Regular, size: 16, weight: 400, lineHeight: 100, letterSpacing: 0)",
+    "Body Copy/18pt Regular": "Font(family: \"SF Pro\", style: Regular, size: 18, weight: 400, lineHeight: 24, letterSpacing: 0)",
+    "Body Copy/18pt Medium": "Font(family: \"SF Pro\", style: Medium, size: 18, weight: 510, lineHeight: 24, letterSpacing: 0)",
+    "Body Copy/18pt Semibold": "Font(family: \"SF Pro\", style: Semibold, size: 18, weight: 590, lineHeight: 100, letterSpacing: 0)",
+    "Header/22pt Regular": "Font(family: \"SF Pro\", style: Regular, size: 22, weight: 400, lineHeight: 100, letterSpacing: 0)",
+    "Header/22pt Semibold": "Font(family: \"SF Pro\", style: Semibold, size: 22, weight: 590, lineHeight: 100, letterSpacing: 0)",
+    "Shade 02 - 30%": "#222222",
+    "Discounts": "#008A05",
+    "Accent 02": "#D03660",
+    "Accent 01": "#F6D7DF",
+    "Error 01": "#FEF8F6",
+    "Error 02": "#C13515",
+    "Primary 01": "#F6475F",
+    "Primary 02": "#FF385C",
+    "Neutral 05": "#C2C2C2",
+    "Neutral 06": "#B0B0B0",
+    "Neutral 08": "#5E5E5E",
+    "Neutral 01": "#F7F7F7",
+    "Elevation 03": "Effect(type: DROP_SHADOW, color: #0000001F, offset: (0, 6), radius: 16, spread: 0)",
+    "Elevation 02": "Effect(type: DROP_SHADOW, color: #00000030, offset: (0, 1), radius: 5, spread: -363)",
+    "Elevation 01": "Effect(type: DROP_SHADOW, color: #0000002B, offset: (0, 4), radius: 18, spread: 0)"
+  }
+}

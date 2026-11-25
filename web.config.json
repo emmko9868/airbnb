@@ -1,0 +1,1 @@
+{"schema_version":2,"title":"Airbnb","locale":"en","pages":[{"name":"Home","path":"/","entry":"my-website/pages/HomePage.tsx"}],"routes":["/"]}

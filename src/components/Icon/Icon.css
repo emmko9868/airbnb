@@ -1,0 +1,23 @@
+.ds-icon {
+  display: inline-block;
+  flex: none;
+}
+
+.ds-icon--sm {
+  width: calc(var(--spacing) * 3);
+  height: calc(var(--spacing) * 3);
+}
+
+.ds-icon--md {
+  width: calc(var(--spacing) * 4);
+  height: calc(var(--spacing) * 4);
+}
+
+.ds-icon--lg {
+  width: calc(var(--spacing) * 5);
+  height: calc(var(--spacing) * 5);
+}
+
+.ds-icon--inherit { color: inherit; }
+.ds-icon--default { color: var(--color-text); }
+.ds-icon--secondary { color: var(--color-text-secondary); }

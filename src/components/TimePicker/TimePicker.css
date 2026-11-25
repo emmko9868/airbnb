@@ -1,0 +1,65 @@
+/* TimePicker — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-timepicker {
+  display: inline-flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 1.5);
+  font-family: var(--font-sans);
+  color: var(--color-text);
+}
+
+.ds-timepicker__set { margin: 0; padding: 0; border: 0; }
+
+.ds-timepicker__legend {
+  padding: 0;
+  margin-bottom: calc(var(--spacing) * 1.5);
+  font-size: var(--text-body-2);
+  color: var(--color-text-secondary);
+}
+
+/* 표기 체계를 화면에 드러낸다 — "9:00" 만으로는 오전·오후를 알 수 없다. */
+.ds-timepicker__format { color: var(--color-text-disabled); }
+
+.ds-timepicker__row {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 1);
+}
+
+.ds-timepicker__select {
+  min-height: calc(var(--spacing) * 8);
+  padding: calc(var(--spacing) * 1) calc(var(--spacing) * 2);
+  border: var(--border-width-thin) solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-raised);
+  color: inherit;
+  font: inherit;
+  font-size: var(--text-body-2);
+  font-variant-numeric: tabular-nums;
+}
+
+.ds-timepicker__select:hover:not(:disabled) { border-color: var(--color-primary); }
+
+.ds-timepicker__select:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.ds-timepicker__select:disabled {
+  color: var(--color-text-disabled);
+  background: var(--color-surface);
+  cursor: not-allowed;
+}
+
+.ds-timepicker__set[aria-invalid="true"] .ds-timepicker__select {
+  border-color: var(--color-danger);
+  border-width: var(--border-width-thick);
+}
+
+.ds-timepicker__colon { color: var(--color-text-secondary); }
+.ds-timepicker__select--meridiem { margin-left: calc(var(--spacing) * 2); }
+
+.ds-timepicker__help { font-size: var(--text-body-2); color: var(--color-text-secondary); }
+.ds-timepicker__help--invalid { color: var(--color-danger); }
+
+.ds-timepicker--sm .ds-timepicker__select { min-height: calc(var(--spacing) * 7); }
+.ds-timepicker--lg .ds-timepicker__select { min-height: calc(var(--spacing) * 10); }

@@ -1,0 +1,86 @@
+/* Notification — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-notification {
+  display: flex;
+  align-items: flex-start;
+  gap: calc(var(--spacing) * 3);
+  padding: calc(var(--spacing) * 3) calc(var(--spacing) * 4);
+  border: var(--border-width-thin) solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-raised);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: var(--text-body-2);
+  line-height: var(--leading-normal);
+}
+
+.ds-notification--toast {
+  box-shadow: var(--shadow-md);
+  border-color: transparent;
+}
+
+/* 표식은 색과 **모양**을 함께 바꾼다. 색맹 사용자도 구분할 수 있어야 한다. */
+.ds-notification__mark {
+  flex: 0 0 auto;
+  width: calc(var(--spacing) * 3);
+  height: calc(var(--spacing) * 3);
+  margin-top: calc(var(--spacing) * 0.5);
+  background: var(--color-info);
+  border-radius: var(--radius-full);
+}
+
+.ds-notification--info .ds-notification__mark { background: var(--color-info); }
+.ds-notification--success .ds-notification__mark { background: var(--color-success); }
+.ds-notification--warning .ds-notification__mark {
+  background: var(--color-warning);
+  border-radius: var(--radius-sm);
+}
+.ds-notification--danger .ds-notification__mark {
+  background: var(--color-danger);
+  border-radius: 0;
+  transform: rotate(45deg);
+}
+
+.ds-notification--info { border-left: calc(var(--spacing) * 0.75) solid var(--color-info); }
+.ds-notification--success { border-left: calc(var(--spacing) * 0.75) solid var(--color-success); }
+.ds-notification--warning { border-left: calc(var(--spacing) * 0.75) solid var(--color-warning); }
+.ds-notification--danger { border-left: calc(var(--spacing) * 0.75) solid var(--color-danger); }
+
+.ds-notification__body {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 1);
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.ds-notification__title {
+  margin: 0;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--text-body-1);
+}
+
+.ds-notification__text { color: var(--color-text-secondary); }
+
+.ds-notification__close {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(var(--spacing) * 7);
+  height: calc(var(--spacing) * 7);
+  margin: calc(var(--spacing) * -1) calc(var(--spacing) * -2) 0 0;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: background var(--duration-fast) var(--ease-standard);
+}
+
+.ds-notification__close:hover { background: var(--color-surface); color: var(--color-text); }
+
+.ds-notification__close:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}

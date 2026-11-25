@@ -1,0 +1,445 @@
+/* Card — semantic/layout tokens only. No primitives (G1). */
+
+.ds-card {
+  position: relative;
+  font-family: var(--font-sans);
+}
+
+/* ── Image area ── */
+.ds-card__image {
+  background: var(--color-image-placeholder);
+  border-radius: var(--radius-lg);
+}
+
+/* ── Heart (favorite) button ── */
+.ds-card__heart {
+  position: absolute;
+  top: calc(var(--spacing) * 4);
+  right: calc(var(--spacing) * 4);
+  width: calc(var(--spacing) * 6);
+  height: calc(var(--spacing) * 6);
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ds-card__heart:focus-visible {
+  outline: calc(var(--spacing) * 0.5) solid var(--color-primary);
+  outline-offset: calc(var(--spacing) * 0.5);
+  border-radius: var(--radius-full);
+}
+
+/* ── Info section ── */
+.ds-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+.ds-card__title {
+  font-size: var(--text-type-body-copy-14pt-semibold);
+  font-weight: var(--font-weight-type-body-copy-14pt-semibold);
+  color: var(--color-text);
+  margin: 0;
+}
+
+.ds-card__subtitle,
+.ds-card__dates {
+  font-size: var(--text-type-body-copy-14pt-regular);
+  font-weight: var(--font-weight-type-body-copy-14pt-regular);
+  color: var(--color-text-tertiary);
+  margin: 0;
+}
+
+/* ── Rating ── */
+.ds-card__rating {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing);
+  font-size: var(--text-type-body-copy-14pt-regular);
+  color: var(--color-text);
+}
+
+/* ── Price ── */
+.ds-card__price {
+  font-size: var(--text-type-body-copy-14pt-regular);
+  color: var(--color-text);
+  margin: 0;
+}
+
+.ds-card__price-strong {
+  font-weight: var(--font-weight-type-body-copy-14pt-semibold);
+}
+
+.ds-card__price-original {
+  text-decoration: line-through;
+  color: var(--color-text-tertiary);
+  font-size: var(--text-type-body-copy-14pt-regular);
+}
+
+/* ── Ellipses (image carousel indicator) ── */
+.ds-card__ellipses {
+  position: absolute;
+  bottom: calc(var(--spacing) * 3.5);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ── Default Card layout ── */
+.ds-card--default {
+  width: calc(var(--spacing) * 75.75);
+}
+
+.ds-card--default .ds-card__image {
+  width: calc(var(--spacing) * 75.75);
+  height: calc(var(--spacing) * 71.75);
+}
+
+.ds-card--default .ds-card__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: calc(var(--spacing) * 4);
+}
+
+.ds-card--default .ds-card__info {
+  gap: var(--spacing);
+}
+
+/* ── Sleep Card layout ── */
+.ds-card--sleep {
+  width: calc(var(--spacing) * 79.75);
+}
+
+.ds-card--sleep .ds-card__image {
+  width: calc(var(--spacing) * 79.75);
+  height: calc(var(--spacing) * 53);
+}
+
+.ds-card--sleep .ds-card__content {
+  padding-top: calc(var(--spacing) * 4);
+}
+
+.ds-card--sleep .ds-card__bedroom-title {
+  font-size: var(--text-type-body-copy-16pt-regular);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+  margin: 0;
+}
+
+.ds-card--sleep .ds-card__bed-info {
+  font-size: var(--text-type-body-copy-14pt-regular);
+  color: var(--color-text-tertiary);
+  margin: 0;
+}
+
+/* ── Reservation Card layout ── */
+.ds-card--reservation {
+  width: calc(var(--spacing) * 93.25);
+  background: var(--color-surface);
+  border: var(--border-width-thin) solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-elevation-03);
+  padding: calc(var(--spacing) * 6);
+}
+
+.ds-card--reservation .ds-card__price-header {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing);
+  margin-bottom: calc(var(--spacing) * 6);
+}
+
+.ds-card--reservation .ds-card__price-old {
+  font-size: var(--text-type-header-22pt-semibold);
+  font-weight: var(--font-weight-type-header-22pt-semibold);
+  color: var(--color-text-secondary);
+  text-decoration: line-through;
+}
+
+.ds-card--reservation .ds-card__price-new {
+  font-size: var(--text-type-header-22pt-semibold);
+  font-weight: var(--font-weight-type-header-22pt-semibold);
+  color: var(--color-text);
+}
+
+.ds-card--reservation .ds-card__price-unit {
+  font-size: var(--text-type-body-copy-16pt-regular);
+  color: var(--color-text);
+}
+
+.ds-card--reservation .ds-card__rating-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing);
+  margin-left: auto;
+}
+
+.ds-card--reservation .ds-card__dot {
+  width: calc(var(--spacing) * 0.5);
+  height: calc(var(--spacing) * 0.5);
+  border-radius: var(--radius-full);
+  background: var(--color-text);
+}
+
+.ds-card--reservation .ds-card__reviews {
+  font-size: var(--text-type-body-copy-14pt-regular);
+  color: var(--color-text-tertiary);
+}
+
+.ds-card--reservation .ds-card__date-fields {
+  display: flex;
+  border: var(--border-width-thick) solid var(--color-border-strong);
+  border-bottom: none;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.ds-card--reservation .ds-card__date-field {
+  flex: 1;
+  padding: calc(var(--spacing) * 3) calc(var(--spacing) * 4);
+}
+
+.ds-card--reservation .ds-card__date-field:first-child {
+  border-right: var(--border-width-thick) solid var(--color-border-strong);
+}
+
+.ds-card--reservation .ds-card__guests-field {
+  border: var(--border-width-thick) solid var(--color-border-strong);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  padding: calc(var(--spacing) * 3) calc(var(--spacing) * 4);
+}
+
+.ds-card--reservation .ds-card__date-label {
+  font-size: var(--text-type-mirco-text-10pt-semibold);
+  font-weight: var(--font-weight-type-mirco-text-10pt-semibold);
+  color: var(--color-text);
+  margin: 0 0 var(--spacing);
+}
+
+.ds-card--reservation .ds-card__date-value {
+  font-size: var(--text-type-body-copy-14pt-regular);
+  color: var(--color-text-tertiary);
+  margin: 0;
+}
+
+.ds-card--reservation .ds-card__reserve-btn {
+  margin-top: calc(var(--spacing) * 4);
+}
+
+.ds-card--reservation .ds-card__notice {
+  font-size: var(--text-type-body-copy-14pt-regular);
+  color: var(--color-text-tertiary);
+  text-align: center;
+  margin: calc(var(--spacing) * 4) 0 0;
+}
+
+.ds-card--reservation .ds-card__breakdown {
+  margin-top: calc(var(--spacing) * 6);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ds-card--reservation .ds-card__breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: calc(var(--spacing) * 2) 0;
+  font-size: var(--text-type-body-copy-16pt-regular);
+}
+
+.ds-card--reservation .ds-card__breakdown-label {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+.ds-card--reservation .ds-card__breakdown-value {
+  color: var(--color-text);
+}
+
+.ds-card--reservation .ds-card__breakdown-value--success {
+  color: var(--color-success);
+}
+
+.ds-card--reservation .ds-card__breakdown-total {
+  border-top: var(--border-width-thin) solid var(--color-border);
+  margin-top: calc(var(--spacing) * 2);
+  padding-top: calc(var(--spacing) * 4);
+  font-weight: var(--font-weight-type-body-copy-16pt-semibold);
+}
+
+/* ── Reservation Confirmation Card layout ── */
+.ds-card--confirmation {
+  width: calc(var(--spacing) * 119.25);
+  background: var(--color-surface);
+  border: var(--border-width-thin) solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-elevation-03);
+  padding: calc(var(--spacing) * 6);
+}
+
+.ds-card--confirmation .ds-card__header {
+  display: flex;
+  gap: calc(var(--spacing) * 3);
+}
+
+.ds-card--confirmation .ds-card__header-image {
+  width: calc(var(--spacing) * 31);
+  height: calc(var(--spacing) * 26.5);
+  background: var(--color-image-placeholder);
+  border-radius: var(--radius-lg);
+}
+
+.ds-card--confirmation .ds-card__header-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+.ds-card--confirmation .ds-card__header-type {
+  font-size: var(--text-type-body-copy-12pt-regular);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.ds-card--confirmation .ds-card__header-title {
+  font-size: var(--text-type-body-copy-14pt-regular);
+  color: var(--color-text);
+  margin: 0;
+}
+
+.ds-card--confirmation .ds-card__header-meta {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 2);
+  margin-top: calc(var(--spacing) * 2);
+  font-size: var(--text-type-body-copy-14pt-regular);
+}
+
+.ds-card--confirmation .ds-card__protection {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing);
+  padding: calc(var(--spacing) * 4) 0;
+  border-bottom: var(--border-width-thin) solid var(--color-border);
+  font-size: var(--text-type-body-copy-14pt-regular);
+  color: var(--color-text-tertiary);
+}
+
+.ds-card--confirmation .ds-card__price-details-title {
+  font-size: var(--text-type-header-22pt-semibold);
+  font-weight: var(--font-weight-type-header-22pt-semibold);
+  color: var(--color-text);
+  margin: calc(var(--spacing) * 4) 0;
+}
+
+.ds-card--confirmation .ds-card__breakdown {
+  border-top: var(--border-width-thin) solid var(--color-border);
+  padding-top: calc(var(--spacing) * 4);
+}
+
+.ds-card--confirmation .ds-card__breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  padding: calc(var(--spacing) * 2) 0;
+  font-size: var(--text-type-body-copy-16pt-regular);
+}
+
+.ds-card--confirmation .ds-card__breakdown-label {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+.ds-card--confirmation .ds-card__breakdown-total {
+  border-top: var(--border-width-thin) solid var(--color-border);
+  margin-top: calc(var(--spacing) * 2);
+  padding-top: calc(var(--spacing) * 4);
+  font-weight: var(--font-weight-type-body-copy-16pt-semibold);
+}
+
+/* ── Discount Card layout ── */
+.ds-card--discount {
+  width: calc(var(--spacing) * 81);
+}
+
+.ds-card--discount .ds-card__image {
+  width: calc(var(--spacing) * 81);
+  height: calc(var(--spacing) * 77);
+}
+
+.ds-card--discount .ds-card__badge {
+  position: absolute;
+  top: calc(var(--spacing) * 4);
+  left: calc(var(--spacing) * 4);
+  background: var(--color-surface);
+  padding: var(--spacing) calc(var(--spacing) * 2);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-type-body-copy-14pt-semibold);
+  font-weight: var(--font-weight-type-body-copy-14pt-semibold);
+  color: var(--color-text);
+}
+
+.ds-card--discount .ds-card__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: calc(var(--spacing) * 4);
+}
+
+.ds-card--discount .ds-card__price-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing);
+}
+
+/* ── Map Card layout ── */
+.ds-card--map {
+  width: calc(var(--spacing) * 81.75);
+  box-shadow: var(--shadow-elevation-03);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.ds-card--map .ds-card__image {
+  width: calc(var(--spacing) * 81.75);
+  height: calc(var(--spacing) * 52.75);
+  border-radius: 0;
+}
+
+.ds-card--map .ds-card__map-icon {
+  position: absolute;
+  top: calc(var(--spacing) * 4);
+  left: calc(var(--spacing) * 4);
+  width: calc(var(--spacing) * 6);
+  height: calc(var(--spacing) * 6);
+}
+
+.ds-card--map .ds-card__bottom {
+  background: var(--color-surface);
+  padding: calc(var(--spacing) * 4);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ds-card--map .ds-card__bottom-info {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 3);
+}
+
+.ds-card--map .ds-card__price-dates {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing);
+  font-size: var(--text-type-body-copy-14pt-regular);
+}
+
+.ds-card--map .ds-card__price-dates .ds-card__date-text {
+  color: var(--color-text-tertiary);
+}

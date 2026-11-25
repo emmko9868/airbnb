@@ -1,0 +1,45 @@
+/* Checkbox — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 2);
+  font-family: var(--font-sans);
+  font-size: var(--text-body-2);
+  line-height: var(--leading-normal);
+  color: var(--color-text);
+}
+
+/* 네이티브 상자를 그대로 쓰고 색만 토큰으로 맞춘다. 상자를 새로 그리면 고대비 모드에서 사라진다. */
+.ds-checkbox__field {
+  flex: none;
+  width: calc(var(--spacing) * 4);
+  height: calc(var(--spacing) * 4);
+  margin: 0;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.ds-checkbox__field:focus-visible {
+  outline: var(--border-width-thick) solid var(--color-primary);
+  outline-offset: var(--border-width-thick);
+}
+
+.ds-checkbox__label {
+  cursor: pointer;
+}
+
+.ds-checkbox__field:disabled,
+.ds-checkbox__field:disabled + .ds-checkbox__label {
+  color: var(--color-text-disabled);
+  cursor: not-allowed;
+}
+
+/* 오류는 색만이 아니라 테두리 선으로도 구분된다. */
+.ds-checkbox--invalid .ds-checkbox__field {
+  outline: var(--border-width-thin) solid var(--color-danger);
+  outline-offset: var(--border-width-thin);
+}
+
+.ds-checkbox--invalid .ds-checkbox__label {
+  color: var(--color-danger);
+}

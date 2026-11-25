@@ -1,0 +1,84 @@
+/* Loading — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-loading {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-size: var(--text-body-2);
+  color: var(--color-text-secondary);
+}
+
+.ds-loading__box {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--spacing) * 2);
+}
+
+.ds-loading__spinner {
+  width: calc(var(--spacing) * 10);
+  height: calc(var(--spacing) * 10);
+  animation: ds-loading-spin 900ms linear infinite;
+}
+
+.ds-loading--sm .ds-loading__spinner {
+  width: calc(var(--spacing) * 5);
+  height: calc(var(--spacing) * 5);
+}
+
+.ds-loading--lg .ds-loading__spinner {
+  width: calc(var(--spacing) * 16);
+  height: calc(var(--spacing) * 16);
+}
+
+.ds-loading__track,
+.ds-loading__arc {
+  fill: none;
+  stroke-width: 5;
+}
+
+.ds-loading__track {
+  stroke: var(--color-border);
+}
+
+.ds-loading__arc {
+  stroke: var(--color-primary);
+  stroke-linecap: round;
+  stroke-dasharray: 90 200;
+}
+
+/* 가림막. 뒤의 화면을 누를 수 없게 막고 가운데에 스피너를 띄운다. */
+.ds-loading--overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: var(--color-overlay);
+  color: var(--color-on-primary);
+}
+
+.ds-loading--overlay .ds-loading__track {
+  stroke: var(--color-surface);
+  opacity: 0.35;
+}
+
+.ds-loading__sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@keyframes ds-loading-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-loading__spinner {
+    animation-duration: 3s;
+  }
+}

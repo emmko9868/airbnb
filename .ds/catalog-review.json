@@ -1,0 +1,941 @@
+{
+  "schemaVersion": 1,
+  "components": {
+    "Navigation": {
+      "reviewVersion": 2,
+      "reviewer": "Emma",
+      "source": {
+        "kind": "figma",
+        "ref": "https://www.figma.com/design/zrqq2F92iVtCoxKzj4b8Pm/testing-Airbnb-UI-Kit--Community-?node-id=418-8282"
+      },
+      "scope": [
+        {
+          "props": {
+            "disabled": false
+          },
+          "states": [
+            "default",
+            "hover",
+            "focus"
+          ]
+        },
+        {
+          "props": {
+            "disabled": true
+          },
+          "states": [
+            "default",
+            "disabled"
+          ]
+        }
+      ],
+      "evidenceId": "Storybook: Default, WithActiveSection, SearchClick, Disabled, AllSections, TabNavigation; appearance:true, pointer:true, keyboard:true, disabled:true; ",
+      "reviewedAt": "2026-11-18T10:32:12.870Z",
+      "note": "",
+      "checklist": [
+        {
+          "id": "appearance",
+          "passed": true
+        },
+        {
+          "id": "pointer",
+          "passed": true
+        },
+        {
+          "id": "keyboard",
+          "passed": true
+        },
+        {
+          "id": "disabled",
+          "passed": true
+        }
+      ],
+      "examples": [
+        {
+          "story": "Default",
+          "file": "src/components/Navigation/Navigation.stories.tsx",
+          "props": {
+            "disabled": false
+          }
+        },
+        {
+          "story": "WithActiveSection",
+          "file": "src/components/Navigation/Navigation.stories.tsx",
+          "props": {
+            "disabled": false
+          }
+        },
+        {
+          "story": "SearchClick",
+          "file": "src/components/Navigation/Navigation.stories.tsx",
+          "props": {
+            "disabled": false
+          }
+        },
+        {
+          "story": "Disabled",
+          "file": "src/components/Navigation/Navigation.stories.tsx",
+          "props": {
+            "disabled": true
+          }
+        },
+        {
+          "story": "AllSections",
+          "file": "src/components/Navigation/Navigation.stories.tsx",
+          "props": {
+            "disabled": false
+          }
+        },
+        {
+          "story": "TabNavigation",
+          "file": "src/components/Navigation/Navigation.stories.tsx",
+          "props": {
+            "disabled": false
+          }
+        }
+      ],
+      "behavior": {
+        "decision": "approved",
+        "codeHash": "7d6716518f4ece5c158ca5ddde746c09a19dcdacdde2e953985a1f72b040dcd8",
+        "cssHash": "cf68331ec0fb13ec07f49a09c4a254167fc29da2858f096138f76e68d8757042",
+        "dependencyHash": "46420e41e0ef48b3a83d591c9b1237dea688ebde6250f08e1207346f503425de"
+      },
+      "visual": {
+        "decision": "approved",
+        "tokensHash": "bdd38527174fe00ec064c97b5c7b28e998943e59d88e253b7067c639631f297a"
+      }
+    },
+    "Button": {
+      "reviewVersion": 2,
+      "reviewer": "엠마",
+      "source": {
+        "kind": "figma",
+        "ref": "https://www.figma.com/design/zrqq2F92iVtCoxKzj4b8Pm/Airbnb-UI-Kit--Community-?node-id=238-2188&m=dev"
+      },
+      "scope": [
+        {
+          "props": {
+            "variant": "primary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          },
+          "states": [
+            "default",
+            "hover",
+            "active",
+            "focus"
+          ]
+        },
+        {
+          "props": {
+            "variant": "secondary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          },
+          "states": [
+            "default",
+            "hover",
+            "active",
+            "focus"
+          ]
+        },
+        {
+          "props": {
+            "variant": "secondary",
+            "size": "large",
+            "isLoading": true,
+            "fullWidth": false,
+            "type": "button"
+          },
+          "states": [
+            "default",
+            "hover",
+            "active",
+            "focus"
+          ]
+        },
+        {
+          "props": {
+            "variant": "secondary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "disabled": true,
+            "type": "button"
+          },
+          "states": [
+            "default",
+            "disabled"
+          ]
+        },
+        {
+          "props": {
+            "variant": "tertiary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          },
+          "states": [
+            "default",
+            "hover",
+            "active",
+            "focus"
+          ]
+        },
+        {
+          "props": {
+            "variant": "link",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          },
+          "states": [
+            "default",
+            "hover",
+            "active",
+            "focus"
+          ]
+        },
+        {
+          "props": {
+            "variant": "primary",
+            "size": "small",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          },
+          "states": [
+            "default",
+            "hover",
+            "active",
+            "focus"
+          ]
+        },
+        {
+          "props": {
+            "variant": "primary",
+            "size": "large",
+            "isLoading": true,
+            "fullWidth": false,
+            "type": "button"
+          },
+          "states": [
+            "default",
+            "hover",
+            "active",
+            "focus"
+          ]
+        },
+        {
+          "props": {
+            "variant": "primary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "disabled": true,
+            "type": "button"
+          },
+          "states": [
+            "default",
+            "disabled"
+          ]
+        },
+        {
+          "props": {
+            "variant": "primary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": true,
+            "type": "button"
+          },
+          "states": [
+            "default",
+            "hover",
+            "active",
+            "focus"
+          ]
+        },
+        {
+          "props": {
+            "variant": "primary",
+            "size": "small",
+            "isLoading": true,
+            "fullWidth": false,
+            "type": "button"
+          },
+          "states": [
+            "default",
+            "hover",
+            "active",
+            "focus"
+          ]
+        },
+        {
+          "props": {
+            "variant": "primary",
+            "size": "small",
+            "isLoading": false,
+            "fullWidth": false,
+            "disabled": true,
+            "type": "button"
+          },
+          "states": [
+            "default",
+            "disabled"
+          ]
+        },
+        {
+          "props": {
+            "variant": "secondary",
+            "size": "small",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          },
+          "states": [
+            "default",
+            "hover",
+            "active",
+            "focus"
+          ]
+        },
+        {
+          "props": {
+            "variant": "tertiary",
+            "size": "small",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          },
+          "states": [
+            "default",
+            "hover",
+            "active",
+            "focus"
+          ]
+        },
+        {
+          "props": {
+            "variant": "link",
+            "size": "small",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          },
+          "states": [
+            "default",
+            "hover",
+            "active",
+            "focus"
+          ]
+        }
+      ],
+      "evidenceId": "Storybook: Primary, Secondary, SecondaryWithIcon, SecondaryStates, SecondaryStates, SecondaryStates, Tertiary, Link, Small, Loading, Disabled, FullWidth, Variants, Variants, Variants, Variants, Sizes, Sizes, States, States, States, PrimaryStates, PrimaryStates, PrimaryStates, PrimaryStates, PrimaryStates, PrimaryStates, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix; appearance:true, pointer:true, keyboard:true, disabled:true; 예",
+      "reviewedAt": "2026-11-18T10:51:28.758Z",
+      "note": "예",
+      "checklist": [
+        {
+          "id": "appearance",
+          "passed": true
+        },
+        {
+          "id": "pointer",
+          "passed": true
+        },
+        {
+          "id": "keyboard",
+          "passed": true
+        },
+        {
+          "id": "disabled",
+          "passed": true
+        }
+      ],
+      "examples": [
+        {
+          "story": "Primary",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "primary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "Secondary",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "secondary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "SecondaryWithIcon",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "secondary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "SecondaryStates",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "secondary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "SecondaryStates",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "secondary",
+            "size": "large",
+            "isLoading": true,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "SecondaryStates",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "secondary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "disabled": true,
+            "type": "button"
+          }
+        },
+        {
+          "story": "Tertiary",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "tertiary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "Link",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "link",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "Small",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "primary",
+            "size": "small",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "Loading",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "primary",
+            "size": "large",
+            "isLoading": true,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "Disabled",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "primary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "disabled": true,
+            "type": "button"
+          }
+        },
+        {
+          "story": "FullWidth",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "primary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": true,
+            "type": "button"
+          }
+        },
+        {
+          "story": "Variants",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "primary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "Variants",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "secondary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "Variants",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "tertiary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "Variants",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "link",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "Sizes",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "primary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "Sizes",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "primary",
+            "size": "small",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "States",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "primary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "States",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "primary",
+            "size": "large",
+            "isLoading": true,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "States",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "primary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "disabled": true,
+            "type": "button"
+          }
+        },
+        {
+          "story": "PrimaryStates",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "primary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "PrimaryStates",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "primary",
+            "size": "large",
+            "isLoading": true,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "PrimaryStates",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "primary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "disabled": true,
+            "type": "button"
+          }
+        },
+        {
+          "story": "PrimaryStates",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "primary",
+            "size": "small",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "PrimaryStates",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "primary",
+            "size": "small",
+            "isLoading": true,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "PrimaryStates",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "primary",
+            "size": "small",
+            "isLoading": false,
+            "fullWidth": false,
+            "disabled": true,
+            "type": "button"
+          }
+        },
+        {
+          "story": "Matrix",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "primary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "Matrix",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "primary",
+            "size": "small",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "Matrix",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "secondary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "Matrix",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "secondary",
+            "size": "small",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "Matrix",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "tertiary",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "Matrix",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "tertiary",
+            "size": "small",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "Matrix",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "link",
+            "size": "large",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        },
+        {
+          "story": "Matrix",
+          "file": "src/components/Button/Button.stories.tsx",
+          "props": {
+            "variant": "link",
+            "size": "small",
+            "isLoading": false,
+            "fullWidth": false,
+            "type": "button"
+          }
+        }
+      ],
+      "behavior": {
+        "decision": "approved",
+        "codeHash": "dbcfb61736274cb53ac8cf094759b3b79e10dbc20a79a9a039f42e1a61242ac3",
+        "cssHash": "c8edb182b6dbabafa6474b3fb47637a8aae1541d09fc4bec2c4cc95913f031af",
+        "dependencyHash": "46420e41e0ef48b3a83d591c9b1237dea688ebde6250f08e1207346f503425de"
+      },
+      "visual": {
+        "decision": "approved",
+        "tokensHash": "bdd38527174fe00ec064c97b5c7b28e998943e59d88e253b7067c639631f297a"
+      }
+    },
+    "Card": {
+      "reviewVersion": 2,
+      "reviewer": "엠마",
+      "source": {
+        "kind": "figma",
+        "ref": "https://www.figma.com/design/zrqq2F92iVtCoxKzj4b8Pm/testing-Airbnb-UI-Kit--Community-?node-id=238-2378"
+      },
+      "scope": [
+        {
+          "props": {
+            "cardType": "default",
+            "isFavorite": false
+          },
+          "states": [
+            "default",
+            "focus"
+          ]
+        },
+        {
+          "props": {
+            "cardType": "default",
+            "isFavorite": true
+          },
+          "states": [
+            "default",
+            "focus"
+          ]
+        },
+        {
+          "props": {
+            "cardType": "sleep",
+            "isFavorite": false
+          },
+          "states": [
+            "default",
+            "focus"
+          ]
+        },
+        {
+          "props": {
+            "cardType": "reservation",
+            "isFavorite": false
+          },
+          "states": [
+            "default",
+            "focus"
+          ]
+        },
+        {
+          "props": {
+            "cardType": "confirmation",
+            "isFavorite": false
+          },
+          "states": [
+            "default",
+            "focus"
+          ]
+        },
+        {
+          "props": {
+            "cardType": "discount",
+            "isFavorite": false
+          },
+          "states": [
+            "default",
+            "focus"
+          ]
+        },
+        {
+          "props": {
+            "cardType": "map",
+            "isFavorite": false
+          },
+          "states": [
+            "default",
+            "focus"
+          ]
+        }
+      ],
+      "evidenceId": "Storybook: Default, DefaultFavorite, Sleep, Reservation, Confirmation, Discount, Map, WithCallbacks, ReservationWithCallbacks; appearance:true, keyboard:true; 예",
+      "reviewedAt": "2026-11-18T10:52:07.811Z",
+      "note": "예",
+      "checklist": [
+        {
+          "id": "appearance",
+          "passed": true
+        },
+        {
+          "id": "keyboard",
+          "passed": true
+        }
+      ],
+      "examples": [
+        {
+          "story": "Default",
+          "file": "src/components/Card/Card.stories.tsx",
+          "props": {
+            "cardType": "default",
+            "isFavorite": false
+          }
+        },
+        {
+          "story": "DefaultFavorite",
+          "file": "src/components/Card/Card.stories.tsx",
+          "props": {
+            "cardType": "default",
+            "isFavorite": true
+          }
+        },
+        {
+          "story": "Sleep",
+          "file": "src/components/Card/Card.stories.tsx",
+          "props": {
+            "cardType": "sleep",
+            "isFavorite": false
+          }
+        },
+        {
+          "story": "Reservation",
+          "file": "src/components/Card/Card.stories.tsx",
+          "props": {
+            "cardType": "reservation",
+            "isFavorite": false
+          }
+        },
+        {
+          "story": "Confirmation",
+          "file": "src/components/Card/Card.stories.tsx",
+          "props": {
+            "cardType": "confirmation",
+            "isFavorite": false
+          }
+        },
+        {
+          "story": "Discount",
+          "file": "src/components/Card/Card.stories.tsx",
+          "props": {
+            "cardType": "discount",
+            "isFavorite": false
+          }
+        },
+        {
+          "story": "Map",
+          "file": "src/components/Card/Card.stories.tsx",
+          "props": {
+            "cardType": "map",
+            "isFavorite": false
+          }
+        },
+        {
+          "story": "WithCallbacks",
+          "file": "src/components/Card/Card.stories.tsx",
+          "props": {
+            "cardType": "default",
+            "isFavorite": false
+          }
+        },
+        {
+          "story": "ReservationWithCallbacks",
+          "file": "src/components/Card/Card.stories.tsx",
+          "props": {
+            "cardType": "reservation",
+            "isFavorite": false
+          }
+        }
+      ],
+      "behavior": {
+        "decision": "approved",
+        "codeHash": "e4ad6979546eefb9140a1cd3d8bdf96feef99d167a8b7229bd978c96d329278f",
+        "cssHash": "7b3f1b6e47ed077d13ab83ab98f66abab5ad087eb4c82e0f1773c83f0ac98f12",
+        "dependencyHash": "f101720fc98b0fada89e4605bba45ddb548ca8cdee6ca4be2cbf1049edf0d780"
+      },
+      "visual": {
+        "decision": "approved",
+        "tokensHash": "bdd38527174fe00ec064c97b5c7b28e998943e59d88e253b7067c639631f297a"
+      }
+    }
+  }
+}

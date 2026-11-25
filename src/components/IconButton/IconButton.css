@@ -1,0 +1,125 @@
+/* IconButton — semantic/layout tokens only. No primitive references (G1). */
+
+.ds-iconbutton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background var(--duration-fast) var(--ease-standard),
+              border-color var(--duration-fast) var(--ease-standard);
+}
+
+/* Sizes */
+.ds-iconbutton--L {
+  width: calc(var(--spacing) * 10);
+  height: calc(var(--spacing) * 10);
+}
+
+.ds-iconbutton--S {
+  width: calc(var(--spacing) * 7);
+  height: calc(var(--spacing) * 7);
+}
+
+/* Icon container — no background, just holds the icon */
+.ds-iconbutton__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(var(--spacing) * 5);
+  height: calc(var(--spacing) * 5);
+}
+
+.ds-iconbutton--S .ds-iconbutton__icon {
+  width: calc(var(--spacing) * 3);
+  height: calc(var(--spacing) * 3);
+}
+
+.ds-iconbutton__icon > svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ============================================
+   PRIMARY VARIANT — white icon on pink gradient
+   ============================================ */
+
+/* Primary Default — gradient background */
+.ds-iconbutton--primary {
+  background-image: var(--gradient-icon-buttondefault-sizel-typeprimary-1);
+  background-size: cover;
+  color: var(--color-on-primary);
+}
+
+/* Primary Hover */
+.ds-iconbutton--primary:hover:not(:disabled) {
+  background-image: var(--gradient-icon-button-2);
+}
+
+/* Primary Pressed */
+.ds-iconbutton--primary:active:not(:disabled) {
+  background-image: var(--gradient-icon-button-3);
+}
+
+/* Primary Disabled */
+.ds-iconbutton--primary:disabled {
+  background: var(--color-neutral-01);
+  background-image: none;
+  color: var(--color-text-disabled);
+  cursor: not-allowed;
+}
+
+/* Primary Focus */
+.ds-iconbutton--primary:focus-visible:not(:disabled) {
+  border-color: var(--color-text);
+  background-image: var(--gradient-icon-button-4);
+}
+
+/* ============================================
+   SECONDARY VARIANT — dark icon on gray
+   ============================================ */
+
+/* Secondary Default */
+.ds-iconbutton--secondary {
+  background: var(--color-border);
+  color: var(--color-text);
+}
+
+/* Secondary Hover */
+.ds-iconbutton--secondary:hover:not(:disabled) {
+  background: var(--color-neutral-04);
+}
+
+/* Secondary Pressed */
+.ds-iconbutton--secondary:active:not(:disabled) {
+  background: var(--color-text-disabled);
+}
+
+/* Secondary Disabled */
+.ds-iconbutton--secondary:disabled {
+  background: var(--color-neutral-01);
+  color: var(--color-text-disabled);
+  cursor: not-allowed;
+}
+
+/* ============================================
+   FOCUS STATE (both variants)
+   ============================================ */
+
+.ds-iconbutton:focus-visible {
+  outline: none;
+}
+
+/* Focus expands button by 2px on each side (44×44 for L, 32×32 for S) */
+.ds-iconbutton--L:focus-visible {
+  width: calc(var(--spacing) * 11);
+  height: calc(var(--spacing) * 11);
+}
+
+.ds-iconbutton--S:focus-visible {
+  width: calc(var(--spacing) * 8);
+  height: calc(var(--spacing) * 8);
+}

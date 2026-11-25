@@ -1,0 +1,50 @@
+/* Textarea — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-textarea {
+  display: inline-flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 1.5);
+  font-family: var(--font-sans);
+  color: var(--color-text);
+}
+
+.ds-textarea__label {
+  font-size: var(--text-body-2);
+  color: var(--color-text-secondary);
+}
+
+.ds-textarea__field {
+  min-height: calc(var(--spacing) * 8);
+  padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3);
+  border: var(--border-width-thin) solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-raised);
+  color: inherit;
+  font: inherit;
+  font-size: var(--text-body-2);
+}
+
+.ds-textarea__field:hover:not(:disabled) { border-color: var(--color-primary); }
+
+.ds-textarea__field:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.ds-textarea__field:disabled {
+  color: var(--color-text-disabled);
+  background: var(--color-surface);
+  cursor: not-allowed;
+}
+
+/* 오류는 색만이 아니라 테두리 두께로도 구분된다. */
+.ds-textarea__field[aria-invalid="true"] {
+  border-color: var(--color-danger);
+  border-width: var(--border-width-thick);
+}
+
+.ds-textarea__help { font-size: var(--text-body-2); color: var(--color-text-secondary); }
+.ds-textarea__helpInvalid, .ds-textarea__help--invalid { font-size: var(--text-body-2); color: var(--color-danger); }
+
+.ds-textarea--sm .ds-textarea__field { min-height: calc(var(--spacing) * 7); }
+.ds-textarea--md .ds-textarea__field { min-height: calc(var(--spacing) * 8); }
+.ds-textarea--lg .ds-textarea__field { min-height: calc(var(--spacing) * 10); }

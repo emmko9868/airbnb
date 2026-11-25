@@ -1,0 +1,980 @@
+{
+ "schema_version": "1.0",
+ "file_key": "SAMPLEKEY123",
+ "file_name": "Design System (샘플)",
+ "scope": "file",
+ "data": {
+  "variables": {
+   "collections": [
+    {
+     "id": "c1",
+     "name": "Primitive",
+     "modes": [
+      {
+       "id": "m1",
+       "name": "Mode 1"
+      }
+     ],
+     "variables": [
+      {
+       "id": "v-blue/50",
+       "name": "blue/50",
+       "type": "COLOR",
+       "value": "#E5EFFF",
+       "description": ""
+      },
+      {
+       "id": "v-blue/100",
+       "name": "blue/100",
+       "type": "COLOR",
+       "value": "#B7D4FF",
+       "description": ""
+      },
+      {
+       "id": "v-blue/200",
+       "name": "blue/200",
+       "type": "COLOR",
+       "value": "#8AB8FF",
+       "description": ""
+      },
+      {
+       "id": "v-blue/300",
+       "name": "blue/300",
+       "type": "COLOR",
+       "value": "#5C9DFF",
+       "description": ""
+      },
+      {
+       "id": "v-blue/400",
+       "name": "blue/400",
+       "type": "COLOR",
+       "value": "#2E81FF",
+       "description": ""
+      },
+      {
+       "id": "v-blue/500",
+       "name": "blue/500",
+       "type": "COLOR",
+       "value": "#0066FF",
+       "description": ""
+      },
+      {
+       "id": "v-blue/600",
+       "name": "blue/600",
+       "type": "COLOR",
+       "value": "#0056D6",
+       "description": ""
+      },
+      {
+       "id": "v-blue/700",
+       "name": "blue/700",
+       "type": "COLOR",
+       "value": "#0045AD",
+       "description": ""
+      },
+      {
+       "id": "v-blue/800",
+       "name": "blue/800",
+       "type": "COLOR",
+       "value": "#003585",
+       "description": ""
+      },
+      {
+       "id": "v-blue/900",
+       "name": "blue/900",
+       "type": "COLOR",
+       "value": "#00255C",
+       "description": ""
+      },
+      {
+       "id": "v-gray/50",
+       "name": "gray/50",
+       "type": "COLOR",
+       "value": "#FAFAFA",
+       "description": ""
+      },
+      {
+       "id": "v-gray/100",
+       "name": "gray/100",
+       "type": "COLOR",
+       "value": "#F4F4F5",
+       "description": ""
+      },
+      {
+       "id": "v-gray/200",
+       "name": "gray/200",
+       "type": "COLOR",
+       "value": "#E4E4E7",
+       "description": ""
+      },
+      {
+       "id": "v-gray/300",
+       "name": "gray/300",
+       "type": "COLOR",
+       "value": "#D4D4D8",
+       "description": ""
+      },
+      {
+       "id": "v-gray/400",
+       "name": "gray/400",
+       "type": "COLOR",
+       "value": "#A1A1AA",
+       "description": ""
+      },
+      {
+       "id": "v-gray/500",
+       "name": "gray/500",
+       "type": "COLOR",
+       "value": "#71717A",
+       "description": ""
+      },
+      {
+       "id": "v-gray/600",
+       "name": "gray/600",
+       "type": "COLOR",
+       "value": "#52525B",
+       "description": ""
+      },
+      {
+       "id": "v-gray/700",
+       "name": "gray/700",
+       "type": "COLOR",
+       "value": "#3F3F46",
+       "description": ""
+      },
+      {
+       "id": "v-gray/800",
+       "name": "gray/800",
+       "type": "COLOR",
+       "value": "#27272A",
+       "description": ""
+      },
+      {
+       "id": "v-gray/900",
+       "name": "gray/900",
+       "type": "COLOR",
+       "value": "#18181B",
+       "description": ""
+      },
+      {
+       "id": "v-red/400",
+       "name": "red/400",
+       "type": "COLOR",
+       "value": "#F87171",
+       "description": ""
+      },
+      {
+       "id": "v-red/500",
+       "name": "red/500",
+       "type": "COLOR",
+       "value": "#EF4444",
+       "description": ""
+      },
+      {
+       "id": "v-red/600",
+       "name": "red/600",
+       "type": "COLOR",
+       "value": "#DC2626",
+       "description": ""
+      },
+      {
+       "id": "v-green/400",
+       "name": "green/400",
+       "type": "COLOR",
+       "value": "#4ADE80",
+       "description": ""
+      },
+      {
+       "id": "v-green/500",
+       "name": "green/500",
+       "type": "COLOR",
+       "value": "#22C55E",
+       "description": ""
+      },
+      {
+       "id": "v-green/600",
+       "name": "green/600",
+       "type": "COLOR",
+       "value": "#16A34A",
+       "description": ""
+      },
+      {
+       "id": "v-amber/400",
+       "name": "amber/400",
+       "type": "COLOR",
+       "value": "#FBBF24",
+       "description": ""
+      },
+      {
+       "id": "v-amber/500",
+       "name": "amber/500",
+       "type": "COLOR",
+       "value": "#F59E0B",
+       "description": ""
+      },
+      {
+       "id": "v-amber/600",
+       "name": "amber/600",
+       "type": "COLOR",
+       "value": "#D97706",
+       "description": ""
+      }
+     ]
+    },
+    {
+     "id": "c2",
+     "name": "Layout",
+     "modes": [
+      {
+       "id": "m2",
+       "name": "Mode 1"
+      }
+     ],
+     "variables": [
+      {
+       "id": "r1",
+       "name": "radius/md",
+       "type": "FLOAT",
+       "value": 8
+      },
+      {
+       "id": "r2",
+       "name": "radius/lg",
+       "type": "FLOAT",
+       "value": 12
+      },
+      {
+       "id": "s1",
+       "name": "spacing/base",
+       "type": "FLOAT",
+       "value": 4
+      },
+      {
+       "id": "b1",
+       "name": "border/width/thin",
+       "type": "FLOAT",
+       "value": 1
+      }
+     ]
+    }
+   ]
+  },
+  "styles": {
+   "paint": [],
+   "text": [],
+   "effect": [],
+   "grid": []
+  },
+  "components": [
+   {
+    "id": "0:4856",
+    "node_id": "0:4856",
+    "type": "COMPONENT_SET",
+    "name": "Button",
+    "page_name": "컴포넌트 정리",
+    "description": "A button that runs the main action. Use only one Primary button per screen.",
+    "property_definitions": {
+     "Type": {
+      "variantOptions": [
+       "Primary",
+       "Secondary",
+       "Outline",
+       "Tertiary"
+      ],
+      "type": "VARIANT",
+      "defaultValue": "Primary"
+     },
+     "Size": {
+      "variantOptions": [
+       "L",
+       "M",
+       "S"
+      ],
+      "type": "VARIANT",
+      "defaultValue": "M"
+     },
+     "State": {
+      "variantOptions": [
+       "Default",
+       "Hover",
+       "Pressed",
+       "Disabled"
+      ],
+      "type": "VARIANT"
+     },
+     "Label#1:1": {
+      "type": "TEXT",
+      "defaultValue": "Button"
+     },
+     "Has icon#1:2": {
+      "type": "BOOLEAN",
+      "defaultValue": false
+     }
+    }
+   },
+   {
+    "id": "0:5200",
+    "node_id": "0:5200",
+    "type": "COMPONENT_SET",
+    "name": "Badge",
+    "page_name": "컴포넌트 정리",
+    "description": "",
+    "property_definitions": {
+     "Tone": {
+      "variantOptions": [
+       "Neutral",
+       "Info",
+       "Success",
+       "Warning",
+       "Danger"
+      ],
+      "type": "VARIANT",
+      "defaultValue": "Neutral"
+     },
+     "Label#2:1": {
+      "type": "TEXT",
+      "defaultValue": "Badge"
+     }
+    }
+   },
+   {
+    "id": "0:5400",
+    "node_id": "0:5400",
+    "type": "COMPONENT",
+    "name": "Card",
+    "page_name": "컴포넌트 정리",
+    "description": "A surface that groups related content.",
+    "property_definitions": {}
+   },
+   {
+    "id": "c3",
+    "node_id": "c3",
+    "type": "COMPONENT",
+    "name": "Type=Primary, Size=L, State=Default",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Primary",
+     "Size": "L",
+     "State": "Default"
+    }
+   },
+   {
+    "id": "c4",
+    "node_id": "c4",
+    "type": "COMPONENT",
+    "name": "Type=Primary, Size=L, State=Hover",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Primary",
+     "Size": "L",
+     "State": "Hover"
+    }
+   },
+   {
+    "id": "c5",
+    "node_id": "c5",
+    "type": "COMPONENT",
+    "name": "Type=Primary, Size=L, State=Pressed",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Primary",
+     "Size": "L",
+     "State": "Pressed"
+    }
+   },
+   {
+    "id": "c6",
+    "node_id": "c6",
+    "type": "COMPONENT",
+    "name": "Type=Primary, Size=L, State=Disabled",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Primary",
+     "Size": "L",
+     "State": "Disabled"
+    }
+   },
+   {
+    "id": "c7",
+    "node_id": "c7",
+    "type": "COMPONENT",
+    "name": "Type=Primary, Size=M, State=Default",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Primary",
+     "Size": "M",
+     "State": "Default"
+    }
+   },
+   {
+    "id": "c8",
+    "node_id": "c8",
+    "type": "COMPONENT",
+    "name": "Type=Primary, Size=M, State=Hover",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Primary",
+     "Size": "M",
+     "State": "Hover"
+    }
+   },
+   {
+    "id": "c9",
+    "node_id": "c9",
+    "type": "COMPONENT",
+    "name": "Type=Primary, Size=M, State=Pressed",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Primary",
+     "Size": "M",
+     "State": "Pressed"
+    }
+   },
+   {
+    "id": "c10",
+    "node_id": "c10",
+    "type": "COMPONENT",
+    "name": "Type=Primary, Size=M, State=Disabled",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Primary",
+     "Size": "M",
+     "State": "Disabled"
+    }
+   },
+   {
+    "id": "c11",
+    "node_id": "c11",
+    "type": "COMPONENT",
+    "name": "Type=Primary, Size=S, State=Default",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Primary",
+     "Size": "S",
+     "State": "Default"
+    }
+   },
+   {
+    "id": "c12",
+    "node_id": "c12",
+    "type": "COMPONENT",
+    "name": "Type=Primary, Size=S, State=Hover",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Primary",
+     "Size": "S",
+     "State": "Hover"
+    }
+   },
+   {
+    "id": "c13",
+    "node_id": "c13",
+    "type": "COMPONENT",
+    "name": "Type=Primary, Size=S, State=Pressed",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Primary",
+     "Size": "S",
+     "State": "Pressed"
+    }
+   },
+   {
+    "id": "c14",
+    "node_id": "c14",
+    "type": "COMPONENT",
+    "name": "Type=Primary, Size=S, State=Disabled",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Primary",
+     "Size": "S",
+     "State": "Disabled"
+    }
+   },
+   {
+    "id": "c15",
+    "node_id": "c15",
+    "type": "COMPONENT",
+    "name": "Type=Secondary, Size=L, State=Default",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Secondary",
+     "Size": "L",
+     "State": "Default"
+    }
+   },
+   {
+    "id": "c16",
+    "node_id": "c16",
+    "type": "COMPONENT",
+    "name": "Type=Secondary, Size=L, State=Hover",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Secondary",
+     "Size": "L",
+     "State": "Hover"
+    }
+   },
+   {
+    "id": "c17",
+    "node_id": "c17",
+    "type": "COMPONENT",
+    "name": "Type=Secondary, Size=L, State=Pressed",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Secondary",
+     "Size": "L",
+     "State": "Pressed"
+    }
+   },
+   {
+    "id": "c18",
+    "node_id": "c18",
+    "type": "COMPONENT",
+    "name": "Type=Secondary, Size=L, State=Disabled",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Secondary",
+     "Size": "L",
+     "State": "Disabled"
+    }
+   },
+   {
+    "id": "c19",
+    "node_id": "c19",
+    "type": "COMPONENT",
+    "name": "Type=Secondary, Size=M, State=Default",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Secondary",
+     "Size": "M",
+     "State": "Default"
+    }
+   },
+   {
+    "id": "c20",
+    "node_id": "c20",
+    "type": "COMPONENT",
+    "name": "Type=Secondary, Size=M, State=Hover",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Secondary",
+     "Size": "M",
+     "State": "Hover"
+    }
+   },
+   {
+    "id": "c21",
+    "node_id": "c21",
+    "type": "COMPONENT",
+    "name": "Type=Secondary, Size=M, State=Pressed",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Secondary",
+     "Size": "M",
+     "State": "Pressed"
+    }
+   },
+   {
+    "id": "c22",
+    "node_id": "c22",
+    "type": "COMPONENT",
+    "name": "Type=Secondary, Size=M, State=Disabled",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Secondary",
+     "Size": "M",
+     "State": "Disabled"
+    }
+   },
+   {
+    "id": "c23",
+    "node_id": "c23",
+    "type": "COMPONENT",
+    "name": "Type=Secondary, Size=S, State=Default",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Secondary",
+     "Size": "S",
+     "State": "Default"
+    }
+   },
+   {
+    "id": "c24",
+    "node_id": "c24",
+    "type": "COMPONENT",
+    "name": "Type=Secondary, Size=S, State=Hover",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Secondary",
+     "Size": "S",
+     "State": "Hover"
+    }
+   },
+   {
+    "id": "c25",
+    "node_id": "c25",
+    "type": "COMPONENT",
+    "name": "Type=Secondary, Size=S, State=Pressed",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Secondary",
+     "Size": "S",
+     "State": "Pressed"
+    }
+   },
+   {
+    "id": "c26",
+    "node_id": "c26",
+    "type": "COMPONENT",
+    "name": "Type=Secondary, Size=S, State=Disabled",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Secondary",
+     "Size": "S",
+     "State": "Disabled"
+    }
+   },
+   {
+    "id": "c27",
+    "node_id": "c27",
+    "type": "COMPONENT",
+    "name": "Type=Outline, Size=L, State=Default",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Outline",
+     "Size": "L",
+     "State": "Default"
+    }
+   },
+   {
+    "id": "c28",
+    "node_id": "c28",
+    "type": "COMPONENT",
+    "name": "Type=Outline, Size=L, State=Hover",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Outline",
+     "Size": "L",
+     "State": "Hover"
+    }
+   },
+   {
+    "id": "c29",
+    "node_id": "c29",
+    "type": "COMPONENT",
+    "name": "Type=Outline, Size=L, State=Pressed",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Outline",
+     "Size": "L",
+     "State": "Pressed"
+    }
+   },
+   {
+    "id": "c30",
+    "node_id": "c30",
+    "type": "COMPONENT",
+    "name": "Type=Outline, Size=L, State=Disabled",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Outline",
+     "Size": "L",
+     "State": "Disabled"
+    }
+   },
+   {
+    "id": "c31",
+    "node_id": "c31",
+    "type": "COMPONENT",
+    "name": "Type=Outline, Size=M, State=Default",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Outline",
+     "Size": "M",
+     "State": "Default"
+    }
+   },
+   {
+    "id": "c32",
+    "node_id": "c32",
+    "type": "COMPONENT",
+    "name": "Type=Outline, Size=M, State=Hover",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Outline",
+     "Size": "M",
+     "State": "Hover"
+    }
+   },
+   {
+    "id": "c33",
+    "node_id": "c33",
+    "type": "COMPONENT",
+    "name": "Type=Outline, Size=M, State=Pressed",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Outline",
+     "Size": "M",
+     "State": "Pressed"
+    }
+   },
+   {
+    "id": "c34",
+    "node_id": "c34",
+    "type": "COMPONENT",
+    "name": "Type=Outline, Size=M, State=Disabled",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Outline",
+     "Size": "M",
+     "State": "Disabled"
+    }
+   },
+   {
+    "id": "c35",
+    "node_id": "c35",
+    "type": "COMPONENT",
+    "name": "Type=Outline, Size=S, State=Default",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Outline",
+     "Size": "S",
+     "State": "Default"
+    }
+   },
+   {
+    "id": "c36",
+    "node_id": "c36",
+    "type": "COMPONENT",
+    "name": "Type=Outline, Size=S, State=Hover",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Outline",
+     "Size": "S",
+     "State": "Hover"
+    }
+   },
+   {
+    "id": "c37",
+    "node_id": "c37",
+    "type": "COMPONENT",
+    "name": "Type=Outline, Size=S, State=Pressed",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Outline",
+     "Size": "S",
+     "State": "Pressed"
+    }
+   },
+   {
+    "id": "c38",
+    "node_id": "c38",
+    "type": "COMPONENT",
+    "name": "Type=Outline, Size=S, State=Disabled",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Outline",
+     "Size": "S",
+     "State": "Disabled"
+    }
+   },
+   {
+    "id": "c39",
+    "node_id": "c39",
+    "type": "COMPONENT",
+    "name": "Type=Tertiary, Size=L, State=Default",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Tertiary",
+     "Size": "L",
+     "State": "Default"
+    }
+   },
+   {
+    "id": "c40",
+    "node_id": "c40",
+    "type": "COMPONENT",
+    "name": "Type=Tertiary, Size=L, State=Hover",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Tertiary",
+     "Size": "L",
+     "State": "Hover"
+    }
+   },
+   {
+    "id": "c41",
+    "node_id": "c41",
+    "type": "COMPONENT",
+    "name": "Type=Tertiary, Size=L, State=Pressed",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Tertiary",
+     "Size": "L",
+     "State": "Pressed"
+    }
+   },
+   {
+    "id": "c42",
+    "node_id": "c42",
+    "type": "COMPONENT",
+    "name": "Type=Tertiary, Size=L, State=Disabled",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Tertiary",
+     "Size": "L",
+     "State": "Disabled"
+    }
+   },
+   {
+    "id": "c43",
+    "node_id": "c43",
+    "type": "COMPONENT",
+    "name": "Type=Tertiary, Size=M, State=Default",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Tertiary",
+     "Size": "M",
+     "State": "Default"
+    }
+   },
+   {
+    "id": "c44",
+    "node_id": "c44",
+    "type": "COMPONENT",
+    "name": "Type=Tertiary, Size=M, State=Hover",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Tertiary",
+     "Size": "M",
+     "State": "Hover"
+    }
+   },
+   {
+    "id": "c45",
+    "node_id": "c45",
+    "type": "COMPONENT",
+    "name": "Type=Tertiary, Size=M, State=Pressed",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Tertiary",
+     "Size": "M",
+     "State": "Pressed"
+    }
+   },
+   {
+    "id": "c46",
+    "node_id": "c46",
+    "type": "COMPONENT",
+    "name": "Type=Tertiary, Size=M, State=Disabled",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Tertiary",
+     "Size": "M",
+     "State": "Disabled"
+    }
+   },
+   {
+    "id": "c47",
+    "node_id": "c47",
+    "type": "COMPONENT",
+    "name": "Type=Tertiary, Size=S, State=Default",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Tertiary",
+     "Size": "S",
+     "State": "Default"
+    }
+   },
+   {
+    "id": "c48",
+    "node_id": "c48",
+    "type": "COMPONENT",
+    "name": "Type=Tertiary, Size=S, State=Hover",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Tertiary",
+     "Size": "S",
+     "State": "Hover"
+    }
+   },
+   {
+    "id": "c49",
+    "node_id": "c49",
+    "type": "COMPONENT",
+    "name": "Type=Tertiary, Size=S, State=Pressed",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Tertiary",
+     "Size": "S",
+     "State": "Pressed"
+    }
+   },
+   {
+    "id": "c50",
+    "node_id": "c50",
+    "type": "COMPONENT",
+    "name": "Type=Tertiary, Size=S, State=Disabled",
+    "component_set_id": "0:4856",
+    "variant_properties": {
+     "Type": "Tertiary",
+     "Size": "S",
+     "State": "Disabled"
+    }
+   },
+   {
+    "id": "b51",
+    "node_id": "b51",
+    "type": "COMPONENT",
+    "name": "Tone=Neutral",
+    "component_set_id": "0:5200",
+    "variant_properties": {
+     "Tone": "Neutral"
+    }
+   },
+   {
+    "id": "b52",
+    "node_id": "b52",
+    "type": "COMPONENT",
+    "name": "Tone=Info",
+    "component_set_id": "0:5200",
+    "variant_properties": {
+     "Tone": "Info"
+    }
+   },
+   {
+    "id": "b53",
+    "node_id": "b53",
+    "type": "COMPONENT",
+    "name": "Tone=Success",
+    "component_set_id": "0:5200",
+    "variant_properties": {
+     "Tone": "Success"
+    }
+   },
+   {
+    "id": "b54",
+    "node_id": "b54",
+    "type": "COMPONENT",
+    "name": "Tone=Warning",
+    "component_set_id": "0:5200",
+    "variant_properties": {
+     "Tone": "Warning"
+    }
+   },
+   {
+    "id": "b55",
+    "node_id": "b55",
+    "type": "COMPONENT",
+    "name": "Tone=Danger",
+    "component_set_id": "0:5200",
+    "variant_properties": {
+     "Tone": "Danger"
+    }
+   }
+  ],
+  "assets": [],
+  "warnings": [],
+  "summary": {}
+ }
+}

@@ -1,0 +1,208 @@
+{
+  "$comment": "컴포넌트 분류 체계. vibe-design-starterkit 의 Vibe Dictionary v0.4 Part 1(기본 컴포넌트)을 기준으로 삼고, components.baseline.json(IBM Carbon 유래)의 어휘를 보강했다. Figma 에서 읽히는 것만 남겼다 — 모션·스크롤 패턴(Part 2)은 Figma 컴포넌트로 안 잡힌다.",
+  "$source": "Apple HIG · Google Material · NN/g · WCAG/WAI-ARIA (Vibe Dictionary v0.4 경유)",
+  "$usage": "이름 매칭으로 분류한다. 자기 팀 목록으로 통째로 바꿔도 된다 — 커버리지 표가 그대로 따라간다.",
+  "categories": [
+    {
+      "name": "Typography",
+      "items": [
+        "Blockquote",
+        "Caption",
+        "Code",
+        "Heading",
+        "Kbd",
+        "Label",
+        "Link",
+        "List",
+        "Paragraph",
+        "Text"
+      ]
+    },
+    {
+      "name": "Container",
+      "items": [
+        "Accordion",
+        "AspectRatio",
+        "Box",
+        "Collapse",
+        "Collapsible",
+        "Divider",
+        "OptionsTile",
+        "Panel",
+        "ScrollArea",
+        "Separator",
+        "Space"
+      ]
+    },
+    {
+      "name": "Card",
+      "items": [
+        "BentoCard",
+        "Card",
+        "Item",
+        "MediaCard",
+        "Tile"
+      ]
+    },
+    {
+      "name": "Media",
+      "items": [
+        "Avatar",
+        "Carousel",
+        "Gallery",
+        "Icon",
+        "Image",
+        "Lightbox",
+        "QRCode",
+        "Thumbnail",
+        "Video"
+      ]
+    },
+    {
+      "name": "Data Display",
+      "items": [
+        "AISkeleton",
+        "Badge",
+        "BigNumber",
+        "Calendar",
+        "Chart",
+        "Chip",
+        "CodeSnippet",
+        "ContainedList",
+        "DataTable",
+        "Empty",
+        "IconIndicator",
+        "InlineLoading",
+        "Loading",
+        "Meter",
+        "Progress",
+        "ShapeIndicator",
+        "Skeleton",
+        "Spinner",
+        "Statistic",
+        "StructuredList",
+        "Table",
+        "Tag",
+        "Timeline",
+        "Tree"
+      ]
+    },
+    {
+      "name": "In-page Navigation",
+      "items": [
+        "Anchor",
+        "Breadcrumb",
+        "ContentSwitcher",
+        "Pagination",
+        "ProgressIndicator",
+        "SegmentedControl",
+        "Stepper",
+        "Steps",
+        "Tabs",
+        "ToggleGroup"
+      ]
+    },
+    {
+      "name": "Input & Control",
+      "items": [
+        "Attachment",
+        "Button",
+        "ButtonGroup",
+        "Checkbox",
+        "ColorPicker",
+        "Combobox",
+        "DatePicker",
+        "DateRangePicker",
+        "Dropdown",
+        "EditInPlace",
+        "ExpandableSearch",
+        "Field",
+        "FileUploader",
+        "Form",
+        "IconButton",
+        "Input",
+        "InputGroup",
+        "InputOTP",
+        "MenuButton",
+        "NativeSelect",
+        "PasswordInput",
+        "Radio",
+        "RadioGroup",
+        "Rating",
+        "Search",
+        "Select",
+        "Slider",
+        "SplitButton",
+        "Switch",
+        "Textarea",
+        "TimePicker",
+        "Toggle",
+        "Upload"
+      ]
+    },
+    {
+      "name": "Layout",
+      "items": [
+        "BentoGrid",
+        "Container",
+        "Flex",
+        "Grid",
+        "Layout",
+        "Masonry",
+        "Resizable",
+        "SplitScreen",
+        "Splitter",
+        "Stack"
+      ]
+    },
+    {
+      "name": "Overlay & Feedback",
+      "items": [
+        "Alert",
+        "AlertDialog",
+        "Banner",
+        "Coachmark",
+        "Command",
+        "ContextMenu",
+        "Dialog",
+        "Drawer",
+        "DropdownMenu",
+        "FullPageError",
+        "Guidebanner",
+        "HoverCard",
+        "InterstitialScreen",
+        "Modal",
+        "Notification",
+        "NotificationsPanel",
+        "Popover",
+        "Sheet",
+        "SidePanel",
+        "Snackbar",
+        "Sonner",
+        "Tearsheet",
+        "Toast",
+        "Toggletip",
+        "Tooltip",
+        "Tour"
+      ]
+    },
+    {
+      "name": "Navigation (Global)",
+      "items": [
+        "AppBar",
+        "BottomNavigation",
+        "CommandPalette",
+        "Dock",
+        "Footer",
+        "Header",
+        "Menu",
+        "Menubar",
+        "Navbar",
+        "NavigationMenu",
+        "PageHeader",
+        "Sidebar",
+        "UIShell"
+      ]
+    }
+  ]
+}

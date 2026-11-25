@@ -1,0 +1,84 @@
+/* NumberInput — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-numberinput {
+  display: inline-flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 1.5);
+  font-family: var(--font-sans);
+  color: var(--color-text);
+}
+
+.ds-numberinput__label { font-size: var(--text-body-2); color: var(--color-text-secondary); }
+
+.ds-numberinput__row {
+  display: flex;
+  align-items: stretch;
+  border: var(--border-width-thin) solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-raised);
+  overflow: hidden;
+}
+
+.ds-numberinput__row:focus-within {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.ds-numberinput__field {
+  width: calc(var(--spacing) * 24);
+  min-height: calc(var(--spacing) * 8);
+  padding: calc(var(--spacing) * 1) calc(var(--spacing) * 3);
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: var(--text-body-2);
+  font-variant-numeric: tabular-nums;
+}
+
+.ds-numberinput__field:focus { outline: none; }
+
+/* 브라우저 기본 스피너는 숨기고 우리 버튼을 쓴다 — 기본은 너무 작고 이름을 못 붙인다. */
+.ds-numberinput__field::-webkit-inner-spin-button,
+.ds-numberinput__field::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+.ds-numberinput__field { appearance: textfield; }
+
+.ds-numberinput__steppers {
+  display: flex;
+  flex-direction: column;
+  border-left: var(--border-width-thin) solid var(--color-border);
+}
+
+.ds-numberinput__step {
+  flex: 1 1 0;
+  width: calc(var(--spacing) * 7);
+  border: 0;
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  font-size: 9px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.ds-numberinput__step + .ds-numberinput__step { border-top: var(--border-width-thin) solid var(--color-border); }
+.ds-numberinput__step:hover:not(:disabled) { background: var(--color-surface-raised); color: var(--color-primary); }
+
+.ds-numberinput__step:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+}
+
+.ds-numberinput__step:disabled { color: var(--color-text-disabled); cursor: not-allowed; }
+
+.ds-numberinput__row:has(.ds-numberinput__field[aria-invalid="true"]) {
+  border-color: var(--color-danger);
+  border-width: var(--border-width-thick);
+}
+
+.ds-numberinput__help { font-size: var(--text-body-2); color: var(--color-text-secondary); }
+.ds-numberinput__help--invalid { color: var(--color-danger); }
+
+.ds-numberinput--sm .ds-numberinput__field { min-height: calc(var(--spacing) * 7); }
+.ds-numberinput--lg .ds-numberinput__field { min-height: calc(var(--spacing) * 10); }

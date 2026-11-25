@@ -1,0 +1,168 @@
+/* Button — semantic/layout tokens only. No primitive references (G1). */
+.ds-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--spacing) * 2);
+  border: var(--border-width-thin) solid transparent;
+  font-family: var(--font-type-body-copy-16pt-semibold);
+  font-weight: var(--font-weight-type-body-copy-16pt-semibold);
+  line-height: 1;
+  cursor: pointer;
+  transition: background var(--duration-fast) var(--ease-standard),
+              border-color var(--duration-fast) var(--ease-standard),
+              color var(--duration-fast) var(--ease-standard);
+}
+
+/* Sizes */
+.ds-button--large {
+  min-height: calc(var(--spacing) * 12);
+  padding: calc(var(--spacing) * 3) calc(var(--spacing) * 6);
+  font-size: var(--text-type-body-copy-16pt-semibold);
+}
+
+.ds-button--small {
+  min-height: calc(var(--spacing) * 8);
+  padding: calc(var(--spacing) * 2) calc(var(--spacing) * 4);
+  font-size: var(--text-type-body-copy-14pt-semibold);
+}
+
+/* Full width */
+.ds-button--full-width {
+  width: 100%;
+}
+
+/* Primary variant — solid Airbnb pink from 245:3518 */
+.ds-button--primary {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  border-radius: var(--radius-md);
+}
+
+.ds-button--primary:hover:not(:disabled) {
+  background-color: var(--color-primary-hover);
+}
+
+.ds-button--primary:active:not(:disabled) {
+  background-color: var(--color-primary-active);
+}
+
+.ds-button--primary:focus-visible {
+  border-color: var(--color-neutral-04);
+}
+
+/* Secondary variant — outlined button */
+.ds-button--secondary {
+  background: transparent;
+  border-color: var(--color-border);
+  color: var(--color-text);
+  border-radius: var(--radius-md);
+}
+
+.ds-button--secondary:hover:not(:disabled) {
+  background: var(--color-neutral-01);
+}
+
+.ds-button--secondary:active:not(:disabled) {
+  background: var(--color-neutral-02);
+}
+
+.ds-button--secondary:focus-visible {
+  border-color: var(--color-border-strong);
+}
+
+/* Tertiary variant — dark filled button */
+.ds-button--tertiary {
+  background: var(--color-text);
+  color: var(--color-on-primary);
+  border-radius: var(--radius-md);
+}
+
+.ds-button--tertiary:hover:not(:disabled) {
+  background: var(--color-shade-02-5);
+}
+
+.ds-button--tertiary:active:not(:disabled) {
+  background: var(--color-shade-02-30);
+}
+
+/* Link variant */
+.ds-button--link {
+  background: transparent;
+  border-color: transparent;
+  color: var(--color-info);
+  padding: 0;
+  min-height: auto;
+  font-size: var(--text-type-body-copy-16pt-regular);
+  font-weight: var(--font-weight-type-body-copy-16pt-regular);
+  text-decoration: underline;
+  border-radius: 0;
+}
+
+.ds-button--link:hover:not(:disabled) {
+  color: var(--color-primary-hover);
+}
+
+.ds-button--link:active:not(:disabled) {
+  color: var(--color-primary-active);
+}
+
+/* Focus state */
+.ds-button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Disabled state */
+.ds-button:disabled,
+.ds-button[aria-disabled="true"] {
+  color: var(--color-text-disabled);
+  cursor: not-allowed;
+  background: var(--color-neutral-02);
+  border-color: transparent;
+}
+
+.ds-button--link:disabled {
+  background: transparent;
+  text-decoration: none;
+}
+
+.ds-button--tertiary:disabled {
+  background: var(--color-border);
+  color: var(--color-on-primary);
+  border-color: transparent;
+}
+
+/* Loading state */
+.ds-button--loading {
+  cursor: wait;
+}
+
+.ds-button__spinner {
+  width: calc(var(--spacing) * 4);
+  height: calc(var(--spacing) * 4);
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: ds-button-spin 0.8s linear infinite;
+}
+
+.ds-button__ellipsis {
+  display: block;
+  flex-shrink: 0;
+}
+
+@keyframes ds-button-spin {
+  to { transform: rotate(360deg); }
+}
+
+.ds-button__content {
+  display: inline-flex;
+  align-items: center;
+}
+
+.ds-button__icon {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}

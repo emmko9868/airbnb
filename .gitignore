@@ -1,0 +1,14 @@
+node_modules/
+storybook-static/
+var/
+*.log
+.DS_Store
+# .ds/ 는 커밋한다 — lock/provenance 가 리뷰의 근거다.
+
+# 생성 산출물은 커밋한다 (리뷰의 근거). node_modules 만 제외.
+
+.env*
+!.env.example
+.vercel/
+dist/
+.claude/settings.local.json

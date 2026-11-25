@@ -1,0 +1,93 @@
+/* Toggle — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 2);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-family: var(--font-sans);
+  font-size: var(--text-body-2);
+  line-height: var(--leading-normal);
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.ds-toggle__track {
+  position: relative;
+  flex: none;
+  width: calc(var(--spacing) * 12);
+  height: calc(var(--spacing) * 6);
+  border-radius: var(--radius-full);
+  background: var(--color-border-strong);
+  transition: background var(--duration-fast) var(--ease-standard);
+}
+
+.ds-toggle__thumb {
+  position: absolute;
+  top: calc(var(--spacing) * 0.75);
+  left: calc(var(--spacing) * 0.75);
+  width: calc(var(--spacing) * 4.5);
+  height: calc(var(--spacing) * 4.5);
+  border-radius: var(--radius-full);
+  background: var(--color-surface-raised);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--duration-fast) var(--ease-standard);
+}
+
+.ds-toggle--checked .ds-toggle__track {
+  background: var(--color-primary);
+}
+
+.ds-toggle--checked .ds-toggle__thumb {
+  transform: translateX(calc(var(--spacing) * 6));
+}
+
+.ds-toggle--sm .ds-toggle__track {
+  width: calc(var(--spacing) * 8);
+  height: calc(var(--spacing) * 4);
+}
+
+.ds-toggle--sm .ds-toggle__thumb {
+  top: calc(var(--spacing) * 0.5);
+  left: calc(var(--spacing) * 0.5);
+  width: calc(var(--spacing) * 3);
+  height: calc(var(--spacing) * 3);
+}
+
+.ds-toggle--sm.ds-toggle--checked .ds-toggle__thumb {
+  transform: translateX(calc(var(--spacing) * 4));
+}
+
+.ds-toggle:hover:not(:disabled) .ds-toggle__track {
+  background: var(--color-text-secondary);
+}
+
+.ds-toggle--checked:hover:not(:disabled) .ds-toggle__track {
+  background: var(--color-primary-hover);
+}
+
+.ds-toggle:focus-visible {
+  outline: none;
+}
+
+.ds-toggle:focus-visible .ds-toggle__track {
+  outline: var(--border-width-thick) solid var(--color-primary);
+  outline-offset: var(--border-width-thick);
+}
+
+.ds-toggle:disabled {
+  color: var(--color-text-disabled);
+  cursor: not-allowed;
+}
+
+.ds-toggle:disabled .ds-toggle__track {
+  background: var(--color-border);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-toggle__track,
+  .ds-toggle__thumb {
+    transition: none;
+  }
+}

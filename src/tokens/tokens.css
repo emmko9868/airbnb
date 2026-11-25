@@ -1,0 +1,155 @@
+/**
+ * 생성 파일 — 직접 고치지 마세요. `pnpm ds:tokens` 로 다시 만듭니다.
+ * 학생 팔레트: 선언/승인 역할만 적용
+ * Figma: 학생 Figma / source 14e6422ce7c7baa9
+ */
+@import "tailwindcss";
+
+@theme {
+  /* ── Primitive — hexcode 에 이름을 붙인 층. 화면에서 직접 쓰지 않는다. ── */
+  --color-accent-01: #F6D7DF;
+  --color-accent-02: #D03660;
+  --color-discounts: #008A05;
+  --color-error-01: #FEF8F6;
+  --color-error-02: #C13515;
+  --color-link: #004CC4;
+  --color-neutral-01: #F7F7F7;
+  --color-neutral-02: #EBEBEB;
+  --color-neutral-03: #DDDDDD;
+  --color-neutral-04: #D3D3D3;
+  --color-neutral-05: #C2C2C2;
+  --color-neutral-06: #B0B0B0;
+  --color-neutral-07: #717171;
+  --color-neutral-08: #5E5E5E;
+  --color-primary-01: #F6475F;
+  --color-primary-02: #FF385C;
+  --color-shade-01: #FFFFFF;
+  --color-shade-02: #222222;
+  --color-shade-02-5: #222222;
+  --color-shade-02-30: #222222;
+
+  /* ── Semantic — 역할. 컴포넌트는 이 층만 참조한다. ── */
+  --color-bg: var(--color-shade-01);  /* human 1.00 */
+  --color-border: var(--color-neutral-03);  /* human 1.00 */
+  --color-border-strong: var(--color-neutral-07);  /* human 1.00 */
+  --color-danger: var(--color-error-02);  /* human 1.00 */
+  --color-image-placeholder: var(--color-neutral-06);  /* human 1.00 */
+  --color-info: var(--color-link);  /* human 1.00 */
+  --color-on-primary: var(--color-shade-01);  /* human 1.00 */
+  --color-primary: var(--color-primary-02);  /* human 1.00 */
+  --color-primary-active: var(--color-accent-02);  /* human 1.00 */
+  --color-primary-hover: var(--color-accent-02);  /* human 1.00 */
+  --color-success: var(--color-discounts);  /* human 1.00 */
+  --color-surface: var(--color-shade-01);  /* human 1.00 */
+  --color-surface-raised: var(--color-shade-01);  /* human 1.00 */
+  --color-text: var(--color-shade-02);  /* human 1.00 */
+  --color-text-disabled: var(--color-neutral-05);  /* human 1.00 */
+  --color-text-secondary: var(--color-neutral-07);  /* human 1.00 */
+  --color-text-tertiary: var(--color-neutral-08);  /* human 1.00 */
+  --color-warning: var(--color-primary-01);  /* human 1.00 */
+
+  /* ── Layout — 간격·모서리·그림자·모션. ── */
+  --border-width-thick: 2px;  /* synthesized 0.30 */
+  --border-width-thin: 1px;
+  --color-overlay: rgb(0 0 0 / 45%);  /* synthesized 0.30 */
+  --duration-fast: 150ms;  /* synthesized 0.30 */
+  --duration-normal: 250ms;  /* synthesized 0.30 */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);  /* synthesized 0.30 */
+  --font-sans: system-ui, -apple-system, 'Segoe UI', sans-serif;  /* synthesized 0.30 */
+  --font-type-body-copy-12pt-regular: "SF Pro", var(--font-sans);
+  --font-type-body-copy-12pt-semibold: "SF Pro", var(--font-sans);
+  --font-type-body-copy-12pt-semibold-underlined: "SF Pro", var(--font-sans);
+  --font-type-body-copy-13pt-regular: "SF Pro", var(--font-sans);
+  --font-type-body-copy-13pt-semibold: "SF Pro", var(--font-sans);
+  --font-type-body-copy-14pt-regular: "SF Pro", var(--font-sans);
+  --font-type-body-copy-14pt-semibold: "SF Pro", var(--font-sans);
+  --font-type-body-copy-16pt-regular: "SF Pro", var(--font-sans);
+  --font-type-body-copy-16pt-regular-underlined: "SF Pro", var(--font-sans);
+  --font-type-body-copy-16pt-semibold: "SF Pro", var(--font-sans);
+  --font-type-body-copy-18pt-medium: "SF Pro", var(--font-sans);
+  --font-type-body-copy-18pt-regular: "SF Pro", var(--font-sans);
+  --font-type-body-copy-18pt-semibold: "SF Pro", var(--font-sans);
+  --font-type-header-22pt-regular: "SF Pro", var(--font-sans);
+  --font-type-header-22pt-semibold: "SF Pro", var(--font-sans);
+  --font-type-mirco-text-10pt-semibold: "SF Pro", var(--font-sans);
+  --text-body-1: 16px;  /* synthesized 0.30 */
+  --text-body-2: 14px;  /* synthesized 0.30 */
+  --text-title: 20px;  /* synthesized 0.30 */
+  --text-type-body-copy-12pt-regular: 12px;
+  --text-type-body-copy-12pt-semibold: 12px;
+  --text-type-body-copy-12pt-semibold-underlined: 12px;
+  --text-type-body-copy-13pt-regular: 13px;
+  --text-type-body-copy-13pt-semibold: 13px;
+  --text-type-body-copy-14pt-regular: 14px;
+  --text-type-body-copy-14pt-semibold: 14px;
+  --text-type-body-copy-16pt-regular: 16px;
+  --text-type-body-copy-16pt-regular-underlined: 16px;
+  --text-type-body-copy-16pt-semibold: 16px;
+  --text-type-body-copy-18pt-medium: 18px;
+  --text-type-body-copy-18pt-regular: 18px;
+  --text-type-body-copy-18pt-semibold: 18px;
+  --text-type-header-22pt-regular: 22px;
+  --text-type-header-22pt-semibold: 22px;
+  --text-type-mirco-text-10pt-semibold: 10px;
+  --font-weight-bold: 700;  /* synthesized 0.30 */
+  --font-weight-medium: 500;  /* synthesized 0.30 */
+  --font-weight-regular: 400;  /* synthesized 0.30 */
+  --font-weight-type-body-copy-12pt-regular: 400;
+  --font-weight-type-body-copy-12pt-semibold: 590;
+  --font-weight-type-body-copy-12pt-semibold-underlined: 590;
+  --font-weight-type-body-copy-13pt-regular: 400;
+  --font-weight-type-body-copy-13pt-semibold: 590;
+  --font-weight-type-body-copy-14pt-regular: 400;
+  --font-weight-type-body-copy-14pt-semibold: 590;
+  --font-weight-type-body-copy-16pt-regular: 400;
+  --font-weight-type-body-copy-16pt-regular-underlined: 400;
+  --font-weight-type-body-copy-16pt-semibold: 590;
+  --font-weight-type-body-copy-18pt-medium: 510;
+  --font-weight-type-body-copy-18pt-regular: 400;
+  --font-weight-type-body-copy-18pt-semibold: 590;
+  --font-weight-type-header-22pt-regular: 400;
+  --font-weight-type-header-22pt-semibold: 590;
+  --font-weight-type-mirco-text-10pt-semibold: 590;
+  --gradient-card-1: url("data:image/svg+xml;utf8,<svg viewBox='0 0 325 51' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(33.785 -5.5463e-7 0.0000035344 72.091 -12.853 51)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>");
+  --gradient-icon-button-1: url("data:image/svg+xml;utf8,<svg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(4.1582 -4.3501e-7 4.3501e-7 56.542 -1.5819 40)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>");
+  --gradient-icon-button-2: url("data:image/svg+xml;utf8,<svg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-3.9578 4 -4 -486.33 39.77 0.0000061807)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>");
+  --gradient-icon-button-3: linear-gradient(90deg, rgb(235, 76, 96) 0%, rgb(235, 76, 96) 100%), url("data:image/svg+xml;utf8,<svg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-3.9578 4 -4 -486.33 39.77 0.0000061807)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>"), url("data:image/svg+xml;utf8,<svg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-3.9578 4 -4 -486.33 39.77 0.0000061807)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>");
+  --gradient-icon-button-4: url("data:image/svg+xml;utf8,<svg viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(3.7424 -3.915e-7 3.915e-7 50.887 -1.4237 36)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>");
+  --gradient-icon-buttondefault-sizel-typeprimary-1: url("data:image/svg+xml;utf8,<svg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(4.1582 -4.3501e-7 4.3501e-7 56.542 -1.5819 40)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>");
+  --gradient-primary-buttons-1: url("data:image/svg+xml;utf8,<svg viewBox='0 0 520 47' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-51.451 4.7 -52 -571.44 517.01 0.0000072623)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>");
+  --gradient-primary-buttons-2: url("data:image/svg+xml;utf8,<svg viewBox='0 0 91 48' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-9.0039 4.8 -9.1 -583.6 90.476 0.0000074169)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>");
+  --gradient-primary-buttons-3: linear-gradient(90deg, rgb(235, 76, 96) 0%, rgb(235, 76, 96) 100%), url("data:image/svg+xml;utf8,<svg viewBox='0 0 488 47' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-48.285 4.7 -48.8 -571.44 485.19 0.0000072623)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>"), url("data:image/svg+xml;utf8,<svg viewBox='0 0 488 47' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-48.285 4.7 -48.8 -571.44 485.19 0.0000072623)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>");
+  --gradient-primary-buttons-4: linear-gradient(90deg, rgb(235, 76, 96) 0%, rgb(235, 76, 96) 100%), url("data:image/svg+xml;utf8,<svg viewBox='0 0 91 48' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-9.0039 4.8 -9.1 -583.6 90.476 0.0000074169)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>"), url("data:image/svg+xml;utf8,<svg viewBox='0 0 91 48' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-9.0039 4.8 -9.1 -583.6 90.476 0.0000074169)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>");
+  --gradient-primary-buttons-5: url("data:image/svg+xml;utf8,<svg viewBox='0 0 520 47' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(54.056 -5.1113e-7 0.0000056551 66.436 -20.565 47)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>");
+  --gradient-primary-buttons-6: url("data:image/svg+xml;utf8,<svg viewBox='0 0 91 48' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(9.4599 -5.2201e-7 9.8964e-7 67.85 -3.5989 48)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>");
+  --tracking-type-body-copy-12pt-regular: 0px;
+  --tracking-type-body-copy-12pt-semibold: 0px;
+  --tracking-type-body-copy-12pt-semibold-underlined: 0px;
+  --tracking-type-body-copy-13pt-regular: 0px;
+  --tracking-type-body-copy-13pt-semibold: 0px;
+  --tracking-type-body-copy-14pt-regular: 0px;
+  --tracking-type-body-copy-14pt-semibold: 0px;
+  --tracking-type-body-copy-16pt-regular: 0px;
+  --tracking-type-body-copy-16pt-regular-underlined: 0px;
+  --tracking-type-body-copy-16pt-semibold: 0px;
+  --tracking-type-body-copy-18pt-medium: 0px;
+  --tracking-type-body-copy-18pt-regular: 0px;
+  --tracking-type-body-copy-18pt-semibold: 0px;
+  --tracking-type-header-22pt-regular: 0px;
+  --tracking-type-header-22pt-semibold: 0px;
+  --tracking-type-mirco-text-10pt-semibold: 0px;
+  --leading-normal: 1.5;  /* synthesized 0.30 */
+  --leading-tight: 1.25;  /* synthesized 0.30 */
+  --radius-full: 9999px;  /* synthesized 0.30 */
+  --radius-lg: 12px;
+  --radius-md: 8px;
+  --radius-sm: 4px;  /* synthesized 0.30 */
+  --shadow-elevation-01: 0px 4px 18px 0px #0000002B;
+  --shadow-elevation-02: 0px 1px 5px -363px #00000030;
+  --shadow-elevation-03: 0px 6px 16px 0px #0000001F;
+  --shadow-lg: 0 12px 32px rgba(0,0,0,.12);  /* synthesized 0.30 */
+  --shadow-md: 0 4px 12px rgba(0,0,0,.08);  /* synthesized 0.30 */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.06);  /* synthesized 0.30 */
+  --spacing: 4px;
+
+}

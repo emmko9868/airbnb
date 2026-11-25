@@ -1,0 +1,61 @@
+/* RadioButton — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-radiobutton {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-2);
+  line-height: var(--leading-normal);
+  color: var(--color-text);
+}
+
+.ds-radiobutton--group {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.ds-radiobutton__legend {
+  padding: 0;
+  margin-bottom: calc(var(--spacing) * 2);
+  color: var(--color-text-secondary);
+}
+
+.ds-radiobutton__options {
+  display: flex;
+  gap: calc(var(--spacing) * 4);
+}
+
+.ds-radiobutton--vertical .ds-radiobutton__options {
+  flex-direction: column;
+  gap: calc(var(--spacing) * 2);
+}
+
+.ds-radiobutton:not(.ds-radiobutton--group),
+.ds-radiobutton__option {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 2);
+}
+
+.ds-radiobutton__field {
+  flex: none;
+  width: calc(var(--spacing) * 4);
+  height: calc(var(--spacing) * 4);
+  margin: 0;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.ds-radiobutton__field:focus-visible {
+  outline: var(--border-width-thick) solid var(--color-primary);
+  outline-offset: var(--border-width-thick);
+}
+
+.ds-radiobutton__label {
+  cursor: pointer;
+}
+
+.ds-radiobutton__field:disabled,
+.ds-radiobutton__field:disabled + .ds-radiobutton__label {
+  color: var(--color-text-disabled);
+  cursor: not-allowed;
+}

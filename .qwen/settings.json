@@ -1,0 +1,119 @@
+{
+  "general": {
+    "outputLanguage": "English"
+  },
+  "context": {
+    "fileName": [
+      "QWEN.md"
+    ]
+  },
+  "memory": {
+    "enableManagedAutoMemory": false,
+    "enableManagedAutoDream": false,
+    "enableAutoSkill": false
+  },
+  "tools": {
+    "approvalMode": "default",
+    "eager": [
+      "read_file",
+      "edit",
+      "write_file",
+      "glob",
+      "grep_search",
+      "run_shell_command",
+      "ask_user_question",
+      "skill"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "write_file|edit|notebook_edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node scripts/ai-check.mjs pre",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "run_shell_command",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node scripts/ai-check.mjs pre",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "write_file|edit|notebook_edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node scripts/ai-check.mjs post",
+            "timeout": 55,
+            "statusMessage": "규칙 검사 중"
+          }
+        ]
+      },
+      {
+        "matcher": "ask_user_question",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node scripts/ai-check.mjs answer",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node scripts/ai-check.mjs prompt",
+            "timeout": 55,
+            "statusMessage": "Figma 디자인 읽는 중"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node scripts/ai-check.mjs stop",
+            "timeout": 55,
+            "statusMessage": "끝내기 전 검사 중"
+          }
+        ]
+      }
+    ]
+  },
+  "mcpServers": {
+    "figma-desktop": {
+      "httpUrl": "http://127.0.0.1:3845/mcp"
+    }
+  },
+  "$version": 4,
+  "permissions": {
+    "allow": [
+      "Bash(pnpm *)",
+      "Bash(cd *)",
+      "Bash(head *)",
+      "Bash(curl *)",
+      "Bash(rm *)",
+      "Bash(node *)",
+      "Bash(grep *)"
+    ]
+  },
+  "mcp": {
+    "excluded": []
+  }
+}

@@ -1,0 +1,68 @@
+/* Tooltip — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-tooltip {
+  position: relative;
+  display: inline-flex;
+  font-family: var(--font-sans);
+}
+
+.ds-tooltip__anchor {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--radius-sm);
+  text-decoration: underline dotted;
+  text-underline-offset: calc(var(--spacing) * 0.75);
+  cursor: help;
+  color: var(--color-text);
+}
+
+.ds-tooltip__anchor:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.ds-tooltip__bubble {
+  position: absolute;
+  z-index: 10;
+  max-width: calc(var(--spacing) * 56);
+  width: max-content;
+  padding: calc(var(--spacing) * 1.5) calc(var(--spacing) * 2.5);
+  border-radius: var(--radius-sm);
+  background: var(--color-text);
+  color: var(--color-bg);
+  font-size: var(--text-body-2);
+  line-height: var(--leading-tight);
+  box-shadow: var(--shadow-md);
+  pointer-events: none;
+}
+
+.ds-tooltip--top .ds-tooltip__bubble {
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, calc(var(--spacing) * -1.5));
+}
+.ds-tooltip--bottom .ds-tooltip__bubble {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, calc(var(--spacing) * 1.5));
+}
+.ds-tooltip--left .ds-tooltip__bubble {
+  right: 100%;
+  top: 50%;
+  transform: translate(calc(var(--spacing) * -1.5), -50%);
+}
+.ds-tooltip--right .ds-tooltip__bubble {
+  left: 100%;
+  top: 50%;
+  transform: translate(calc(var(--spacing) * 1.5), -50%);
+}
+
+@media (max-width: 600px) {
+  .ds-tooltip--left .ds-tooltip__bubble,
+  .ds-tooltip--right .ds-tooltip__bubble {
+    top: 100%;
+    bottom: auto;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, calc(var(--spacing) * 1.5));
+  }
+}

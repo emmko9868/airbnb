@@ -1,0 +1,98 @@
+/* Tabs — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-tabs {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-sans);
+  color: var(--color-text);
+}
+
+.ds-tabs--vertical { flex-direction: row; gap: calc(var(--spacing) * 4); }
+
+.ds-tabs__list {
+  display: flex;
+  gap: calc(var(--spacing) * 1);
+  border-bottom: var(--border-width-thin) solid var(--color-border);
+}
+
+.ds-tabs--vertical .ds-tabs__list {
+  flex-direction: column;
+  border-bottom: 0;
+  border-right: var(--border-width-thin) solid var(--color-border);
+  flex: 0 0 auto;
+}
+
+.ds-tabs__tab {
+  position: relative;
+  padding: calc(var(--spacing) * 2.5) calc(var(--spacing) * 4);
+  border: 0;
+  background: transparent;
+  color: var(--color-text-secondary);
+  font: inherit;
+  font-size: var(--text-body-2);
+  font-weight: var(--font-weight-medium);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+
+.ds-tabs__tab:hover:not(:disabled) { color: var(--color-text); }
+
+.ds-tabs__tab:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+}
+
+.ds-tabs__tab:disabled {
+  color: var(--color-text-disabled);
+  cursor: not-allowed;
+}
+
+/* 선택 상태를 색만으로 전달하지 않는다 — 밑줄(또는 채움)을 함께 둔다. */
+.ds-tabs__tab[aria-selected="true"] { color: var(--color-primary); }
+
+.ds-tabs--line .ds-tabs__tab[aria-selected="true"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(var(--border-width-thin) * -1);
+  height: calc(var(--spacing) * 0.5);
+  background: var(--color-primary);
+}
+
+.ds-tabs--vertical.ds-tabs--line .ds-tabs__tab[aria-selected="true"]::after {
+  left: auto;
+  top: 0;
+  bottom: 0;
+  right: calc(var(--border-width-thin) * -1);
+  width: calc(var(--spacing) * 0.5);
+  height: auto;
+}
+
+.ds-tabs--contained .ds-tabs__list { gap: 0; border-bottom: 0; }
+
+.ds-tabs--contained .ds-tabs__tab {
+  border: var(--border-width-thin) solid var(--color-border);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  background: var(--color-surface);
+}
+
+.ds-tabs--contained .ds-tabs__tab[aria-selected="true"] {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.ds-tabs__panel {
+  padding: calc(var(--spacing) * 4) 0;
+  font-size: var(--text-body-2);
+  line-height: var(--leading-normal);
+  color: var(--color-text-secondary);
+}
+
+.ds-tabs__panel:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.ds-tabs--sm .ds-tabs__tab { padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3); }

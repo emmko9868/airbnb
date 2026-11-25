@@ -1,0 +1,100 @@
+/* ServiceTab — Figma 418:3150
+ * Hover/selected colors mapped to closest existing tokens:
+ * #FCEDED → --color-accent-01 (#F6D7DF)
+ * #C72D65 → --color-accent-02 (#D03660)
+ * rgba(241,164,164,0.2) → color-mix(--color-accent-01, 20%)
+ */
+
+.ds-servicetab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--spacing) * 3); /* 12px */
+  width: calc(var(--spacing) * 15); /* 60px */
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: var(--font-sans);
+}
+
+.ds-servicetab:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.ds-servicetab:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
+  border-radius: var(--radius-md);
+}
+
+/* Icon container */
+.ds-servicetab__icon-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(var(--spacing) * 15.5); /* 62px */
+  height: calc(var(--spacing) * 15.5); /* 62px */
+  padding: calc(var(--spacing) * 1.5); /* 6px */
+  border-radius: var(--radius-lg); /* 12px */
+  background: var(--color-bg);
+  transition: background var(--duration-fast) var(--ease-standard);
+}
+
+/* Hover */
+.ds-servicetab:hover:not(:disabled) .ds-servicetab__icon-item {
+  background: var(--color-accent-01);
+}
+
+/* Service Icon wrapper */
+.ds-servicetab__service-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(var(--spacing) * 12); /* 48px */
+  height: calc(var(--spacing) * 12); /* 48px */
+  border-radius: calc(var(--spacing) * 1.5); /* 6px */
+  overflow: hidden;
+}
+
+/* Selected border */
+.ds-servicetab--selected .ds-servicetab__service-icon {
+  border: 1.5px solid var(--color-accent-02);
+  border-radius: calc(var(--spacing) * 1.5); /* 6px */
+}
+
+/* Selected overlay — using closest token (--color-accent-01) */
+.ds-servicetab--selected .ds-servicetab__service-icon::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-accent-01);
+  opacity: 0.2;
+  border-radius: calc(var(--spacing) * 1.5); /* 6px */
+  pointer-events: none;
+}
+
+.ds-servicetab__service-icon img {
+  width: calc(var(--spacing) * 12); /* 48px */
+  height: calc(var(--spacing) * 12); /* 48px */
+  object-fit: cover;
+  display: block;
+}
+
+/* Label */
+.ds-servicetab__label {
+  font-size: var(--text-type-body-copy-16pt-regular);
+  font-weight: var(--font-weight-type-body-copy-16pt-regular);
+  line-height: 1;
+  color: var(--color-on-primary);
+  text-align: center;
+  white-space: nowrap;
+  word-break: break-word;
+}
+
+.ds-servicetab--selected .ds-servicetab__label {
+  font-weight: var(--font-weight-type-body-copy-16pt-semibold);
+}

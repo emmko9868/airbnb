@@ -1,0 +1,20 @@
+Currently selected nodes:
+- 418:8305: Start Your Trip with Airbnb
+
+
+<frame id="418:8305" name="Start Your Trip with Airbnb" x="0" y="80" width="1440" height="426">
+  <rounded-rectangle id="418:3082" name="Start Your Trip with Airbnb" x="0" y="0" width="1912" height="426" />
+  <frame id="418:8304" name="Frame 1" x="80" y="80" width="1280" height="266">
+    <text id="418:3120" name="Start Your Trip with Airbnb" x="0" y="0" width="1280" height="48" />
+    <frame id="418:8303" name="Tab group" x="0" y="80" width="620" height="92">
+      <instance id="418:3155" name="Service tab" x="0" y="-1" width="60" height="94" />
+      <instance id="418:8261" name="Service tab" x="140" y="-1" width="60" height="94" />
+      <instance id="418:8265" name="Service tab" x="280" y="-1" width="60" height="94" />
+      <instance id="418:8269" name="Service tab" x="420" y="-1" width="60" height="94" />
+      <instance id="418:8273" name="Service tab" x="560" y="-0.5" width="60" height="93" />
+    </frame>
+    <instance id="418:8282" name="Navigation" x="0" y="204" width="1280" height="62" />
+  </frame>
+</frame>
+IMPORTANT: After you call this tool, you MUST call get_design_context if trying to implement the design, since this tool only returns metadata. If you do not call get_design_context, the agent will not be able to implement the design.
+IMPORTANT: Inform the user that

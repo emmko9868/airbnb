@@ -1,0 +1,12 @@
+{
+  "Button": {
+    "description": "A button that runs the main action. Use only one Primary button per screen.",
+    "source": "figma",
+    "confidence": 1
+  },
+  "Card": {
+    "description": "A surface that groups related content.",
+    "source": "figma",
+    "confidence": 1
+  }
+}

@@ -1,0 +1,837 @@
+{
+  "version": 1,
+  "level": "L2a",
+  "sourceHash": "7b556f3582e9a94d",
+  "generatedAt": "2026-10-26T04:41:59.228Z",
+  "tokens": {
+    "COLOR:blue-50": {
+      "layer": "primitive",
+      "value": "#E5EFFF",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-blue/50"
+    },
+    "COLOR:blue-100": {
+      "layer": "primitive",
+      "value": "#B7D4FF",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-blue/100"
+    },
+    "COLOR:blue-200": {
+      "layer": "primitive",
+      "value": "#8AB8FF",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-blue/200"
+    },
+    "COLOR:blue-300": {
+      "layer": "primitive",
+      "value": "#5C9DFF",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-blue/300"
+    },
+    "COLOR:blue-400": {
+      "layer": "primitive",
+      "value": "#2E81FF",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-blue/400"
+    },
+    "COLOR:blue-500": {
+      "layer": "primitive",
+      "value": "#0066FF",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-blue/500"
+    },
+    "COLOR:blue-600": {
+      "layer": "primitive",
+      "value": "#0056D6",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-blue/600"
+    },
+    "COLOR:blue-700": {
+      "layer": "primitive",
+      "value": "#0045AD",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-blue/700"
+    },
+    "COLOR:blue-800": {
+      "layer": "primitive",
+      "value": "#003585",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-blue/800"
+    },
+    "COLOR:blue-900": {
+      "layer": "primitive",
+      "value": "#00255C",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-blue/900"
+    },
+    "COLOR:gray-50": {
+      "layer": "primitive",
+      "value": "#FAFAFA",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-gray/50"
+    },
+    "COLOR:gray-100": {
+      "layer": "primitive",
+      "value": "#F4F4F5",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-gray/100"
+    },
+    "COLOR:gray-200": {
+      "layer": "primitive",
+      "value": "#E4E4E7",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-gray/200"
+    },
+    "COLOR:gray-300": {
+      "layer": "primitive",
+      "value": "#D4D4D8",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-gray/300"
+    },
+    "COLOR:gray-400": {
+      "layer": "primitive",
+      "value": "#A1A1AA",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-gray/400"
+    },
+    "COLOR:gray-500": {
+      "layer": "primitive",
+      "value": "#71717A",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-gray/500"
+    },
+    "COLOR:gray-600": {
+      "layer": "primitive",
+      "value": "#52525B",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-gray/600"
+    },
+    "COLOR:gray-700": {
+      "layer": "primitive",
+      "value": "#3F3F46",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-gray/700"
+    },
+    "COLOR:gray-800": {
+      "layer": "primitive",
+      "value": "#27272A",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-gray/800"
+    },
+    "COLOR:gray-900": {
+      "layer": "primitive",
+      "value": "#18181B",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-gray/900"
+    },
+    "COLOR:red-400": {
+      "layer": "primitive",
+      "value": "#F87171",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-red/400"
+    },
+    "COLOR:red-500": {
+      "layer": "primitive",
+      "value": "#EF4444",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-red/500"
+    },
+    "COLOR:red-600": {
+      "layer": "primitive",
+      "value": "#DC2626",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-red/600"
+    },
+    "COLOR:green-400": {
+      "layer": "primitive",
+      "value": "#4ADE80",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-green/400"
+    },
+    "COLOR:green-500": {
+      "layer": "primitive",
+      "value": "#22C55E",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-green/500"
+    },
+    "COLOR:green-600": {
+      "layer": "primitive",
+      "value": "#16A34A",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-green/600"
+    },
+    "COLOR:amber-400": {
+      "layer": "primitive",
+      "value": "#FBBF24",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-amber/400"
+    },
+    "COLOR:amber-500": {
+      "layer": "primitive",
+      "value": "#F59E0B",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-amber/500"
+    },
+    "COLOR:amber-600": {
+      "layer": "primitive",
+      "value": "#D97706",
+      "source": "declared",
+      "confidence": 1,
+      "id": "v-amber/600"
+    },
+    "COLOR:bg": {
+      "layer": "semantic",
+      "value": "var(--color-gray-50)",
+      "source": "inferred",
+      "confidence": 0.55
+    },
+    "COLOR:surface": {
+      "layer": "semantic",
+      "value": "var(--color-gray-50)",
+      "source": "inferred",
+      "confidence": 0.55
+    },
+    "COLOR:text": {
+      "layer": "semantic",
+      "value": "var(--color-gray-900)",
+      "source": "inferred",
+      "confidence": 0.55
+    },
+    "COLOR:text-secondary": {
+      "layer": "semantic",
+      "value": "var(--color-gray-500)",
+      "source": "inferred",
+      "confidence": 0.55
+    },
+    "COLOR:text-disabled": {
+      "layer": "semantic",
+      "value": "var(--color-gray-400)",
+      "source": "inferred",
+      "confidence": 0.55
+    },
+    "COLOR:border": {
+      "layer": "semantic",
+      "value": "var(--color-gray-300)",
+      "source": "inferred",
+      "confidence": 0.55
+    },
+    "COLOR:border-strong": {
+      "layer": "semantic",
+      "value": "var(--color-gray-400)",
+      "source": "inferred",
+      "confidence": 0.55
+    },
+    "COLOR:surface-raised": {
+      "layer": "semantic",
+      "value": "var(--color-gray-50)",
+      "source": "inferred",
+      "confidence": 0.55
+    },
+    "COLOR:primary": {
+      "layer": "semantic",
+      "value": "var(--color-blue-500)",
+      "source": "inferred",
+      "confidence": 0.4
+    },
+    "COLOR:primary-hover": {
+      "layer": "semantic",
+      "value": "var(--color-blue-600)",
+      "source": "inferred",
+      "confidence": 0.55
+    },
+    "COLOR:primary-active": {
+      "layer": "semantic",
+      "value": "var(--color-blue-700)",
+      "source": "inferred",
+      "confidence": 0.55
+    },
+    "COLOR:on-primary": {
+      "layer": "semantic",
+      "value": "var(--color-gray-50)",
+      "source": "inferred",
+      "confidence": 0.55
+    },
+    "COLOR:danger": {
+      "layer": "semantic",
+      "value": "var(--color-red-500)",
+      "source": "inferred",
+      "confidence": 0.55
+    },
+    "COLOR:warning": {
+      "layer": "semantic",
+      "value": "var(--color-amber-500)",
+      "source": "inferred",
+      "confidence": 0.55
+    },
+    "COLOR:success": {
+      "layer": "semantic",
+      "value": "var(--color-green-500)",
+      "source": "inferred",
+      "confidence": 0.55
+    },
+    "COLOR:info": {
+      "layer": "semantic",
+      "value": "var(--color-blue-500)",
+      "source": "inferred",
+      "confidence": 0.55
+    },
+    "RADIUS:md": {
+      "layer": "layout",
+      "value": "8px",
+      "source": "inferred",
+      "confidence": 0.75,
+      "id": "r1"
+    },
+    "RADIUS:lg": {
+      "layer": "layout",
+      "value": "12px",
+      "source": "inferred",
+      "confidence": 0.75,
+      "id": "r2"
+    },
+    "SPACING_UNIT:base": {
+      "layer": "layout",
+      "value": "4px",
+      "source": "inferred",
+      "confidence": 0.75,
+      "id": "s1"
+    },
+    "BORDER_WIDTH:thin": {
+      "layer": "layout",
+      "value": "1px",
+      "source": "inferred",
+      "confidence": 0.6,
+      "id": "b1"
+    },
+    "COLOR:overlay": {
+      "layer": "layout",
+      "value": "rgb(0 0 0 / 45%)",
+      "source": "synthesized",
+      "confidence": 0.3
+    },
+    "RADIUS:sm": {
+      "layer": "layout",
+      "value": "4px",
+      "source": "synthesized",
+      "confidence": 0.3
+    },
+    "RADIUS:full": {
+      "layer": "layout",
+      "value": "9999px",
+      "source": "synthesized",
+      "confidence": 0.3
+    },
+    "BORDER_WIDTH:thick": {
+      "layer": "layout",
+      "value": "2px",
+      "source": "synthesized",
+      "confidence": 0.3
+    },
+    "SHADOW:sm": {
+      "layer": "layout",
+      "value": "0 1px 2px rgba(0,0,0,.06)",
+      "source": "synthesized",
+      "confidence": 0.3
+    },
+    "SHADOW:md": {
+      "layer": "layout",
+      "value": "0 4px 12px rgba(0,0,0,.08)",
+      "source": "synthesized",
+      "confidence": 0.3
+    },
+    "SHADOW:lg": {
+      "layer": "layout",
+      "value": "0 12px 32px rgba(0,0,0,.12)",
+      "source": "synthesized",
+      "confidence": 0.3
+    },
+    "DURATION:fast": {
+      "layer": "layout",
+      "value": "150ms",
+      "source": "synthesized",
+      "confidence": 0.3
+    },
+    "DURATION:normal": {
+      "layer": "layout",
+      "value": "250ms",
+      "source": "synthesized",
+      "confidence": 0.3
+    },
+    "EASING:standard": {
+      "layer": "layout",
+      "value": "cubic-bezier(0.2, 0, 0, 1)",
+      "source": "synthesized",
+      "confidence": 0.3
+    },
+    "FONT_FAMILY:sans": {
+      "layer": "layout",
+      "value": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+      "source": "synthesized",
+      "confidence": 0.3
+    },
+    "FONT_SIZE:body-2": {
+      "layer": "layout",
+      "value": "14px",
+      "source": "synthesized",
+      "confidence": 0.3
+    },
+    "FONT_SIZE:body-1": {
+      "layer": "layout",
+      "value": "16px",
+      "source": "synthesized",
+      "confidence": 0.3
+    },
+    "FONT_SIZE:title": {
+      "layer": "layout",
+      "value": "20px",
+      "source": "synthesized",
+      "confidence": 0.3
+    },
+    "FONT_WEIGHT:regular": {
+      "layer": "layout",
+      "value": "400",
+      "source": "synthesized",
+      "confidence": 0.3
+    },
+    "FONT_WEIGHT:medium": {
+      "layer": "layout",
+      "value": "500",
+      "source": "synthesized",
+      "confidence": 0.3
+    },
+    "FONT_WEIGHT:bold": {
+      "layer": "layout",
+      "value": "700",
+      "source": "synthesized",
+      "confidence": 0.3
+    },
+    "LINE_HEIGHT:tight": {
+      "layer": "layout",
+      "value": "1.25",
+      "source": "synthesized",
+      "confidence": 0.3
+    },
+    "LINE_HEIGHT:normal": {
+      "layer": "layout",
+      "value": "1.5",
+      "source": "synthesized",
+      "confidence": 0.3
+    }
+  },
+  "components": {
+    "Accordion": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "align:enum:start|end",
+        "disabled:boolean:",
+        "size:enum:sm|md|lg"
+      ]
+    },
+    "Badge": {
+      "nodeId": "0:5200",
+      "variantCount": 5,
+      "props": [
+        "children:string:",
+        "tone:enum:neutral|info|success|warning|danger"
+      ]
+    },
+    "Breadcrumb": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "noTrailingSlash:boolean:",
+        "size:enum:sm|md"
+      ]
+    },
+    "Button": {
+      "nodeId": "0:4856",
+      "variantCount": 48,
+      "props": [
+        "children:string:",
+        "hasIcon:boolean:",
+        "size:enum:l|m|s",
+        "variant:enum:primary|secondary|outline|tertiary"
+      ]
+    },
+    "Card": {
+      "nodeId": "0:5400",
+      "variantCount": 0,
+      "props": []
+    },
+    "Checkbox": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "checked:boolean:",
+        "disabled:boolean:",
+        "indeterminate:boolean:",
+        "invalid:boolean:",
+        "label:string:"
+      ]
+    },
+    "CodeSnippet": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "disabled:boolean:",
+        "type:enum:single|multi|inline",
+        "wrapText:boolean:"
+      ]
+    },
+    "ComboBox": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "disabled:boolean:",
+        "invalid:boolean:",
+        "label:string:",
+        "size:enum:sm|md|lg"
+      ]
+    },
+    "ContainedList": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "size:enum:sm|md|lg",
+        "variant:enum:on-page|disclosed"
+      ]
+    },
+    "ContentSwitcher": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "size:enum:sm|md|lg"
+      ]
+    },
+    "DatePicker": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "disabled:boolean:",
+        "invalid:boolean:",
+        "size:enum:sm|md|lg",
+        "type:enum:single|range"
+      ]
+    },
+    "Dropdown": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "disabled:boolean:",
+        "invalid:boolean:",
+        "label:string:",
+        "size:enum:sm|md|lg",
+        "type:enum:default|inline"
+      ]
+    },
+    "FileUploader": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "disabled:boolean:",
+        "multiple:boolean:",
+        "size:enum:sm|md|lg",
+        "variant:enum:button|dropArea"
+      ]
+    },
+    "IconButton": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "disabled:boolean:",
+        "icon:node:",
+        "size:enum:sm|md|lg",
+        "variant:enum:primary|secondary|ghost|danger"
+      ]
+    },
+    "InlineLoading": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "description:string:",
+        "status:enum:active|finished|error|inactive"
+      ]
+    },
+    "Link": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "disabled:boolean:",
+        "external:boolean:",
+        "size:enum:sm|md",
+        "variant:enum:default|inline"
+      ]
+    },
+    "Loading": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "label:string:",
+        "overlay:boolean:",
+        "size:enum:sm|md|lg"
+      ]
+    },
+    "Modal": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "open:boolean:",
+        "size:enum:sm|md|lg",
+        "title:string:",
+        "variant:enum:default|danger"
+      ]
+    },
+    "MultiSelect": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "disabled:boolean:",
+        "invalid:boolean:",
+        "size:enum:sm|md|lg",
+        "type:enum:default|inline"
+      ]
+    },
+    "Notification": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "dismissible:boolean:",
+        "title:string:",
+        "tone:enum:info|success|warning|danger",
+        "variant:enum:inline|toast"
+      ]
+    },
+    "NumberInput": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "disabled:boolean:",
+        "hideSteppers:boolean:",
+        "invalid:boolean:",
+        "size:enum:sm|md|lg"
+      ]
+    },
+    "OverflowMenu": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "align:enum:start|end",
+        "flipped:boolean:",
+        "size:enum:sm|md|lg"
+      ]
+    },
+    "Pagination": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "size:enum:sm|md|lg",
+        "variant:enum:default|compact"
+      ]
+    },
+    "Popover": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "align:enum:top|bottom|left|right",
+        "caret:boolean:",
+        "open:boolean:"
+      ]
+    },
+    "ProgressBar": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "indeterminate:boolean:",
+        "size:enum:sm|md",
+        "status:enum:active|finished|error"
+      ]
+    },
+    "ProgressIndicator": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "orientation:enum:horizontal|vertical",
+        "size:enum:sm|md"
+      ]
+    },
+    "RadioButton": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "checked:boolean:",
+        "disabled:boolean:",
+        "label:string:",
+        "orientation:enum:horizontal|vertical"
+      ]
+    },
+    "Search": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "disabled:boolean:",
+        "expandable:boolean:",
+        "placeholder:string:",
+        "size:enum:sm|md|lg"
+      ]
+    },
+    "Select": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "disabled:boolean:",
+        "invalid:boolean:",
+        "label:string:",
+        "size:enum:sm|md|lg"
+      ]
+    },
+    "Skeleton": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "animated:boolean:",
+        "variant:enum:text|placeholder|icon"
+      ]
+    },
+    "Slider": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "disabled:boolean:",
+        "hideTextInput:boolean:",
+        "invalid:boolean:"
+      ]
+    },
+    "StructuredList": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "condensed:boolean:",
+        "selectable:boolean:"
+      ]
+    },
+    "Tabs": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "orientation:enum:horizontal|vertical",
+        "size:enum:sm|md",
+        "variant:enum:line|contained"
+      ]
+    },
+    "Tag": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "dismissible:boolean:",
+        "icon:node:",
+        "size:enum:sm|md",
+        "tone:enum:neutral|info|success|warning|danger"
+      ]
+    },
+    "TextInput": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "disabled:boolean:",
+        "helperText:string:",
+        "invalid:boolean:",
+        "label:string:",
+        "placeholder:string:",
+        "readOnly:boolean:",
+        "size:enum:sm|md|lg"
+      ]
+    },
+    "Textarea": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "disabled:boolean:",
+        "helperText:string:",
+        "invalid:boolean:",
+        "label:string:",
+        "size:enum:sm|md|lg"
+      ]
+    },
+    "Tile": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "disabled:boolean:",
+        "selected:boolean:",
+        "variant:enum:base|clickable|selectable|expandable"
+      ]
+    },
+    "TimePicker": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "disabled:boolean:",
+        "invalid:boolean:",
+        "size:enum:sm|md|lg"
+      ]
+    },
+    "Toggle": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "checked:boolean:",
+        "disabled:boolean:",
+        "label:string:",
+        "size:enum:sm|md"
+      ]
+    },
+    "Toggletip": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "align:enum:top|bottom|left|right"
+      ]
+    },
+    "Tooltip": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "align:enum:top|bottom|left|right",
+        "label:string:"
+      ]
+    },
+    "TreeView": {
+      "nodeId": "",
+      "variantCount": 0,
+      "props": [
+        "hideLabel:boolean:",
+        "multiselect:boolean:",
+        "size:enum:sm|md"
+      ]
+    }
+  }
+}

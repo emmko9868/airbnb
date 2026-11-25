@@ -1,0 +1,139 @@
+/* MultiSelect — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-multiselect {
+  display: inline-flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 1.5);
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  min-width: calc(var(--spacing) * 56);
+}
+
+.ds-multiselect__label { font-size: var(--text-body-2); color: var(--color-text-secondary); }
+.ds-multiselect__field { position: relative; }
+
+.ds-multiselect__trigger {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 2);
+  width: 100%;
+  min-height: calc(var(--spacing) * 8);
+  padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3);
+  border: var(--border-width-thin) solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-raised);
+  color: inherit;
+  font: inherit;
+  font-size: var(--text-body-2);
+  text-align: left;
+  cursor: pointer;
+}
+
+.ds-multiselect__trigger:hover:not(:disabled) { border-color: var(--color-primary); }
+
+.ds-multiselect__trigger:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.ds-multiselect__trigger:disabled {
+  color: var(--color-text-disabled);
+  background: var(--color-surface);
+  border-color: var(--color-border);
+  cursor: not-allowed;
+}
+
+.ds-multiselect__trigger[aria-invalid="true"] {
+  border-color: var(--color-danger);
+  border-width: var(--border-width-thick);
+}
+
+.ds-multiselect__count {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: calc(var(--spacing) * 5);
+  height: calc(var(--spacing) * 5);
+  padding: 0 calc(var(--spacing) * 1);
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  font-size: var(--text-body-2);
+  font-variant-numeric: tabular-nums;
+}
+
+.ds-multiselect__value {
+  flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ds-multiselect__placeholder { flex: 1 1 auto; color: var(--color-text-disabled); }
+.ds-multiselect__chevron { flex: 0 0 auto; color: var(--color-text-secondary); }
+
+.ds-multiselect__list {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + var(--spacing));
+  left: 0;
+  right: 0;
+  max-height: calc(var(--spacing) * 60);
+  overflow-y: auto;
+  margin: 0;
+  padding: calc(var(--spacing) * 1);
+  border: var(--border-width-thin) solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-raised);
+  box-shadow: var(--shadow-lg);
+  list-style: none;
+}
+
+.ds-multiselect__option {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 2);
+  padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-body-2);
+  cursor: pointer;
+}
+
+.ds-multiselect__option[data-active] { background: var(--color-surface); }
+.ds-multiselect__option[aria-disabled="true"] { color: var(--color-text-disabled); cursor: not-allowed; }
+
+.ds-multiselect__box {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(var(--spacing) * 4);
+  height: calc(var(--spacing) * 4);
+  border: var(--border-width-thin) solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-body-2);
+  line-height: 1;
+}
+
+.ds-multiselect__option[aria-selected="true"] .ds-multiselect__box {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.ds-multiselect__sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.ds-multiselect__help { font-size: var(--text-body-2); color: var(--color-text-secondary); }
+.ds-multiselect__help--invalid { color: var(--color-danger); }
+
+.ds-multiselect--sm .ds-multiselect__trigger { min-height: calc(var(--spacing) * 7); }
+.ds-multiselect--lg .ds-multiselect__trigger { min-height: calc(var(--spacing) * 10); }
+.ds-multiselect--inline .ds-multiselect__trigger { border-color: transparent; background: transparent; }

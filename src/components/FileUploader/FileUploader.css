@@ -1,0 +1,125 @@
+/* FileUploader — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-fileuploader {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 2);
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  min-width: calc(var(--spacing) * 64);
+}
+
+/* 파일 input 은 숨기되 포커스는 받을 수 있어야 한다 — display:none 이면 키보드로 못 간다. */
+.ds-fileuploader__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+.ds-fileuploader__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  min-height: calc(var(--spacing) * 8);
+  padding: 0 calc(var(--spacing) * 4);
+  border: var(--border-width-thin) solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-raised);
+  font-size: var(--text-body-2);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+}
+
+.ds-fileuploader__button:hover { border-color: var(--color-primary); color: var(--color-primary); }
+
+/* 숨긴 input 이 포커스를 받으면 라벨에 표시한다. */
+.ds-fileuploader__input:focus-visible + .ds-fileuploader__button {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.ds-fileuploader__input:disabled + .ds-fileuploader__button {
+  color: var(--color-text-disabled);
+  border-color: var(--color-border);
+  cursor: not-allowed;
+}
+
+.ds-fileuploader__drop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--spacing) * 2);
+  padding: calc(var(--spacing) * 8) calc(var(--spacing) * 4);
+  border: var(--border-width-thick) dashed var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  text-align: center;
+}
+
+.ds-fileuploader--dragging .ds-fileuploader__drop {
+  border-color: var(--color-primary);
+  background: var(--color-surface-raised);
+}
+
+.ds-fileuploader__hint { margin: 0; color: var(--color-text-secondary); font-size: var(--text-body-2); }
+.ds-fileuploader__help { font-size: var(--text-body-2); color: var(--color-text-secondary); }
+
+.ds-fileuploader__list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: calc(var(--spacing) * 1); }
+
+.ds-fileuploader__file {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 3);
+  padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3);
+  border: var(--border-width-thin) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-raised);
+  font-size: var(--text-body-2);
+}
+
+.ds-fileuploader__name { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ds-fileuploader__size { color: var(--color-text-secondary); font-variant-numeric: tabular-nums; }
+.ds-fileuploader__status { color: var(--color-text-secondary); }
+
+/* 상태는 색만이 아니라 글자로도 전한다(위 status 텍스트). 색은 보조다. */
+.ds-fileuploader__file[data-status="error"] { border-color: var(--color-danger); }
+.ds-fileuploader__file[data-status="error"] .ds-fileuploader__status { color: var(--color-danger); }
+.ds-fileuploader__file[data-status="done"] .ds-fileuploader__status { color: var(--color-success); }
+
+.ds-fileuploader__remove {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(var(--spacing) * 6);
+  height: calc(var(--spacing) * 6);
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+
+.ds-fileuploader__remove:hover { color: var(--color-danger); }
+
+.ds-fileuploader__remove:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.ds-fileuploader__sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.ds-fileuploader--sm .ds-fileuploader__drop { padding: calc(var(--spacing) * 5) calc(var(--spacing) * 3); }
+.ds-fileuploader--lg .ds-fileuploader__drop { padding: calc(var(--spacing) * 12) calc(var(--spacing) * 6); }

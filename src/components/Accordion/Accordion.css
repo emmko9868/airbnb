@@ -1,0 +1,70 @@
+/* Accordion — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-accordion {
+  display: flex;
+  flex-direction: column;
+  border-top: var(--border-width-thin) solid var(--color-border);
+  font-family: var(--font-sans);
+  color: var(--color-text);
+}
+
+.ds-accordion__item { border-bottom: var(--border-width-thin) solid var(--color-border); }
+
+.ds-accordion__heading { margin: 0; font-size: inherit; font-weight: inherit; }
+
+.ds-accordion__trigger {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 3);
+  width: 100%;
+  padding: calc(var(--spacing) * 4);
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: var(--text-body-1);
+  font-weight: var(--font-weight-medium);
+  text-align: left;
+  cursor: pointer;
+  transition: background var(--duration-fast) var(--ease-standard);
+}
+
+.ds-accordion__trigger:hover:not(:disabled) { background: var(--color-surface-raised); }
+
+.ds-accordion__trigger:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+}
+
+.ds-accordion__trigger:disabled {
+  color: var(--color-text-disabled);
+  cursor: not-allowed;
+}
+
+.ds-accordion__title { flex: 1 1 auto; min-width: 0; }
+
+.ds-accordion__chevron {
+  flex: 0 0 auto;
+  color: var(--color-text-secondary);
+  transition: transform var(--duration-fast) var(--ease-standard);
+}
+
+.ds-accordion__trigger[aria-expanded="true"] .ds-accordion__chevron { transform: rotate(180deg); }
+
+/* align=start 면 펼침 표시가 제목 앞에 온다. */
+.ds-accordion--start .ds-accordion__trigger { flex-direction: row-reverse; }
+
+.ds-accordion__content {
+  padding: 0 calc(var(--spacing) * 4) calc(var(--spacing) * 4);
+  color: var(--color-text-secondary);
+  font-size: var(--text-body-2);
+  line-height: var(--leading-normal);
+}
+
+.ds-accordion--sm .ds-accordion__trigger { padding: calc(var(--spacing) * 3); }
+.ds-accordion--sm .ds-accordion__content { padding: 0 calc(var(--spacing) * 3) calc(var(--spacing) * 3); }
+.ds-accordion--lg .ds-accordion__trigger { padding: calc(var(--spacing) * 5); }
+.ds-accordion--lg .ds-accordion__content { padding: 0 calc(var(--spacing) * 5) calc(var(--spacing) * 5); }
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-accordion__chevron { transition: none; }
+}

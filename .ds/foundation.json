@@ -1,0 +1,2739 @@
+{
+  "schema": 1,
+  "level": "L2a",
+  "levelLabel": {
+    "ko": "학생 팔레트: 선언/승인 역할만 적용",
+    "en": "Student palette: only declared or approved roles are applied"
+  },
+  "notes": [
+    {
+      "ko": "샘플 색을 제거했습니다. 누락 역할은 학생 승인이 필요합니다.",
+      "en": "Sample colors were removed. Missing roles need your approval."
+    }
+  ],
+  "counts": {
+    "primitive": 20,
+    "layout": 102,
+    "semantic": 18
+  },
+  "bySource": {
+    "declared": 103,
+    "synthesized": 19,
+    "human": 18
+  },
+  "reviewThreshold": 0.6,
+  "review": [
+    {
+      "name": "overlay",
+      "layer": "layout",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "name": "sm",
+      "layer": "layout",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "name": "full",
+      "layer": "layout",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "name": "thick",
+      "layer": "layout",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "name": "sm",
+      "layer": "layout",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "name": "md",
+      "layer": "layout",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "name": "lg",
+      "layer": "layout",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "name": "fast",
+      "layer": "layout",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "name": "normal",
+      "layer": "layout",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "name": "standard",
+      "layer": "layout",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "name": "sans",
+      "layer": "layout",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "name": "body-2",
+      "layer": "layout",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "name": "body-1",
+      "layer": "layout",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "name": "title",
+      "layer": "layout",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "name": "regular",
+      "layer": "layout",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "name": "medium",
+      "layer": "layout",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "name": "bold",
+      "layer": "layout",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "name": "tight",
+      "layer": "layout",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "name": "normal",
+      "layer": "layout",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "name": "type-body-copy-16pt-semibold",
+      "layer": "layout",
+      "confidence": 0.5,
+      "reason": {
+        "ko": "텍스트 스타일 \"Body Copy/16pt Semibold\" 의 줄높이 단위를 알 수 없어 줄높이는 넣지 않았습니다(퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다.).",
+        "en": "The line-height unit of text style \"Body Copy/16pt Semibold\" is unknown, so no line height was added (No unit says whether it is a percent or pixels. The size of the number alone is not used to guess.)."
+      }
+    },
+    {
+      "name": "type-body-copy-13pt-semibold",
+      "layer": "layout",
+      "confidence": 0.5,
+      "reason": {
+        "ko": "텍스트 스타일 \"Body Copy/13pt Semibold\" 의 줄높이 단위를 알 수 없어 줄높이는 넣지 않았습니다(퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다.).",
+        "en": "The line-height unit of text style \"Body Copy/13pt Semibold\" is unknown, so no line height was added (No unit says whether it is a percent or pixels. The size of the number alone is not used to guess.)."
+      }
+    },
+    {
+      "name": "type-body-copy-12pt-semibold-underlined",
+      "layer": "layout",
+      "confidence": 0.5,
+      "reason": {
+        "ko": "텍스트 스타일 \"Body Copy/12pt Semibold Underlined\" 의 줄높이 단위를 알 수 없어 줄높이는 넣지 않았습니다(퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다.).",
+        "en": "The line-height unit of text style \"Body Copy/12pt Semibold Underlined\" is unknown, so no line height was added (No unit says whether it is a percent or pixels. The size of the number alone is not used to guess.)."
+      }
+    },
+    {
+      "name": "type-body-copy-14pt-semibold",
+      "layer": "layout",
+      "confidence": 0.5,
+      "reason": {
+        "ko": "텍스트 스타일 \"Body Copy/14pt Semibold\" 의 줄높이 단위를 알 수 없어 줄높이는 넣지 않았습니다(퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다.).",
+        "en": "The line-height unit of text style \"Body Copy/14pt Semibold\" is unknown, so no line height was added (No unit says whether it is a percent or pixels. The size of the number alone is not used to guess.)."
+      }
+    },
+    {
+      "name": "type-body-copy-12pt-regular",
+      "layer": "layout",
+      "confidence": 0.5,
+      "reason": {
+        "ko": "텍스트 스타일 \"Body Copy/12pt Regular\" 의 줄높이 단위를 알 수 없어 줄높이는 넣지 않았습니다(퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다.).",
+        "en": "The line-height unit of text style \"Body Copy/12pt Regular\" is unknown, so no line height was added (No unit says whether it is a percent or pixels. The size of the number alone is not used to guess.)."
+      }
+    },
+    {
+      "name": "type-mirco-text-10pt-semibold",
+      "layer": "layout",
+      "confidence": 0.5,
+      "reason": {
+        "ko": "텍스트 스타일 \"Mirco Text/10pt Semibold\" 의 줄높이 단위를 알 수 없어 줄높이는 넣지 않았습니다(퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다.).",
+        "en": "The line-height unit of text style \"Mirco Text/10pt Semibold\" is unknown, so no line height was added (No unit says whether it is a percent or pixels. The size of the number alone is not used to guess.)."
+      }
+    },
+    {
+      "name": "type-body-copy-12pt-semibold",
+      "layer": "layout",
+      "confidence": 0.5,
+      "reason": {
+        "ko": "텍스트 스타일 \"Body Copy/12pt Semibold\" 의 줄높이 단위를 알 수 없어 줄높이는 넣지 않았습니다(퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다.).",
+        "en": "The line-height unit of text style \"Body Copy/12pt Semibold\" is unknown, so no line height was added (No unit says whether it is a percent or pixels. The size of the number alone is not used to guess.)."
+      }
+    },
+    {
+      "name": "type-body-copy-13pt-regular",
+      "layer": "layout",
+      "confidence": 0.5,
+      "reason": {
+        "ko": "텍스트 스타일 \"Body Copy/13pt Regular\" 의 줄높이 단위를 알 수 없어 줄높이는 넣지 않았습니다(퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다.).",
+        "en": "The line-height unit of text style \"Body Copy/13pt Regular\" is unknown, so no line height was added (No unit says whether it is a percent or pixels. The size of the number alone is not used to guess.)."
+      }
+    },
+    {
+      "name": "type-body-copy-14pt-regular",
+      "layer": "layout",
+      "confidence": 0.5,
+      "reason": {
+        "ko": "텍스트 스타일 \"Body Copy/14pt Regular\" 의 줄높이 단위를 알 수 없어 줄높이는 넣지 않았습니다(퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다.).",
+        "en": "The line-height unit of text style \"Body Copy/14pt Regular\" is unknown, so no line height was added (No unit says whether it is a percent or pixels. The size of the number alone is not used to guess.)."
+      }
+    },
+    {
+      "name": "type-body-copy-16pt-regular",
+      "layer": "layout",
+      "confidence": 0.5,
+      "reason": {
+        "ko": "텍스트 스타일 \"Body Copy/16pt Regular\" 의 줄높이 단위를 알 수 없어 줄높이는 넣지 않았습니다(퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다.).",
+        "en": "The line-height unit of text style \"Body Copy/16pt Regular\" is unknown, so no line height was added (No unit says whether it is a percent or pixels. The size of the number alone is not used to guess.)."
+      }
+    },
+    {
+      "name": "type-body-copy-16pt-regular-underlined",
+      "layer": "layout",
+      "confidence": 0.5,
+      "reason": {
+        "ko": "텍스트 스타일 \"Body Copy/16pt Regular Underlined\" 의 줄높이 단위를 알 수 없어 줄높이는 넣지 않았습니다(퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다.).",
+        "en": "The line-height unit of text style \"Body Copy/16pt Regular Underlined\" is unknown, so no line height was added (No unit says whether it is a percent or pixels. The size of the number alone is not used to guess.)."
+      }
+    },
+    {
+      "name": "type-body-copy-18pt-regular",
+      "layer": "layout",
+      "confidence": 0.5,
+      "reason": {
+        "ko": "텍스트 스타일 \"Body Copy/18pt Regular\" 의 줄높이 단위를 알 수 없어 줄높이는 넣지 않았습니다(퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다.).",
+        "en": "The line-height unit of text style \"Body Copy/18pt Regular\" is unknown, so no line height was added (No unit says whether it is a percent or pixels. The size of the number alone is not used to guess.)."
+      }
+    },
+    {
+      "name": "type-body-copy-18pt-medium",
+      "layer": "layout",
+      "confidence": 0.5,
+      "reason": {
+        "ko": "텍스트 스타일 \"Body Copy/18pt Medium\" 의 줄높이 단위를 알 수 없어 줄높이는 넣지 않았습니다(퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다.).",
+        "en": "The line-height unit of text style \"Body Copy/18pt Medium\" is unknown, so no line height was added (No unit says whether it is a percent or pixels. The size of the number alone is not used to guess.)."
+      }
+    },
+    {
+      "name": "type-body-copy-18pt-semibold",
+      "layer": "layout",
+      "confidence": 0.5,
+      "reason": {
+        "ko": "텍스트 스타일 \"Body Copy/18pt Semibold\" 의 줄높이 단위를 알 수 없어 줄높이는 넣지 않았습니다(퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다.).",
+        "en": "The line-height unit of text style \"Body Copy/18pt Semibold\" is unknown, so no line height was added (No unit says whether it is a percent or pixels. The size of the number alone is not used to guess.)."
+      }
+    },
+    {
+      "name": "type-header-22pt-regular",
+      "layer": "layout",
+      "confidence": 0.5,
+      "reason": {
+        "ko": "텍스트 스타일 \"Header/22pt Regular\" 의 줄높이 단위를 알 수 없어 줄높이는 넣지 않았습니다(퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다.).",
+        "en": "The line-height unit of text style \"Header/22pt Regular\" is unknown, so no line height was added (No unit says whether it is a percent or pixels. The size of the number alone is not used to guess.)."
+      }
+    },
+    {
+      "name": "type-header-22pt-semibold",
+      "layer": "layout",
+      "confidence": 0.5,
+      "reason": {
+        "ko": "텍스트 스타일 \"Header/22pt Semibold\" 의 줄높이 단위를 알 수 없어 줄높이는 넣지 않았습니다(퍼센트인지 픽셀인지 확인할 단위가 없습니다. 값 크기만으로 추측하지 않습니다.).",
+        "en": "The line-height unit of text style \"Header/22pt Semibold\" is unknown, so no line height was added (No unit says whether it is a percent or pixels. The size of the number alone is not used to guess.)."
+      }
+    }
+  ],
+  "studentPalette": true,
+  "missingRoles": [],
+  "figma": {
+    "fileKey": "zrqq2F92iVtCoxKzj4b8Pm",
+    "importedAt": "2026-11-20T15:11:06.395Z",
+    "variables": [
+      {
+        "figma": "Shade 02",
+        "tier": "primitive",
+        "token": "shade-02",
+        "applied": true,
+        "how": {
+          "ko": "계층 선언 없음 → primitive",
+          "en": "no tier declared → primitive"
+        },
+        "hint": null
+      },
+      {
+        "figma": "Neutral 07",
+        "tier": "primitive",
+        "token": "neutral-07",
+        "applied": true,
+        "how": {
+          "ko": "계층 선언 없음 → primitive",
+          "en": "no tier declared → primitive"
+        },
+        "hint": null
+      },
+      {
+        "figma": "Shade 01",
+        "tier": "primitive",
+        "token": "shade-01",
+        "applied": true,
+        "how": {
+          "ko": "계층 선언 없음 → primitive",
+          "en": "no tier declared → primitive"
+        },
+        "hint": null
+      },
+      {
+        "figma": "Neutral 03",
+        "tier": "primitive",
+        "token": "neutral-03",
+        "applied": true,
+        "how": {
+          "ko": "계층 선언 없음 → primitive",
+          "en": "no tier declared → primitive"
+        },
+        "hint": null
+      },
+      {
+        "figma": "Neutral 02",
+        "tier": "primitive",
+        "token": "neutral-02",
+        "applied": true,
+        "how": {
+          "ko": "계층 선언 없음 → primitive",
+          "en": "no tier declared → primitive"
+        },
+        "hint": null
+      },
+      {
+        "figma": "Neutral 04",
+        "tier": "primitive",
+        "token": "neutral-04",
+        "applied": true,
+        "how": {
+          "ko": "계층 선언 없음 → primitive",
+          "en": "no tier declared → primitive"
+        },
+        "hint": null
+      },
+      {
+        "figma": "Shade 02 - 5%",
+        "tier": "primitive",
+        "token": "shade-02-5",
+        "applied": true,
+        "how": {
+          "ko": "계층 선언 없음 → primitive",
+          "en": "no tier declared → primitive"
+        },
+        "hint": null
+      },
+      {
+        "figma": "Link",
+        "tier": "primitive",
+        "token": "link",
+        "applied": true,
+        "how": {
+          "ko": "계층 선언 없음 → primitive",
+          "en": "no tier declared → primitive"
+        },
+        "hint": null
+      },
+      {
+        "figma": "Shade 02 - 30%",
+        "tier": "primitive",
+        "token": "shade-02-30",
+        "applied": true,
+        "how": {
+          "ko": "계층 선언 없음 → primitive",
+          "en": "no tier declared → primitive"
+        },
+        "hint": null
+      },
+      {
+        "figma": "Discounts",
+        "tier": "primitive",
+        "token": "discounts",
+        "applied": true,
+        "how": {
+          "ko": "계층 선언 없음 → primitive",
+          "en": "no tier declared → primitive"
+        },
+        "hint": null
+      },
+      {
+        "figma": "Accent 02",
+        "tier": "primitive",
+        "token": "accent-02",
+        "applied": true,
+        "how": {
+          "ko": "계층 선언 없음 → primitive",
+          "en": "no tier declared → primitive"
+        },
+        "hint": null
+      },
+      {
+        "figma": "Accent 01",
+        "tier": "primitive",
+        "token": "accent-01",
+        "applied": true,
+        "how": {
+          "ko": "계층 선언 없음 → primitive",
+          "en": "no tier declared → primitive"
+        },
+        "hint": null
+      },
+      {
+        "figma": "Error 01",
+        "tier": "primitive",
+        "token": "error-01",
+        "applied": true,
+        "how": {
+          "ko": "계층 선언 없음 → primitive",
+          "en": "no tier declared → primitive"
+        },
+        "hint": null
+      },
+      {
+        "figma": "Error 02",
+        "tier": "primitive",
+        "token": "error-02",
+        "applied": true,
+        "how": {
+          "ko": "계층 선언 없음 → primitive",
+          "en": "no tier declared → primitive"
+        },
+        "hint": null
+      },
+      {
+        "figma": "Primary 01",
+        "tier": "primitive",
+        "token": "primary-01",
+        "applied": true,
+        "how": {
+          "ko": "계층 선언 없음 → primitive",
+          "en": "no tier declared → primitive"
+        },
+        "hint": null
+      },
+      {
+        "figma": "Primary 02",
+        "tier": "primitive",
+        "token": "primary-02",
+        "applied": true,
+        "how": {
+          "ko": "계층 선언 없음 → primitive",
+          "en": "no tier declared → primitive"
+        },
+        "hint": null
+      },
+      {
+        "figma": "Neutral 05",
+        "tier": "primitive",
+        "token": "neutral-05",
+        "applied": true,
+        "how": {
+          "ko": "계층 선언 없음 → primitive",
+          "en": "no tier declared → primitive"
+        },
+        "hint": null
+      },
+      {
+        "figma": "Neutral 06",
+        "tier": "primitive",
+        "token": "neutral-06",
+        "applied": true,
+        "how": {
+          "ko": "계층 선언 없음 → primitive",
+          "en": "no tier declared → primitive"
+        },
+        "hint": null
+      },
+      {
+        "figma": "Neutral 08",
+        "tier": "primitive",
+        "token": "neutral-08",
+        "applied": true,
+        "how": {
+          "ko": "계층 선언 없음 → primitive",
+          "en": "no tier declared → primitive"
+        },
+        "hint": null
+      },
+      {
+        "figma": "Neutral 01",
+        "tier": "primitive",
+        "token": "neutral-01",
+        "applied": true,
+        "how": {
+          "ko": "계층 선언 없음 → primitive",
+          "en": "no tier declared → primitive"
+        },
+        "hint": null
+      }
+    ],
+    "families": [
+      "SF Pro"
+    ]
+  },
+  "tokens": [
+    {
+      "layer": "primitive",
+      "category": "COLOR",
+      "name": "shade-02",
+      "cssVar": "--color-shade-02",
+      "value": "#222222",
+      "hex": "#222222",
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "학생 Figma의 정확한 원시 색",
+        "en": "Exact raw color from your Figma"
+      }
+    },
+    {
+      "layer": "primitive",
+      "category": "COLOR",
+      "name": "neutral-07",
+      "cssVar": "--color-neutral-07",
+      "value": "#717171",
+      "hex": "#717171",
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "학생 Figma의 정확한 원시 색",
+        "en": "Exact raw color from your Figma"
+      }
+    },
+    {
+      "layer": "primitive",
+      "category": "COLOR",
+      "name": "shade-01",
+      "cssVar": "--color-shade-01",
+      "value": "#FFFFFF",
+      "hex": "#FFFFFF",
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "학생 Figma의 정확한 원시 색",
+        "en": "Exact raw color from your Figma"
+      }
+    },
+    {
+      "layer": "primitive",
+      "category": "COLOR",
+      "name": "neutral-03",
+      "cssVar": "--color-neutral-03",
+      "value": "#DDDDDD",
+      "hex": "#DDDDDD",
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "학생 Figma의 정확한 원시 색",
+        "en": "Exact raw color from your Figma"
+      }
+    },
+    {
+      "layer": "primitive",
+      "category": "COLOR",
+      "name": "neutral-02",
+      "cssVar": "--color-neutral-02",
+      "value": "#EBEBEB",
+      "hex": "#EBEBEB",
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "학생 Figma의 정확한 원시 색",
+        "en": "Exact raw color from your Figma"
+      }
+    },
+    {
+      "layer": "primitive",
+      "category": "COLOR",
+      "name": "neutral-04",
+      "cssVar": "--color-neutral-04",
+      "value": "#D3D3D3",
+      "hex": "#D3D3D3",
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "학생 Figma의 정확한 원시 색",
+        "en": "Exact raw color from your Figma"
+      }
+    },
+    {
+      "layer": "primitive",
+      "category": "COLOR",
+      "name": "shade-02-5",
+      "cssVar": "--color-shade-02-5",
+      "value": "#222222",
+      "hex": "#222222",
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "학생 Figma의 정확한 원시 색",
+        "en": "Exact raw color from your Figma"
+      }
+    },
+    {
+      "layer": "primitive",
+      "category": "COLOR",
+      "name": "link",
+      "cssVar": "--color-link",
+      "value": "#004CC4",
+      "hex": "#004CC4",
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "학생 Figma의 정확한 원시 색",
+        "en": "Exact raw color from your Figma"
+      }
+    },
+    {
+      "layer": "primitive",
+      "category": "COLOR",
+      "name": "shade-02-30",
+      "cssVar": "--color-shade-02-30",
+      "value": "#222222",
+      "hex": "#222222",
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "학생 Figma의 정확한 원시 색",
+        "en": "Exact raw color from your Figma"
+      }
+    },
+    {
+      "layer": "primitive",
+      "category": "COLOR",
+      "name": "discounts",
+      "cssVar": "--color-discounts",
+      "value": "#008A05",
+      "hex": "#008A05",
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "학생 Figma의 정확한 원시 색",
+        "en": "Exact raw color from your Figma"
+      }
+    },
+    {
+      "layer": "primitive",
+      "category": "COLOR",
+      "name": "accent-02",
+      "cssVar": "--color-accent-02",
+      "value": "#D03660",
+      "hex": "#D03660",
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "학생 Figma의 정확한 원시 색",
+        "en": "Exact raw color from your Figma"
+      }
+    },
+    {
+      "layer": "primitive",
+      "category": "COLOR",
+      "name": "accent-01",
+      "cssVar": "--color-accent-01",
+      "value": "#F6D7DF",
+      "hex": "#F6D7DF",
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "학생 Figma의 정확한 원시 색",
+        "en": "Exact raw color from your Figma"
+      }
+    },
+    {
+      "layer": "primitive",
+      "category": "COLOR",
+      "name": "error-01",
+      "cssVar": "--color-error-01",
+      "value": "#FEF8F6",
+      "hex": "#FEF8F6",
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "학생 Figma의 정확한 원시 색",
+        "en": "Exact raw color from your Figma"
+      }
+    },
+    {
+      "layer": "primitive",
+      "category": "COLOR",
+      "name": "error-02",
+      "cssVar": "--color-error-02",
+      "value": "#C13515",
+      "hex": "#C13515",
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "학생 Figma의 정확한 원시 색",
+        "en": "Exact raw color from your Figma"
+      }
+    },
+    {
+      "layer": "primitive",
+      "category": "COLOR",
+      "name": "primary-01",
+      "cssVar": "--color-primary-01",
+      "value": "#F6475F",
+      "hex": "#F6475F",
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "학생 Figma의 정확한 원시 색",
+        "en": "Exact raw color from your Figma"
+      }
+    },
+    {
+      "layer": "primitive",
+      "category": "COLOR",
+      "name": "primary-02",
+      "cssVar": "--color-primary-02",
+      "value": "#FF385C",
+      "hex": "#FF385C",
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "학생 Figma의 정확한 원시 색",
+        "en": "Exact raw color from your Figma"
+      }
+    },
+    {
+      "layer": "primitive",
+      "category": "COLOR",
+      "name": "neutral-05",
+      "cssVar": "--color-neutral-05",
+      "value": "#C2C2C2",
+      "hex": "#C2C2C2",
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "학생 Figma의 정확한 원시 색",
+        "en": "Exact raw color from your Figma"
+      }
+    },
+    {
+      "layer": "primitive",
+      "category": "COLOR",
+      "name": "neutral-06",
+      "cssVar": "--color-neutral-06",
+      "value": "#B0B0B0",
+      "hex": "#B0B0B0",
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "학생 Figma의 정확한 원시 색",
+        "en": "Exact raw color from your Figma"
+      }
+    },
+    {
+      "layer": "primitive",
+      "category": "COLOR",
+      "name": "neutral-08",
+      "cssVar": "--color-neutral-08",
+      "value": "#5E5E5E",
+      "hex": "#5E5E5E",
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "학생 Figma의 정확한 원시 색",
+        "en": "Exact raw color from your Figma"
+      }
+    },
+    {
+      "layer": "primitive",
+      "category": "COLOR",
+      "name": "neutral-01",
+      "cssVar": "--color-neutral-01",
+      "value": "#F7F7F7",
+      "hex": "#F7F7F7",
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "학생 Figma의 정확한 원시 색",
+        "en": "Exact raw color from your Figma"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "RADIUS",
+      "name": "md",
+      "cssVar": "--radius-md",
+      "value": "8px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "기존/가져온 비색상 layout 값",
+        "en": "Existing or imported non-color layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "RADIUS",
+      "name": "lg",
+      "cssVar": "--radius-lg",
+      "value": "12px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "기존/가져온 비색상 layout 값",
+        "en": "Existing or imported non-color layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "SPACING_UNIT",
+      "name": "base",
+      "cssVar": "--spacing",
+      "value": "4px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "기존/가져온 비색상 layout 값",
+        "en": "Existing or imported non-color layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "BORDER_WIDTH",
+      "name": "thin",
+      "cssVar": "--border-width-thin",
+      "value": "1px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "기존/가져온 비색상 layout 값",
+        "en": "Existing or imported non-color layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "SHADOW",
+      "name": "elevation-03",
+      "cssVar": "--shadow-elevation-03",
+      "value": "0px 6px 16px 0px #0000001F",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "기존/가져온 비색상 layout 값",
+        "en": "Existing or imported non-color layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "SHADOW",
+      "name": "elevation-02",
+      "cssVar": "--shadow-elevation-02",
+      "value": "0px 1px 5px -363px #00000030",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "기존/가져온 비색상 layout 값",
+        "en": "Existing or imported non-color layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "SHADOW",
+      "name": "elevation-01",
+      "cssVar": "--shadow-elevation-01",
+      "value": "0px 4px 18px 0px #0000002B",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "기존/가져온 비색상 layout 값",
+        "en": "Existing or imported non-color layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "GRADIENT",
+      "name": "icon-button-1",
+      "cssVar": "--gradient-icon-button-1",
+      "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(4.1582 -4.3501e-7 4.3501e-7 56.542 -1.5819 40)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "기존/가져온 비색상 layout 값",
+        "en": "Existing or imported non-color layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "GRADIENT",
+      "name": "icon-button-2",
+      "cssVar": "--gradient-icon-button-2",
+      "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-3.9578 4 -4 -486.33 39.77 0.0000061807)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "기존/가져온 비색상 layout 값",
+        "en": "Existing or imported non-color layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "GRADIENT",
+      "name": "icon-button-3",
+      "cssVar": "--gradient-icon-button-3",
+      "value": "linear-gradient(90deg, rgb(235, 76, 96) 0%, rgb(235, 76, 96) 100%), url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-3.9578 4 -4 -486.33 39.77 0.0000061807)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\"), url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-3.9578 4 -4 -486.33 39.77 0.0000061807)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "기존/가져온 비색상 layout 값",
+        "en": "Existing or imported non-color layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "GRADIENT",
+      "name": "icon-button-4",
+      "cssVar": "--gradient-icon-button-4",
+      "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(3.7424 -3.915e-7 3.915e-7 50.887 -1.4237 36)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "기존/가져온 비색상 layout 값",
+        "en": "Existing or imported non-color layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "GRADIENT",
+      "name": "icon-buttondefault-sizel-typeprimary-1",
+      "cssVar": "--gradient-icon-buttondefault-sizel-typeprimary-1",
+      "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(4.1582 -4.3501e-7 4.3501e-7 56.542 -1.5819 40)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "기존/가져온 비색상 layout 값",
+        "en": "Existing or imported non-color layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "GRADIENT",
+      "name": "card-1",
+      "cssVar": "--gradient-card-1",
+      "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 325 51' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(33.785 -5.5463e-7 0.0000035344 72.091 -12.853 51)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "기존/가져온 비색상 layout 값",
+        "en": "Existing or imported non-color layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "GRADIENT",
+      "name": "primary-buttons-1",
+      "cssVar": "--gradient-primary-buttons-1",
+      "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 520 47' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-51.451 4.7 -52 -571.44 517.01 0.0000072623)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "기존/가져온 비색상 layout 값",
+        "en": "Existing or imported non-color layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "GRADIENT",
+      "name": "primary-buttons-2",
+      "cssVar": "--gradient-primary-buttons-2",
+      "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 91 48' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-9.0039 4.8 -9.1 -583.6 90.476 0.0000074169)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "기존/가져온 비색상 layout 값",
+        "en": "Existing or imported non-color layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "GRADIENT",
+      "name": "primary-buttons-3",
+      "cssVar": "--gradient-primary-buttons-3",
+      "value": "linear-gradient(90deg, rgb(235, 76, 96) 0%, rgb(235, 76, 96) 100%), url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 488 47' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-48.285 4.7 -48.8 -571.44 485.19 0.0000072623)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\"), url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 488 47' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-48.285 4.7 -48.8 -571.44 485.19 0.0000072623)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "기존/가져온 비색상 layout 값",
+        "en": "Existing or imported non-color layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "GRADIENT",
+      "name": "primary-buttons-4",
+      "cssVar": "--gradient-primary-buttons-4",
+      "value": "linear-gradient(90deg, rgb(235, 76, 96) 0%, rgb(235, 76, 96) 100%), url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 91 48' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-9.0039 4.8 -9.1 -583.6 90.476 0.0000074169)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\"), url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 91 48' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-9.0039 4.8 -9.1 -583.6 90.476 0.0000074169)'><stop stop-color='rgba(199,45,101,1)' offset='0'/><stop stop-color='rgba(210,55,96,1)' offset='0.48442'/><stop stop-color='rgba(210,55,85,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "기존/가져온 비색상 layout 값",
+        "en": "Existing or imported non-color layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "GRADIENT",
+      "name": "primary-buttons-5",
+      "cssVar": "--gradient-primary-buttons-5",
+      "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 520 47' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(54.056 -5.1113e-7 0.0000056551 66.436 -20.565 47)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "기존/가져온 비색상 layout 값",
+        "en": "Existing or imported non-color layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "GRADIENT",
+      "name": "primary-buttons-6",
+      "cssVar": "--gradient-primary-buttons-6",
+      "value": "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 91 48' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(9.4599 -5.2201e-7 9.8964e-7 67.85 -3.5989 48)'><stop stop-color='rgba(211,55,83,1)' offset='0'/><stop stop-color='rgba(209,54,96,1)' offset='0.52835'/><stop stop-color='rgba(199,45,101,1)' offset='1'/></radialGradient></defs></svg>\")",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "기존/가져온 비색상 layout 값",
+        "en": "Existing or imported non-color layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "COLOR",
+      "name": "overlay",
+      "cssVar": "--color-overlay",
+      "value": "rgb(0 0 0 / 45%)",
+      "hex": null,
+      "ref": null,
+      "source": "synthesized",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "RADIUS",
+      "name": "sm",
+      "cssVar": "--radius-sm",
+      "value": "4px",
+      "hex": null,
+      "ref": null,
+      "source": "synthesized",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "RADIUS",
+      "name": "full",
+      "cssVar": "--radius-full",
+      "value": "9999px",
+      "hex": null,
+      "ref": null,
+      "source": "synthesized",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "BORDER_WIDTH",
+      "name": "thick",
+      "cssVar": "--border-width-thick",
+      "value": "2px",
+      "hex": null,
+      "ref": null,
+      "source": "synthesized",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "SHADOW",
+      "name": "sm",
+      "cssVar": "--shadow-sm",
+      "value": "0 1px 2px rgba(0,0,0,.06)",
+      "hex": null,
+      "ref": null,
+      "source": "synthesized",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "SHADOW",
+      "name": "md",
+      "cssVar": "--shadow-md",
+      "value": "0 4px 12px rgba(0,0,0,.08)",
+      "hex": null,
+      "ref": null,
+      "source": "synthesized",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "SHADOW",
+      "name": "lg",
+      "cssVar": "--shadow-lg",
+      "value": "0 12px 32px rgba(0,0,0,.12)",
+      "hex": null,
+      "ref": null,
+      "source": "synthesized",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "DURATION",
+      "name": "fast",
+      "cssVar": "--duration-fast",
+      "value": "150ms",
+      "hex": null,
+      "ref": null,
+      "source": "synthesized",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "DURATION",
+      "name": "normal",
+      "cssVar": "--duration-normal",
+      "value": "250ms",
+      "hex": null,
+      "ref": null,
+      "source": "synthesized",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "EASING",
+      "name": "standard",
+      "cssVar": "--ease-standard",
+      "value": "cubic-bezier(0.2, 0, 0, 1)",
+      "hex": null,
+      "ref": null,
+      "source": "synthesized",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_FAMILY",
+      "name": "sans",
+      "cssVar": "--font-sans",
+      "value": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+      "hex": null,
+      "ref": null,
+      "source": "synthesized",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_SIZE",
+      "name": "body-2",
+      "cssVar": "--text-body-2",
+      "value": "14px",
+      "hex": null,
+      "ref": null,
+      "source": "synthesized",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_SIZE",
+      "name": "body-1",
+      "cssVar": "--text-body-1",
+      "value": "16px",
+      "hex": null,
+      "ref": null,
+      "source": "synthesized",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_SIZE",
+      "name": "title",
+      "cssVar": "--text-title",
+      "value": "20px",
+      "hex": null,
+      "ref": null,
+      "source": "synthesized",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_WEIGHT",
+      "name": "regular",
+      "cssVar": "--font-weight-regular",
+      "value": "400",
+      "hex": null,
+      "ref": null,
+      "source": "synthesized",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_WEIGHT",
+      "name": "medium",
+      "cssVar": "--font-weight-medium",
+      "value": "500",
+      "hex": null,
+      "ref": null,
+      "source": "synthesized",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_WEIGHT",
+      "name": "bold",
+      "cssVar": "--font-weight-bold",
+      "value": "700",
+      "hex": null,
+      "ref": null,
+      "source": "synthesized",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "LINE_HEIGHT",
+      "name": "tight",
+      "cssVar": "--leading-tight",
+      "value": "1.25",
+      "hex": null,
+      "ref": null,
+      "source": "synthesized",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "LINE_HEIGHT",
+      "name": "normal",
+      "cssVar": "--leading-normal",
+      "value": "1.5",
+      "hex": null,
+      "ref": null,
+      "source": "synthesized",
+      "confidence": 0.3,
+      "reason": {
+        "ko": "기본 layout 보충",
+        "en": "Filled default layout value"
+      }
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_SIZE",
+      "name": "type-body-copy-16pt-semibold",
+      "cssVar": "--text-type-body-copy-16pt-semibold",
+      "value": "16px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/16pt Semibold\"",
+        "en": "Figma text style \"Body Copy/16pt Semibold\""
+      },
+      "typeScale": "body-copy-16pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_WEIGHT",
+      "name": "type-body-copy-16pt-semibold",
+      "cssVar": "--font-weight-type-body-copy-16pt-semibold",
+      "value": "590",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/16pt Semibold\"",
+        "en": "Figma text style \"Body Copy/16pt Semibold\""
+      },
+      "typeScale": "body-copy-16pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_FAMILY",
+      "name": "type-body-copy-16pt-semibold",
+      "cssVar": "--font-type-body-copy-16pt-semibold",
+      "value": "\"SF Pro\", var(--font-sans)",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/16pt Semibold\"",
+        "en": "Figma text style \"Body Copy/16pt Semibold\""
+      },
+      "typeScale": "body-copy-16pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "LETTER_SPACING",
+      "name": "type-body-copy-16pt-semibold",
+      "cssVar": "--tracking-type-body-copy-16pt-semibold",
+      "value": "0px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/16pt Semibold\"",
+        "en": "Figma text style \"Body Copy/16pt Semibold\""
+      },
+      "typeScale": "body-copy-16pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_SIZE",
+      "name": "type-body-copy-13pt-semibold",
+      "cssVar": "--text-type-body-copy-13pt-semibold",
+      "value": "13px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/13pt Semibold\"",
+        "en": "Figma text style \"Body Copy/13pt Semibold\""
+      },
+      "typeScale": "body-copy-13pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_WEIGHT",
+      "name": "type-body-copy-13pt-semibold",
+      "cssVar": "--font-weight-type-body-copy-13pt-semibold",
+      "value": "590",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/13pt Semibold\"",
+        "en": "Figma text style \"Body Copy/13pt Semibold\""
+      },
+      "typeScale": "body-copy-13pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_FAMILY",
+      "name": "type-body-copy-13pt-semibold",
+      "cssVar": "--font-type-body-copy-13pt-semibold",
+      "value": "\"SF Pro\", var(--font-sans)",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/13pt Semibold\"",
+        "en": "Figma text style \"Body Copy/13pt Semibold\""
+      },
+      "typeScale": "body-copy-13pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "LETTER_SPACING",
+      "name": "type-body-copy-13pt-semibold",
+      "cssVar": "--tracking-type-body-copy-13pt-semibold",
+      "value": "0px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/13pt Semibold\"",
+        "en": "Figma text style \"Body Copy/13pt Semibold\""
+      },
+      "typeScale": "body-copy-13pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_SIZE",
+      "name": "type-body-copy-12pt-semibold-underlined",
+      "cssVar": "--text-type-body-copy-12pt-semibold-underlined",
+      "value": "12px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/12pt Semibold Underlined\"",
+        "en": "Figma text style \"Body Copy/12pt Semibold Underlined\""
+      },
+      "typeScale": "body-copy-12pt-semibold-underlined"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_WEIGHT",
+      "name": "type-body-copy-12pt-semibold-underlined",
+      "cssVar": "--font-weight-type-body-copy-12pt-semibold-underlined",
+      "value": "590",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/12pt Semibold Underlined\"",
+        "en": "Figma text style \"Body Copy/12pt Semibold Underlined\""
+      },
+      "typeScale": "body-copy-12pt-semibold-underlined"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_FAMILY",
+      "name": "type-body-copy-12pt-semibold-underlined",
+      "cssVar": "--font-type-body-copy-12pt-semibold-underlined",
+      "value": "\"SF Pro\", var(--font-sans)",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/12pt Semibold Underlined\"",
+        "en": "Figma text style \"Body Copy/12pt Semibold Underlined\""
+      },
+      "typeScale": "body-copy-12pt-semibold-underlined"
+    },
+    {
+      "layer": "layout",
+      "category": "LETTER_SPACING",
+      "name": "type-body-copy-12pt-semibold-underlined",
+      "cssVar": "--tracking-type-body-copy-12pt-semibold-underlined",
+      "value": "0px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/12pt Semibold Underlined\"",
+        "en": "Figma text style \"Body Copy/12pt Semibold Underlined\""
+      },
+      "typeScale": "body-copy-12pt-semibold-underlined"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_SIZE",
+      "name": "type-body-copy-14pt-semibold",
+      "cssVar": "--text-type-body-copy-14pt-semibold",
+      "value": "14px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/14pt Semibold\"",
+        "en": "Figma text style \"Body Copy/14pt Semibold\""
+      },
+      "typeScale": "body-copy-14pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_WEIGHT",
+      "name": "type-body-copy-14pt-semibold",
+      "cssVar": "--font-weight-type-body-copy-14pt-semibold",
+      "value": "590",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/14pt Semibold\"",
+        "en": "Figma text style \"Body Copy/14pt Semibold\""
+      },
+      "typeScale": "body-copy-14pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_FAMILY",
+      "name": "type-body-copy-14pt-semibold",
+      "cssVar": "--font-type-body-copy-14pt-semibold",
+      "value": "\"SF Pro\", var(--font-sans)",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/14pt Semibold\"",
+        "en": "Figma text style \"Body Copy/14pt Semibold\""
+      },
+      "typeScale": "body-copy-14pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "LETTER_SPACING",
+      "name": "type-body-copy-14pt-semibold",
+      "cssVar": "--tracking-type-body-copy-14pt-semibold",
+      "value": "0px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/14pt Semibold\"",
+        "en": "Figma text style \"Body Copy/14pt Semibold\""
+      },
+      "typeScale": "body-copy-14pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_SIZE",
+      "name": "type-body-copy-12pt-regular",
+      "cssVar": "--text-type-body-copy-12pt-regular",
+      "value": "12px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/12pt Regular\"",
+        "en": "Figma text style \"Body Copy/12pt Regular\""
+      },
+      "typeScale": "body-copy-12pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_WEIGHT",
+      "name": "type-body-copy-12pt-regular",
+      "cssVar": "--font-weight-type-body-copy-12pt-regular",
+      "value": "400",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/12pt Regular\"",
+        "en": "Figma text style \"Body Copy/12pt Regular\""
+      },
+      "typeScale": "body-copy-12pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_FAMILY",
+      "name": "type-body-copy-12pt-regular",
+      "cssVar": "--font-type-body-copy-12pt-regular",
+      "value": "\"SF Pro\", var(--font-sans)",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/12pt Regular\"",
+        "en": "Figma text style \"Body Copy/12pt Regular\""
+      },
+      "typeScale": "body-copy-12pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "LETTER_SPACING",
+      "name": "type-body-copy-12pt-regular",
+      "cssVar": "--tracking-type-body-copy-12pt-regular",
+      "value": "0px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/12pt Regular\"",
+        "en": "Figma text style \"Body Copy/12pt Regular\""
+      },
+      "typeScale": "body-copy-12pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_SIZE",
+      "name": "type-mirco-text-10pt-semibold",
+      "cssVar": "--text-type-mirco-text-10pt-semibold",
+      "value": "10px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Mirco Text/10pt Semibold\"",
+        "en": "Figma text style \"Mirco Text/10pt Semibold\""
+      },
+      "typeScale": "mirco-text-10pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_WEIGHT",
+      "name": "type-mirco-text-10pt-semibold",
+      "cssVar": "--font-weight-type-mirco-text-10pt-semibold",
+      "value": "590",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Mirco Text/10pt Semibold\"",
+        "en": "Figma text style \"Mirco Text/10pt Semibold\""
+      },
+      "typeScale": "mirco-text-10pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_FAMILY",
+      "name": "type-mirco-text-10pt-semibold",
+      "cssVar": "--font-type-mirco-text-10pt-semibold",
+      "value": "\"SF Pro\", var(--font-sans)",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Mirco Text/10pt Semibold\"",
+        "en": "Figma text style \"Mirco Text/10pt Semibold\""
+      },
+      "typeScale": "mirco-text-10pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "LETTER_SPACING",
+      "name": "type-mirco-text-10pt-semibold",
+      "cssVar": "--tracking-type-mirco-text-10pt-semibold",
+      "value": "0px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Mirco Text/10pt Semibold\"",
+        "en": "Figma text style \"Mirco Text/10pt Semibold\""
+      },
+      "typeScale": "mirco-text-10pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_SIZE",
+      "name": "type-body-copy-12pt-semibold",
+      "cssVar": "--text-type-body-copy-12pt-semibold",
+      "value": "12px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/12pt Semibold\"",
+        "en": "Figma text style \"Body Copy/12pt Semibold\""
+      },
+      "typeScale": "body-copy-12pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_WEIGHT",
+      "name": "type-body-copy-12pt-semibold",
+      "cssVar": "--font-weight-type-body-copy-12pt-semibold",
+      "value": "590",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/12pt Semibold\"",
+        "en": "Figma text style \"Body Copy/12pt Semibold\""
+      },
+      "typeScale": "body-copy-12pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_FAMILY",
+      "name": "type-body-copy-12pt-semibold",
+      "cssVar": "--font-type-body-copy-12pt-semibold",
+      "value": "\"SF Pro\", var(--font-sans)",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/12pt Semibold\"",
+        "en": "Figma text style \"Body Copy/12pt Semibold\""
+      },
+      "typeScale": "body-copy-12pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "LETTER_SPACING",
+      "name": "type-body-copy-12pt-semibold",
+      "cssVar": "--tracking-type-body-copy-12pt-semibold",
+      "value": "0px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/12pt Semibold\"",
+        "en": "Figma text style \"Body Copy/12pt Semibold\""
+      },
+      "typeScale": "body-copy-12pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_SIZE",
+      "name": "type-body-copy-13pt-regular",
+      "cssVar": "--text-type-body-copy-13pt-regular",
+      "value": "13px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/13pt Regular\"",
+        "en": "Figma text style \"Body Copy/13pt Regular\""
+      },
+      "typeScale": "body-copy-13pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_WEIGHT",
+      "name": "type-body-copy-13pt-regular",
+      "cssVar": "--font-weight-type-body-copy-13pt-regular",
+      "value": "400",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/13pt Regular\"",
+        "en": "Figma text style \"Body Copy/13pt Regular\""
+      },
+      "typeScale": "body-copy-13pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_FAMILY",
+      "name": "type-body-copy-13pt-regular",
+      "cssVar": "--font-type-body-copy-13pt-regular",
+      "value": "\"SF Pro\", var(--font-sans)",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/13pt Regular\"",
+        "en": "Figma text style \"Body Copy/13pt Regular\""
+      },
+      "typeScale": "body-copy-13pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "LETTER_SPACING",
+      "name": "type-body-copy-13pt-regular",
+      "cssVar": "--tracking-type-body-copy-13pt-regular",
+      "value": "0px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/13pt Regular\"",
+        "en": "Figma text style \"Body Copy/13pt Regular\""
+      },
+      "typeScale": "body-copy-13pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_SIZE",
+      "name": "type-body-copy-14pt-regular",
+      "cssVar": "--text-type-body-copy-14pt-regular",
+      "value": "14px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/14pt Regular\"",
+        "en": "Figma text style \"Body Copy/14pt Regular\""
+      },
+      "typeScale": "body-copy-14pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_WEIGHT",
+      "name": "type-body-copy-14pt-regular",
+      "cssVar": "--font-weight-type-body-copy-14pt-regular",
+      "value": "400",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/14pt Regular\"",
+        "en": "Figma text style \"Body Copy/14pt Regular\""
+      },
+      "typeScale": "body-copy-14pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_FAMILY",
+      "name": "type-body-copy-14pt-regular",
+      "cssVar": "--font-type-body-copy-14pt-regular",
+      "value": "\"SF Pro\", var(--font-sans)",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/14pt Regular\"",
+        "en": "Figma text style \"Body Copy/14pt Regular\""
+      },
+      "typeScale": "body-copy-14pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "LETTER_SPACING",
+      "name": "type-body-copy-14pt-regular",
+      "cssVar": "--tracking-type-body-copy-14pt-regular",
+      "value": "0px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/14pt Regular\"",
+        "en": "Figma text style \"Body Copy/14pt Regular\""
+      },
+      "typeScale": "body-copy-14pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_SIZE",
+      "name": "type-body-copy-16pt-regular",
+      "cssVar": "--text-type-body-copy-16pt-regular",
+      "value": "16px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/16pt Regular\"",
+        "en": "Figma text style \"Body Copy/16pt Regular\""
+      },
+      "typeScale": "body-copy-16pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_WEIGHT",
+      "name": "type-body-copy-16pt-regular",
+      "cssVar": "--font-weight-type-body-copy-16pt-regular",
+      "value": "400",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/16pt Regular\"",
+        "en": "Figma text style \"Body Copy/16pt Regular\""
+      },
+      "typeScale": "body-copy-16pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_FAMILY",
+      "name": "type-body-copy-16pt-regular",
+      "cssVar": "--font-type-body-copy-16pt-regular",
+      "value": "\"SF Pro\", var(--font-sans)",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/16pt Regular\"",
+        "en": "Figma text style \"Body Copy/16pt Regular\""
+      },
+      "typeScale": "body-copy-16pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "LETTER_SPACING",
+      "name": "type-body-copy-16pt-regular",
+      "cssVar": "--tracking-type-body-copy-16pt-regular",
+      "value": "0px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/16pt Regular\"",
+        "en": "Figma text style \"Body Copy/16pt Regular\""
+      },
+      "typeScale": "body-copy-16pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_SIZE",
+      "name": "type-body-copy-16pt-regular-underlined",
+      "cssVar": "--text-type-body-copy-16pt-regular-underlined",
+      "value": "16px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/16pt Regular Underlined\"",
+        "en": "Figma text style \"Body Copy/16pt Regular Underlined\""
+      },
+      "typeScale": "body-copy-16pt-regular-underlined"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_WEIGHT",
+      "name": "type-body-copy-16pt-regular-underlined",
+      "cssVar": "--font-weight-type-body-copy-16pt-regular-underlined",
+      "value": "400",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/16pt Regular Underlined\"",
+        "en": "Figma text style \"Body Copy/16pt Regular Underlined\""
+      },
+      "typeScale": "body-copy-16pt-regular-underlined"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_FAMILY",
+      "name": "type-body-copy-16pt-regular-underlined",
+      "cssVar": "--font-type-body-copy-16pt-regular-underlined",
+      "value": "\"SF Pro\", var(--font-sans)",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/16pt Regular Underlined\"",
+        "en": "Figma text style \"Body Copy/16pt Regular Underlined\""
+      },
+      "typeScale": "body-copy-16pt-regular-underlined"
+    },
+    {
+      "layer": "layout",
+      "category": "LETTER_SPACING",
+      "name": "type-body-copy-16pt-regular-underlined",
+      "cssVar": "--tracking-type-body-copy-16pt-regular-underlined",
+      "value": "0px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/16pt Regular Underlined\"",
+        "en": "Figma text style \"Body Copy/16pt Regular Underlined\""
+      },
+      "typeScale": "body-copy-16pt-regular-underlined"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_SIZE",
+      "name": "type-body-copy-18pt-regular",
+      "cssVar": "--text-type-body-copy-18pt-regular",
+      "value": "18px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/18pt Regular\"",
+        "en": "Figma text style \"Body Copy/18pt Regular\""
+      },
+      "typeScale": "body-copy-18pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_WEIGHT",
+      "name": "type-body-copy-18pt-regular",
+      "cssVar": "--font-weight-type-body-copy-18pt-regular",
+      "value": "400",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/18pt Regular\"",
+        "en": "Figma text style \"Body Copy/18pt Regular\""
+      },
+      "typeScale": "body-copy-18pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_FAMILY",
+      "name": "type-body-copy-18pt-regular",
+      "cssVar": "--font-type-body-copy-18pt-regular",
+      "value": "\"SF Pro\", var(--font-sans)",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/18pt Regular\"",
+        "en": "Figma text style \"Body Copy/18pt Regular\""
+      },
+      "typeScale": "body-copy-18pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "LETTER_SPACING",
+      "name": "type-body-copy-18pt-regular",
+      "cssVar": "--tracking-type-body-copy-18pt-regular",
+      "value": "0px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/18pt Regular\"",
+        "en": "Figma text style \"Body Copy/18pt Regular\""
+      },
+      "typeScale": "body-copy-18pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_SIZE",
+      "name": "type-body-copy-18pt-medium",
+      "cssVar": "--text-type-body-copy-18pt-medium",
+      "value": "18px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/18pt Medium\"",
+        "en": "Figma text style \"Body Copy/18pt Medium\""
+      },
+      "typeScale": "body-copy-18pt-medium"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_WEIGHT",
+      "name": "type-body-copy-18pt-medium",
+      "cssVar": "--font-weight-type-body-copy-18pt-medium",
+      "value": "510",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/18pt Medium\"",
+        "en": "Figma text style \"Body Copy/18pt Medium\""
+      },
+      "typeScale": "body-copy-18pt-medium"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_FAMILY",
+      "name": "type-body-copy-18pt-medium",
+      "cssVar": "--font-type-body-copy-18pt-medium",
+      "value": "\"SF Pro\", var(--font-sans)",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/18pt Medium\"",
+        "en": "Figma text style \"Body Copy/18pt Medium\""
+      },
+      "typeScale": "body-copy-18pt-medium"
+    },
+    {
+      "layer": "layout",
+      "category": "LETTER_SPACING",
+      "name": "type-body-copy-18pt-medium",
+      "cssVar": "--tracking-type-body-copy-18pt-medium",
+      "value": "0px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/18pt Medium\"",
+        "en": "Figma text style \"Body Copy/18pt Medium\""
+      },
+      "typeScale": "body-copy-18pt-medium"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_SIZE",
+      "name": "type-body-copy-18pt-semibold",
+      "cssVar": "--text-type-body-copy-18pt-semibold",
+      "value": "18px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/18pt Semibold\"",
+        "en": "Figma text style \"Body Copy/18pt Semibold\""
+      },
+      "typeScale": "body-copy-18pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_WEIGHT",
+      "name": "type-body-copy-18pt-semibold",
+      "cssVar": "--font-weight-type-body-copy-18pt-semibold",
+      "value": "590",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/18pt Semibold\"",
+        "en": "Figma text style \"Body Copy/18pt Semibold\""
+      },
+      "typeScale": "body-copy-18pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_FAMILY",
+      "name": "type-body-copy-18pt-semibold",
+      "cssVar": "--font-type-body-copy-18pt-semibold",
+      "value": "\"SF Pro\", var(--font-sans)",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/18pt Semibold\"",
+        "en": "Figma text style \"Body Copy/18pt Semibold\""
+      },
+      "typeScale": "body-copy-18pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "LETTER_SPACING",
+      "name": "type-body-copy-18pt-semibold",
+      "cssVar": "--tracking-type-body-copy-18pt-semibold",
+      "value": "0px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Body Copy/18pt Semibold\"",
+        "en": "Figma text style \"Body Copy/18pt Semibold\""
+      },
+      "typeScale": "body-copy-18pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_SIZE",
+      "name": "type-header-22pt-regular",
+      "cssVar": "--text-type-header-22pt-regular",
+      "value": "22px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Header/22pt Regular\"",
+        "en": "Figma text style \"Header/22pt Regular\""
+      },
+      "typeScale": "header-22pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_WEIGHT",
+      "name": "type-header-22pt-regular",
+      "cssVar": "--font-weight-type-header-22pt-regular",
+      "value": "400",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Header/22pt Regular\"",
+        "en": "Figma text style \"Header/22pt Regular\""
+      },
+      "typeScale": "header-22pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_FAMILY",
+      "name": "type-header-22pt-regular",
+      "cssVar": "--font-type-header-22pt-regular",
+      "value": "\"SF Pro\", var(--font-sans)",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Header/22pt Regular\"",
+        "en": "Figma text style \"Header/22pt Regular\""
+      },
+      "typeScale": "header-22pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "LETTER_SPACING",
+      "name": "type-header-22pt-regular",
+      "cssVar": "--tracking-type-header-22pt-regular",
+      "value": "0px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Header/22pt Regular\"",
+        "en": "Figma text style \"Header/22pt Regular\""
+      },
+      "typeScale": "header-22pt-regular"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_SIZE",
+      "name": "type-header-22pt-semibold",
+      "cssVar": "--text-type-header-22pt-semibold",
+      "value": "22px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Header/22pt Semibold\"",
+        "en": "Figma text style \"Header/22pt Semibold\""
+      },
+      "typeScale": "header-22pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_WEIGHT",
+      "name": "type-header-22pt-semibold",
+      "cssVar": "--font-weight-type-header-22pt-semibold",
+      "value": "590",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Header/22pt Semibold\"",
+        "en": "Figma text style \"Header/22pt Semibold\""
+      },
+      "typeScale": "header-22pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "FONT_FAMILY",
+      "name": "type-header-22pt-semibold",
+      "cssVar": "--font-type-header-22pt-semibold",
+      "value": "\"SF Pro\", var(--font-sans)",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Header/22pt Semibold\"",
+        "en": "Figma text style \"Header/22pt Semibold\""
+      },
+      "typeScale": "header-22pt-semibold"
+    },
+    {
+      "layer": "layout",
+      "category": "LETTER_SPACING",
+      "name": "type-header-22pt-semibold",
+      "cssVar": "--tracking-type-header-22pt-semibold",
+      "value": "0px",
+      "hex": null,
+      "ref": null,
+      "source": "declared",
+      "confidence": 1,
+      "reason": {
+        "ko": "Figma 텍스트 스타일 \"Header/22pt Semibold\"",
+        "en": "Figma text style \"Header/22pt Semibold\""
+      },
+      "typeScale": "header-22pt-semibold"
+    },
+    {
+      "layer": "semantic",
+      "category": "COLOR",
+      "name": "bg",
+      "cssVar": "--color-bg",
+      "value": "var(--color-shade-01)",
+      "hex": "#FFFFFF",
+      "ref": "shade-01",
+      "source": "human",
+      "confidence": 1,
+      "reason": {
+        "ko": ".ds/semantic.json 에서 사람이 지정",
+        "en": "Set by a person in .ds/semantic.json"
+      }
+    },
+    {
+      "layer": "semantic",
+      "category": "COLOR",
+      "name": "surface",
+      "cssVar": "--color-surface",
+      "value": "var(--color-shade-01)",
+      "hex": "#FFFFFF",
+      "ref": "shade-01",
+      "source": "human",
+      "confidence": 1,
+      "reason": {
+        "ko": ".ds/semantic.json 에서 사람이 지정",
+        "en": "Set by a person in .ds/semantic.json"
+      }
+    },
+    {
+      "layer": "semantic",
+      "category": "COLOR",
+      "name": "surface-raised",
+      "cssVar": "--color-surface-raised",
+      "value": "var(--color-shade-01)",
+      "hex": "#FFFFFF",
+      "ref": "shade-01",
+      "source": "human",
+      "confidence": 1,
+      "reason": {
+        "ko": ".ds/semantic.json 에서 사람이 지정",
+        "en": "Set by a person in .ds/semantic.json"
+      }
+    },
+    {
+      "layer": "semantic",
+      "category": "COLOR",
+      "name": "border",
+      "cssVar": "--color-border",
+      "value": "var(--color-neutral-03)",
+      "hex": "#DDDDDD",
+      "ref": "neutral-03",
+      "source": "human",
+      "confidence": 1,
+      "reason": {
+        "ko": ".ds/semantic.json 에서 사람이 지정",
+        "en": "Set by a person in .ds/semantic.json"
+      }
+    },
+    {
+      "layer": "semantic",
+      "category": "COLOR",
+      "name": "border-strong",
+      "cssVar": "--color-border-strong",
+      "value": "var(--color-neutral-07)",
+      "hex": "#717171",
+      "ref": "neutral-07",
+      "source": "human",
+      "confidence": 1,
+      "reason": {
+        "ko": ".ds/semantic.json 에서 사람이 지정",
+        "en": "Set by a person in .ds/semantic.json"
+      }
+    },
+    {
+      "layer": "semantic",
+      "category": "COLOR",
+      "name": "text",
+      "cssVar": "--color-text",
+      "value": "var(--color-shade-02)",
+      "hex": "#222222",
+      "ref": "shade-02",
+      "source": "human",
+      "confidence": 1,
+      "reason": {
+        "ko": ".ds/semantic.json 에서 사람이 지정",
+        "en": "Set by a person in .ds/semantic.json"
+      }
+    },
+    {
+      "layer": "semantic",
+      "category": "COLOR",
+      "name": "text-secondary",
+      "cssVar": "--color-text-secondary",
+      "value": "var(--color-neutral-07)",
+      "hex": "#717171",
+      "ref": "neutral-07",
+      "source": "human",
+      "confidence": 1,
+      "reason": {
+        "ko": ".ds/semantic.json 에서 사람이 지정",
+        "en": "Set by a person in .ds/semantic.json"
+      }
+    },
+    {
+      "layer": "semantic",
+      "category": "COLOR",
+      "name": "text-disabled",
+      "cssVar": "--color-text-disabled",
+      "value": "var(--color-neutral-05)",
+      "hex": "#C2C2C2",
+      "ref": "neutral-05",
+      "source": "human",
+      "confidence": 1,
+      "reason": {
+        "ko": ".ds/semantic.json 에서 사람이 지정",
+        "en": "Set by a person in .ds/semantic.json"
+      }
+    },
+    {
+      "layer": "semantic",
+      "category": "COLOR",
+      "name": "primary",
+      "cssVar": "--color-primary",
+      "value": "var(--color-primary-02)",
+      "hex": "#FF385C",
+      "ref": "primary-02",
+      "source": "human",
+      "confidence": 1,
+      "reason": {
+        "ko": ".ds/semantic.json 에서 사람이 지정",
+        "en": "Set by a person in .ds/semantic.json"
+      }
+    },
+    {
+      "layer": "semantic",
+      "category": "COLOR",
+      "name": "primary-hover",
+      "cssVar": "--color-primary-hover",
+      "value": "var(--color-accent-02)",
+      "hex": "#D03660",
+      "ref": "accent-02",
+      "source": "human",
+      "confidence": 1,
+      "reason": {
+        "ko": ".ds/semantic.json 에서 사람이 지정",
+        "en": "Set by a person in .ds/semantic.json"
+      }
+    },
+    {
+      "layer": "semantic",
+      "category": "COLOR",
+      "name": "primary-active",
+      "cssVar": "--color-primary-active",
+      "value": "var(--color-accent-02)",
+      "hex": "#D03660",
+      "ref": "accent-02",
+      "source": "human",
+      "confidence": 1,
+      "reason": {
+        "ko": ".ds/semantic.json 에서 사람이 지정",
+        "en": "Set by a person in .ds/semantic.json"
+      }
+    },
+    {
+      "layer": "semantic",
+      "category": "COLOR",
+      "name": "on-primary",
+      "cssVar": "--color-on-primary",
+      "value": "var(--color-shade-01)",
+      "hex": "#FFFFFF",
+      "ref": "shade-01",
+      "source": "human",
+      "confidence": 1,
+      "reason": {
+        "ko": ".ds/semantic.json 에서 사람이 지정",
+        "en": "Set by a person in .ds/semantic.json"
+      }
+    },
+    {
+      "layer": "semantic",
+      "category": "COLOR",
+      "name": "danger",
+      "cssVar": "--color-danger",
+      "value": "var(--color-error-02)",
+      "hex": "#C13515",
+      "ref": "error-02",
+      "source": "human",
+      "confidence": 1,
+      "reason": {
+        "ko": ".ds/semantic.json 에서 사람이 지정",
+        "en": "Set by a person in .ds/semantic.json"
+      }
+    },
+    {
+      "layer": "semantic",
+      "category": "COLOR",
+      "name": "success",
+      "cssVar": "--color-success",
+      "value": "var(--color-discounts)",
+      "hex": "#008A05",
+      "ref": "discounts",
+      "source": "human",
+      "confidence": 1,
+      "reason": {
+        "ko": ".ds/semantic.json 에서 사람이 지정",
+        "en": "Set by a person in .ds/semantic.json"
+      }
+    },
+    {
+      "layer": "semantic",
+      "category": "COLOR",
+      "name": "warning",
+      "cssVar": "--color-warning",
+      "value": "var(--color-primary-01)",
+      "hex": "#F6475F",
+      "ref": "primary-01",
+      "source": "human",
+      "confidence": 1,
+      "reason": {
+        "ko": ".ds/semantic.json 에서 사람이 지정",
+        "en": "Set by a person in .ds/semantic.json"
+      }
+    },
+    {
+      "layer": "semantic",
+      "category": "COLOR",
+      "name": "info",
+      "cssVar": "--color-info",
+      "value": "var(--color-link)",
+      "hex": "#004CC4",
+      "ref": "link",
+      "source": "human",
+      "confidence": 1,
+      "reason": {
+        "ko": ".ds/semantic.json 에서 사람이 지정",
+        "en": "Set by a person in .ds/semantic.json"
+      }
+    },
+    {
+      "layer": "semantic",
+      "category": "COLOR",
+      "name": "image-placeholder",
+      "cssVar": "--color-image-placeholder",
+      "value": "var(--color-neutral-06)",
+      "hex": "#B0B0B0",
+      "ref": "neutral-06",
+      "source": "human",
+      "confidence": 1,
+      "reason": {
+        "ko": ".ds/semantic.json 에서 사람이 지정",
+        "en": "Set by a person in .ds/semantic.json"
+      }
+    },
+    {
+      "layer": "semantic",
+      "category": "COLOR",
+      "name": "text-tertiary",
+      "cssVar": "--color-text-tertiary",
+      "value": "var(--color-neutral-08)",
+      "hex": "#5E5E5E",
+      "ref": "neutral-08",
+      "source": "human",
+      "confidence": 1,
+      "reason": {
+        "ko": ".ds/semantic.json 에서 사람이 지정",
+        "en": "Set by a person in .ds/semantic.json"
+      }
+    }
+  ]
+}

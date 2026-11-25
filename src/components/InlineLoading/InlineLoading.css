@@ -1,0 +1,65 @@
+/* InlineLoading — semantic/layout 토큰만 참조한다. primitive 직접 참조 금지(G1). */
+.ds-inlineloading {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 2);
+  min-height: calc(var(--spacing) * 8);
+  font-family: var(--font-sans);
+  font-size: var(--text-body-2);
+  line-height: var(--leading-normal);
+  color: var(--color-text-secondary);
+}
+
+.ds-inlineloading__icon {
+  flex: none;
+}
+
+.ds-inlineloading--active .ds-inlineloading__icon {
+  color: var(--color-primary);
+  animation: ds-inlineloading-spin 900ms linear infinite;
+}
+
+.ds-inlineloading__track,
+.ds-inlineloading__arc {
+  fill: none;
+  stroke-width: 2;
+}
+
+.ds-inlineloading__track {
+  stroke: var(--color-border);
+}
+
+.ds-inlineloading__arc {
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-dasharray: 18 40;
+}
+
+.ds-inlineloading--finished .ds-inlineloading__icon {
+  color: var(--color-success);
+}
+
+.ds-inlineloading--error {
+  color: var(--color-danger);
+}
+
+.ds-inlineloading--error .ds-inlineloading__icon {
+  color: var(--color-danger);
+}
+
+@keyframes ds-inlineloading-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-inlineloading--active .ds-inlineloading__icon {
+    animation-duration: 3s;
+  }
+}
+
+/* 채운 원 위의 체크·느낌표. */
+.ds-inlineloading__mark {
+  stroke: var(--color-on-primary);
+}

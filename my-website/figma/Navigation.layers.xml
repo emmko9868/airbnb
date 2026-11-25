@@ -1,0 +1,10 @@
+Currently selected nodes:
+- 418:3086: Login
+
+
+<frame id="418:3084" name="Navigation" x="0" y="0" width="1440" height="80">
+  <instance id="418:3086" name="Login" x="1111" y="21" width="249" height="38" />
+  <instance id="418:3087" name="Logo" x="80" y="21" width="102" height="32" />
+</frame>
+IMPORTANT: After you call this tool, you MUST call get_design_context if trying to implement the design, since this tool only returns metadata. If you do not call get_design_context, the agent will not be able to implement the design.
+IMPORTANT: Inform the user that
