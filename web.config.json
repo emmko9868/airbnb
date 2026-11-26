@@ -1,1 +1,1 @@
-{"schema_version":2,"title":"Airbnb","locale":"en","pages":[{"name":"Home","path":"/","entry":"my-website/pages/HomePage.tsx"}],"routes":["/"]}
+{"schema_version":2,"title":"AirbnbSeoul","locale":"en","pages":[{"name":"Home","path":"/","entry":"my-website/pages/HomePage.tsx"},{"name":"ListingDetail","path":"/listing","entry":"my-website/pages/ListingDetailPage.tsx"},{"name":"BookingConfirmation","path":"/booking","entry":"my-website/pages/BookingConfirmationPage.tsx"}],"routes":["/","/listing","/booking"]}
